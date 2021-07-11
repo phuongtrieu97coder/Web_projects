@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+         <style>
+          
+         </style>
+    </head>
+
+
+    <body >
+      <!--☰-->
+      <div id="main_content">
+
+
+
+          <div class="w3-top w3-black" style="z-index:5">
+               <button class="w3-button w3-hover-red  w3-ripple w3-white w3-text-green w3-xlarge w3-ripple"
+               onclick="open_sidebar()">☰</button>
+     
+               <a class="w3-button  w3-hover-red  w3-ripple w3-aqua w3-xlarge w3-ripple"
+               href="#">HOME</a>
+               
+               <button class="w3-button  w3-hover-red  w3-ripple w3-light-gray w3-text-yellow w3-xlarge w3-ripple"
+               onclick="open_sidebar()">ABOUT</button>
+               
+     
+               <button class="w3-button  w3-hover-red  w3-ripple w3-right w3-black w3-text-green w3-xlarge w3-ripple"
+               onclick="open_sidebar2()">☰</button>
+           </div>
+     
+     
+          
+     
+     
+     
+     
+     
+     
+           <div class="w3-overlay" id="overlay1" onclick="close_sidebar()"></div>
+           <div id="sidebar" class="w3-sidebar w3-animate-left w3-bar-block w3-black w3-display-container"
+            style="top:0;z-index:5;display:none;font-size:25px">
+                 <button class="w3-button w3-hover-yellow w3-ripple w3-display-topright"
+                 onclick="close_sidebar()"
+                 >X</button>
+                 <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua">HOME</button>
+                 <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua"
+                  onclick="open_about_dropdown()">ABOUT</button>
+                  <span id="about_dropdown_content" class="w3-hide w3-bar-item w3-bar-block w3-white"> 
+                       <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">AUTHOR</button>
+                       <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">ADDRESS</button>
+                       <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">PHONE</button>
+                  </span>
+     
+                  <span class="w3-dropdown-click">
+                    <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua"
+                    onclick="open_menu_dropdown()">MENU</button>
+                    <span id="menu_dropdown_content" class="w3-white w3-dropdown-content w3-bar-block">
+                         <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">NEWS</button>
+                         <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">WORKSHOP</button>
+                         <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">EVENT</button>
+                    </span>
+                  </span>
+                 
+     
+                  <span class="w3-dropdown-hover">
+                     <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua">CONTACT</button>
+                     <span class="w3-dropdown-content w3-bar-block w3-gray w3-animate-left">
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">AUTHOR</button>
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">EMAIL</button>
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">SOCIAL MEDIA</button>
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">PHONE</button>
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">COMPANY</button>
+                     </span>
+                  </span>
+                 
+          </div>
+     
+     
+          <script>
+               function open_sidebar(){
+                    document.getElementById("sidebar").style.display="block";
+                    document.getElementById("overlay1").style.display="block";
+                    
+                   
+     
+               }
+     
+               function open_about_dropdown(){
+                         var x1 = document.getElementById("about_dropdown_content");
+                         if(x1.className.indexOf("w3-show")==-1){
+                              x1.className+=" w3-show";
+                         } else {
+                              x1.className=x1.className.replace(" w3-show","");
+                         }
+                    }
+     
+                    function open_menu_dropdown(){
+                         var x2= document.getElementById("menu_dropdown_content");
+                         if(x2.className.indexOf("w3-show")==-1){
+                              x2.className+=" w3-show";
+                         } else {
+                              x2.className=x2.className.replace(" w3-show","");
+                         }
+                         
+                    }
+              
+               function close_sidebar(){
+                    document.getElementById("sidebar").style.display="none";
+                    document.getElementById("overlay1").style.display="none";
+               }
+          </script>
+     
+     
+     
+     
+          
+          
+     
+          <!--sidebar_right-->
+     
+     
+          
+           <div id="sidebar2" class="w3-sidebar w3-center w3-animate-right w3-bar-block w3-black w3-display-container"
+            style="top:0;z-index:5;display:none;font-size:25px;right:0">
+                 <button class="w3-button w3-hover-yellow w3-ripple w3-display-topright"
+                 onclick="close_sidebar2()"
+                 >X</button>
+                 <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua">HOME</button>
+                 <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua"
+                  onclick="open_about_dropdown2()">ABOUT</button>
+                  <span id="about_dropdown_content2" class="w3-hide w3-bar-item w3-bar-block w3-white"> 
+                       <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">AUTHOR</button>
+                       <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">ADDRESS</button>
+                       <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">PHONE</button>
+                  </span>
+     
+                  <span class="w3-dropdown-click">
+                    <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua"
+                    onclick="open_menu_dropdown2()">MENU</button>
+                    <span id="menu_dropdown_content2" class="w3-white w3-dropdown-content w3-bar-block">
+                         <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">NEWS</button>
+                         <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">WORKSHOP</button>
+                         <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">EVENT</button>
+                    </span>
+                  </span>
+                 
+     
+                  <span class="w3-dropdown-hover">
+                     <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua">CONTACT</button>
+                     <span class="w3-dropdown-content w3-bar-block w3-gray w3-animate-right">
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">AUTHOR</button>
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">EMAIL</button>
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">SOCIAL MEDIA</button>
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">PHONE</button>
+                            <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">COMPANY</button>
+                     </span>
+                  </span>
+                 
+          </div>
+     
+     
+          <script>
+               function open_sidebar2(){
+                    document.getElementById("sidebar2").style.display="block";
+                    document.getElementById("sidebar2").style.width="100%";
+                    
+                   
+     
+               }
+     
+               function open_about_dropdown2(){
+                         var x1_2 = document.getElementById("about_dropdown_content2");
+                         if(x1_2.className.indexOf("w3-show")==-1){
+                              x1_2.className+=" w3-show";
+                         } else {
+                              x1_2.className=x1_2.className.replace(" w3-show","");
+                         }
+                    }
+     
+                    function open_menu_dropdown2(){
+                         var x2_2= document.getElementById("menu_dropdown_content2");
+                         if(x2_2.className.indexOf("w3-show")==-1){
+                              x2_2.className+=" w3-show";
+                         } else {
+                              x2_2.className=x2_2.className.replace(" w3-show","");
+                         }
+                         
+                    }
+              
+               function close_sidebar2(){
+                    document.getElementById("sidebar2").style.display="none";
+                    document.getElementById("sidebar2").style.width="0";
+               }
+          </script>
+     
+     
+     
+     
+     
+             <!--carousel-->
+               <div id="slideshow_block1" class="carousel slide" data-ride="carousel" data-interval="2000">
+                        <span class="carousel-inner ">
+                             
+                         
+                         
+                              <span class="carousel-item active w3-animate-zoom">
+                                   <img src="logo1.jpg" width="100%" height="250px">
+                                   <span class="carousel-caption  w3-text-white" style="font-size:25px;z-index:0">
+                                        <b>WELCOME</b>
+                                        <p>This is slideshow1</p>
+                                   </span>
+     
+                             </span>
+     
+     
+     
+     
+                             <span class="carousel-item">
+                                   <img src="logo4.jpg" width="100%" height="250px">
+                                   <span class="carousel-caption  w3-text-white" style="font-size:25px;z-index:0">
+                                        <b>WELCOME</b>
+                                        <p>This is slideshow2</p>
+                                   </span>
+                              </span>
+     
+     
+                              
+     
+                              <span class="carousel-item">
+                                   <img src="logo6.jpg" width="100%" height="250px">
+                                   <span class="carousel-caption  w3-text-white" style="font-size:25px;z-index:0">
+                                        <b>WELCOME</b>
+                                        <p>This is slideshow3</p>
+                                 </span>
+                             </span>
+     
+     
+     
+                             
+                        </span>
+     
+                    
+     
+     
+                 
+                      <ul class="carousel-indicators" id="indicators1" style="z-index:0;">
+                         <li data-target="#slideshow_block1" data-slide-to="0" class="active"></li>
+                         <li data-target="#slideshow_block1" data-slide-to="1"></li>
+                         <li data-target="#slideshow_block1" data-slide-to="2"></li>
+                    </ul>
+
+                  
+                    
+
+
+
+                   
+
+
+
+
+     
+                    <div class="carousel-control-prev" data-slide="prev" href="#slideshow_block1">
+                         <span class="carousel-control-prev-icon"></span>
+                    </div>
+     
+     
+                    <div class="carousel-control-next" data-slide="next" href="#slideshow_block1">
+                         <span class="carousel-control-next-icon"></span>
+                    </div>
+                       
+                        
+               </div>
+     
+
+            
+     
+     
+            
+               <div class="w3-black">
+                    <button class="w3-button w3-hover-red  w3-ripple  w3-text-green w3-xlarge w3-ripple"
+                    onclick="open_sidebar3()">☰</button>
+          
+                    <a class="w3-button  w3-hover-red  w3-ripple  w3-xlarge w3-ripple"
+                    href="#">HOME</a>
+                    
+                    <button class="w3-button  w3-hover-red  w3-ripple  w3-text-yellow w3-xlarge w3-ripple"
+                    onclick="open_sidebar3()">ABOUT</button>
+                    
+          
+                   
+                </div>
+
+
+                <br>
+               
+
+
+
+                <div id="slideshow_block2" class="carousel slide" data-ride="carousel" data-interval="2000">
+                    <span class="carousel-inner ">
+                         
+                     
+                     
+                          <span class="carousel-item active">
+                               <img src="logo1.jpg" width="100%" height="150px">
+                               <span class="carousel-caption  w3-text-white" style="font-size:25px;z-index:0">
+                                    <b>WELCOME</b>
+                                    <p>This is slideshow1</p>
+                               </span>
+ 
+                         </span>
+ 
+ 
+ 
+ 
+                         <span class="carousel-item w3-animate-zoom">
+                               <img src="logo4.jpg" width="100%" height="150px">
+                               <span class="carousel-caption  w3-text-white" style="font-size:25px;z-index:0">
+                                    <b>WELCOME</b>
+                                    <p>This is slideshow2</p>
+                               </span>
+                          </span>
+ 
+ 
+                          
+ 
+                          <span class="carousel-item">
+                               <img src="logo6.jpg" width="100%" height="150px">
+                               <span class="carousel-caption  w3-text-white" style="font-size:25px;z-index:0">
+                                    <b>WELCOME</b>
+                                    <p>This is slideshow3</p>
+                             </span>
+                         </span>
+ 
+ 
+ 
+                         
+                    </span>
+ 
+                
+ 
+ 
+             
+                <div class="carousel-indicators" style="position:relative;top:-180px;z-index:0">
+                     <span  class="w3-display-container w3-opacity w3-hover-opacity-off active" style="border:3px solid rgb(59, 130, 223)">
+                            <img  data-target="#slideshow_block2"   data-slide-to="0" src="logo1.jpg" width="100px" height="30px">
+                            <span class="w3-display-middle w3-text-white" style="font-size:5px;z-index:0;">
+                              <b>WELCOME</b>
+                              <p>This is slideshow1</p>
+                            </span>
+                     </span>
+                     <span  class="w3-display-container w3-opacity w3-hover-opacity-off" style="border:3px solid rgb(0, 255, 179)">
+                            <img data-target="#slideshow_block2" data-slide-to="1" src="logo4.jpg" width="100px" height="30px">
+                            <span class="w3-display-middle w3-text-white" style="font-size:5px;z-index:0;">
+                              <b>WELCOME</b>
+                              <p>This is slideshow2</p>
+                            </span>
+                     </span>
+                     <span  class="w3-display-container w3-opacity w3-hover-opacity-off" style="border:3px solid rgb(255, 217, 0)">
+                            <img data-target="#slideshow_block2" data-slide-to="2" src="logo6.jpg" width="100px" height="30px">
+                            <span class="w3-display-middle w3-text-white" style="font-size:5px;z-index:0;">
+                              <b>WELCOME</b>
+                              <p>This is slideshow3</p>
+                            </span>
+                     </span>
+                </div>
+
+              
+                
+
+
+
+               
+
+
+
+
+ 
+                <div class="carousel-control-prev" data-slide="prev" href="#slideshow_block2">
+                     <span class="carousel-control-prev-icon"></span>
+                </div>
+ 
+ 
+                <div class="carousel-control-next" data-slide="next" href="#slideshow_block2">
+                     <span class="carousel-control-next-icon"></span>
+                </div>
+                   
+                    
+           </div>
+ 
+
+        
+          
+
+
+
+           <!--right sidebar slideshow-->
+           <div class="w3-sidebar w3-bar-block w3-light-blue" style="width:200px;right:0;margin-top:-35px">
+                <nav class="w3-bar-item">
+                      <img  class="sidebar_right_slideshow1" src="bootstrap_logo.png" width="200px" height="100px">
+                      <img  class="sidebar_right_slideshow1" src="w3_css_logo.jpg" width="200px" height="100px">
+                </nav>
+                <nav class="w3-bar-item">
+                    <img class="sidebar_right_slideshow2" src="html_logo.png" width="200px" height="100px">
+                    <img class="sidebar_right_slideshow2" src="js_logo.png" width="200px" height="100px">
+                </nav>
+           </div>
+
+          <script>
+               var slide_index1 =0;
+               sidebar_right_slideshow1();
+               function  sidebar_right_slideshow1(){
+                    var s1 = document.getElementsByClassName("sidebar_right_slideshow1");
+                    var i;
+                    for(i=0;i<s1.length;i++){
+                         s1[i].style.display="none";
+                    }
+                    slide_index1++;
+                    if(slide_index1>s1.length){slide_index1=1};
+                    s1[slide_index1-1].style.display="block";
+                    setTimeout(sidebar_right_slideshow1,2000);
+               }
+
+
+               var slide_index2 =0;
+               sidebar_right_slideshow2();
+               function  sidebar_right_slideshow2(){
+                    var s2 = document.getElementsByClassName("sidebar_right_slideshow2");
+                    var i2;
+                    for(i2=0;i2<s2.length;i2++){
+                         s2[i2].style.display="none";
+                    }
+                    slide_index2++;
+                    if(slide_index2>s2.length){slide_index2=1};
+                    s2[slide_index2-1].style.display="block";
+                    setTimeout(sidebar_right_slideshow2,2000);
+               }
+          </script>
+
+
+          <nav class="w3-black w3-nav w3-bottom" style="font-size:20px">
+                 <span class="w3-right">
+                    <button class="w3-button w3-ripple w3-hover-green" onclick="open_sidebar2()">ABOUT</button>
+                    <span>|</span>
+                    <button class="w3-button w3-ripple w3-hover-green">POLICY</button>
+                    <span>|</span>
+                    <button class="w3-button w3-ripple w3-hover-green">TERM OF USE</button>
+                    <span>|</span>
+                    <button class="w3-button w3-ripple w3-hover-green">PRIVACY</button>
+                    <span>|</span>
+                    <button class="w3-button w3-ripple w3-hover-green">COPYRIGHT</button>
+                    <span>|</span>
+                 </span>
+          </nav>
+
+
+      </div>
+
+
+     
+     
+      <div class="w3-overlay" id="overlay2" onclick="close_sidebar3()"></div>
+      <div id="sidebar3" class="w3-sidebar w3-animate-left w3-bar-block w3-black w3-display-container"
+       style="top:0;z-index:5;display:none;font-size:25px">
+            <button class="w3-button w3-hover-yellow w3-ripple w3-display-topright"
+            onclick="close_sidebar3()"
+            >X</button>
+            <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua">HOME</button>
+            <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua"
+             onclick="open_about_dropdown3()">ABOUT</button>
+             <span id="about_dropdown_content3" class="w3-hide w3-bar-item w3-bar-block w3-white"> 
+                  <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">AUTHOR</button>
+                  <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">ADDRESS</button>
+                  <button class="w3-button w3-ripple w3-hover-light-blue w3-bar-item">PHONE</button>
+             </span>
+
+             <span class="w3-dropdown-click">
+               <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua"
+               onclick="open_menu_dropdown3()">MENU</button>
+               <span id="menu_dropdown_content3" class="w3-white w3-dropdown-content w3-bar-block">
+                    <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">NEWS</button>
+                    <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">WORKSHOP</button>
+                    <button class="w3-button w3-ripple w3-hover-orange w3-bar-item">EVENT</button>
+               </span>
+             </span>
+            
+
+             <span class="w3-dropdown-hover">
+                <button class="w3-button w3-bar-item w3-ripple w3-hover-aqua">CONTACT</button>
+                <span class="w3-dropdown-content w3-bar-block w3-gray w3-animate-left">
+                       <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">AUTHOR</button>
+                       <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">EMAIL</button>
+                       <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">SOCIAL MEDIA</button>
+                       <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">PHONE</button>
+                       <button class="w3-button w3-bar-item w3-ripple w3-hover-purple">COMPANY</button>
+                </span>
+             </span>
+            
+     </div>
+
+
+     <script>
+          function open_sidebar3(){
+               document.getElementById("sidebar3").style.display="block";
+               document.getElementById("overlay2").style.display="block";
+               document.getElementById("main_content").style.marginLeft="200px";
+               
+              
+
+          }
+
+          function open_about_dropdown3(){
+                    var x1_3 = document.getElementById("about_dropdown_content3");
+                    if(x1_3.className.indexOf("w3-show")==-1){
+                         x1_3.className+=" w3-show";
+                    } else {
+                         x1_3.className=x1_3.className.replace(" w3-show","");
+                    }
+               }
+
+               function open_menu_dropdown3(){
+                    var x2_3= document.getElementById("menu_dropdown_content3");
+                    if(x2_3.className.indexOf("w3-show")==-1){
+                         x2_3.className+=" w3-show";
+                    } else {
+                         x2_3.className=x2_3.className.replace(" w3-show","");
+                    }
+                    
+               }
+         
+          function close_sidebar3(){
+               document.getElementById("sidebar3").style.display="none";
+               document.getElementById("overlay2").style.display="none";
+               document.getElementById("main_content").style.marginLeft="0";
+          }
+     </script>
+
+
+
+    </body>
+
+
+   
+
+
+    <footer>
+
+    </footer>
+
+
+
+
+</html>
+        
