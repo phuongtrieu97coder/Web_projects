@@ -1,0 +1,1895 @@
+<!DOCTYPE html>
+<html lang="en">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+
+      <head>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        <style>
+            table tr td {
+                border: 2px solid green;
+            }
+
+            body {
+              background-image: url("rewardtheme.jpg");
+              height: 850px;/*set a specified height */
+              background-repeat: no-repeat;/*Let the image appear only once (with no-repeat)*/
+              background-position: center;/* Center the image */
+              background-size:cover;/* Resize the background image to cover the entire container */
+            }
+
+
+            #welcome_text {
+              padding-left:150px;
+              font-size:40px;
+              color:red;
+              
+            }
+            #welcome_text2 {
+              padding-left:120px;
+              font-size:30px;
+              color:rgb(132, 236, 13);
+              
+              
+            }
+            #welcome_text3 {
+              padding-left:20px;
+              font-size:20px;
+              color:rgb(57, 23, 211);
+              
+              
+            }
+            #welcome_text4 {
+              padding-left:20px;
+              font-size:30px;
+              color:rgb(132, 146, 223);
+              
+              
+            }
+
+            #welcome_text5 {
+              padding-left:20px;
+              font-size:20px;
+              
+             
+             
+            }
+
+
+            
+        </style>
+
+      </head>
+
+
+
+
+
+
+      <body>
+
+           
+           
+
+
+
+        <div id="block1" class="carousel slide" data-ride="carousel" data-interval="2500" style="z-index:0">
+                        <div class="carousel-inner">
+                             <div class="carousel-item active">
+                                  <img  src="reward1.png" width="100%" height="150px">
+                                  <span class="carousel-caption w3-xxxlarge w3-text-green">
+                                      <b>GOOD MORNING</b>
+                                  </span>
+                             </div>
+                             <div class="carousel-item">
+                                  <img  src="reward2.jpg" width="100%" height="150px">
+                                  <span class="carousel-caption w3-xxxlarge w3-text-blue">
+                                      <b>GOOD MORNING</b>
+                                  </span>
+                             </div>
+                             <div class="carousel-item">
+                                  <img  src="reward3.jpeg" width="100%" height="150px">
+                                  <span class="carousel-caption w3-xxxlarge w3-text-red">
+                                      <b>GOOD MORNING</b>
+                                  </span>
+                             </div>
+                              
+                        </div>
+
+
+                        <ul class="carousel-indicators">
+                            <li data-target="#block1" data-slide-to="0" class="active"></li>
+                            <li data-target="#block1" data-slide-to="1"></li>
+                            <li data-target="#block1" data-slide-to="2"></li>
+                        </ul>
+
+
+                        <div class="carousel-control-prev "  data-slide="prev" href="#block1">
+                             <span class="carousel-control-prev-icon w3-xxlarge" ></span>
+                        </div>
+
+
+                        <div class="carousel-control-next" data-slide="next" href="#block1">
+                             <span class="carousel-control-next-icon w3-xxlarge"></span>
+                        </div>
+
+
+        </div>
+
+        <nav class="w3-bar w3-black" style="font-size:30px;z-index:0">
+
+
+             <button class="w3-bar-item w3-button w3-ripple w3-hover-none
+             w3-hover-text-aqua w3-bottombar w3-rightbar w3-border-black w3-hover-border-yellow
+             "><a href="#" class="w3-text-white w3-hover-text-aqua" style="text-decoration:none">HOME <i class="fa fa-home w3-hover-text-yellow" style="color:aquamarine"></i></a></button>
+
+
+             <button class="w3-bar-item w3-button w3-ripple w3-hover-none
+             w3-hover-text-aqua w3-bottombar w3-rightbar w3-border-black w3-hover-border-yellow
+             "  onclick="open_sidebar1()"
+             >MENU <b style="color:rgb(51, 248, 51)" class="w3-hover-text-yellow">☰</b></button>
+
+
+
+
+            <div class="w3-dropdown-click w3-bar-block">
+              <button class="w3-bar-item w3-button w3-ripple w3-hover-none
+              w3-hover-text-aqua w3-bottombar w3-rightbar w3-border-black w3-hover-border-yellow
+              "style="border-bottom:2px solid greenyellow" onclick="open_contact_dropdown()">
+              CONTACT
+              <i class="fa fa-envelope w3-hover-text-yellow" style="color:rgb(231, 43, 52)"></i>
+               <i class="fa fa-caret-down"></i>
+              </button>
+              
+              <span class="w3-dropdown-content w3-bar-item w3-bar-block w3-hide w3-black"
+               id="contact_dropdown_content" style="width:300px">
+                <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua" 
+                style="border-bottom:2px solid greenyellow"
+                onclick="document.getElementById('company_modal').style.display='block'"
+                >ADDRESS</button>
+                <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua" 
+                style="border-bottom:2px solid greenyellow"
+                onclick="document.getElementById('company_modal').style.display='block'"
+                >PHONE NUMBER</button>
+                <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua" 
+                style="border-bottom:2px solid greenyellow"
+                onclick="document.getElementById('company_modal').style.display='block'"
+                >EMAIL</button>
+                <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua" 
+                style="border-bottom:2px solid greenyellow"
+                onclick="document.getElementById('company_modal').style.display='block'"
+                >SOCIAL MEDIA</button>
+              </span>
+       
+         </div>
+
+         <script>
+               function open_contact_dropdown(){
+                    var get_dropdown_cont_id0 = document.getElementById("contact_dropdown_content");
+                    if(get_dropdown_cont_id0.className.indexOf("w3-show")==-1){
+                      get_dropdown_cont_id0.className+=" w3-show";
+                    } else{
+                      get_dropdown_cont_id0.className=get_dropdown_cont_id0.className.replace(" w3-show","");
+                    }
+                  }
+
+         </script>
+
+ 
+
+
+             <span class="w3-right">
+                   
+
+              <button class="w3-bar-item w3-button w3-ripple w3-hover-none
+              w3-hover-text-aqua w3-bottombar w3-rightbar w3-border-black w3-hover-border-yellow
+              "
+              onclick="open_login_form()"
+              >LOGIN <i class="fa fa-sign-in w3-hover-text-yellow" style="color:rgb(238, 235, 55)"></i></button>
+   
+
+
+                   <input id="search_employee_input_bar" class="w3-bar-item" type="text" placeholder="Search employee..." style="border:2px solid greenyellow">
+                   
+                   
+                   
+                   <button class="w3-bar-item w3-button w3-ripple w3-hover-none
+                   w3-hover-text-aqua w3-bottombar w3-rightbar w3-border-black w3-hover-border-yellow
+                   " type="submit" onclick="search_submit_func()"><i class="fa fa-search w3-hover-text-yellow" style="color:rgb(55, 82, 236)"></i></button>
+                   
+                   
+
+
+
+                 
+                   
+                   
+                 
+
+             </span>
+        </nav>
+
+
+
+        <div id="overlay1" class="w3-animate-left"
+         style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;
+         width:100%;height:100%;z-index:2;background-color: rgba(0,0,0,0.5);"
+        onclick="close_sidebar1()"></div>
+
+
+
+
+
+        <nav id="sidebar1" class="w3-sidebar w3-animate-left w3-black w3-bar-block w3-display-container"
+         style="border-right:3px dotted greenyellow; font-size:25px;
+         top:0; width:400px;display:none;z-index:5">
+                
+               <button onclick="close_sidebar1()" 
+               class="w3-display-topright w3-hover-aqua w3-button w3-ripple" style="border-left:2px solid greenyellow">X</button>
+ 
+               <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+               style="border-bottom:2px solid greenyellow">HOME</button>
+
+
+               <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+               style="border-bottom:2px solid greenyellow">ABOUT</button>
+
+
+               <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+               style="border-bottom:2px solid greenyellow" onclick="open_employee_dropdown()">EMPLOYEE <i class="fa fa-caret-down"></i></button>
+               
+               <div id="employee_dropdown_content" class="w3-bar-block w3-white" style="display:none">
+                     <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+                     style="border-bottom:2px solid greenyellow">JOHN</button>
+                     <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+                     style="border-bottom:2px solid greenyellow">CHRIS</button>
+                     <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+                     style="border-bottom:2px solid greenyellow">HANA</button>
+                     <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+                     style="border-bottom:2px solid greenyellow">JEAN</button>
+               </div>
+
+              
+
+               <div class="w3-dropdown-click">
+                <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+                style="border-bottom:2px solid greenyellow"
+                onclick="open_reward_dropdown()">REWARD <i class="fa fa-caret-down"></i></button>
+
+                <span class="w3-dropdown-content w3-hide" id="reward_dropdown_content">
+                     <button class="w3-button w3-ripple w3-hover-aqua" 
+                     style="border-bottom:2px solid greenyellow">$20000</button>
+                     <button class="w3-button w3-ripple w3-hover-aqua" 
+                     style="border-bottom:2px solid greenyellow">$30000</button>
+                     <button class="w3-button w3-ripple w3-hover-aqua" 
+                     style="border-bottom:2px solid greenyellow">$25000</button>
+                     <button class="w3-button w3-ripple w3-hover-aqua" 
+                     style="border-bottom:2px solid greenyellow">$18000</button>
+                </span>
+               </div>
+
+
+               <div class="w3-dropdown-hover">
+                    <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+                    style="border-bottom:2px solid greenyellow">JOB POSITION <i class="fa fa-caret-down"></i></button>
+                    
+                    <span class="w3-dropdown-content">
+                      <button class="w3-button w3-ripple w3-hover-aqua" 
+                      style="border-bottom:2px solid greenyellow">Financial Accountant</button>
+                      <button class="w3-button w3-ripple w3-hover-aqua" 
+                      style="border-bottom:2px solid greenyellow">Web Developer</button>
+                      <button class="w3-button w3-ripple w3-hover-aqua" 
+                      style="border-bottom:2px solid greenyellow">Graphic Designer</button>
+                      <button class="w3-button w3-ripple w3-hover-aqua" 
+                      style="border-bottom:2px solid greenyellow">Marketing Assistant</button>
+                    </span>
+                 
+               </div>
+
+               <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+               style="border-bottom:2px solid greenyellow"
+               onclick="document.getElementById('company_modal').style.display='none'"
+               >COMPANY</button>
+
+
+               <div class="w3-dropdown-hover">
+                    <button class="w3-bar-item w3-button w3-ripple w3-hover-aqua"
+                    style="border-bottom:2px solid greenyellow"
+                    onclick="document.getElementById('company_modal').style.display='block'"
+                    >CONTACT <i class="fa fa-caret-down"></i></button>
+                    
+                    <span class="w3-dropdown-content">
+                      <button class="w3-button w3-ripple w3-hover-aqua" 
+                      style="border-bottom:2px solid greenyellow"
+                      onclick="document.getElementById('company_modal').style.display='block'"
+                      >ADDRESS</button>
+                      <button class="w3-button w3-ripple w3-hover-aqua" 
+                      style="border-bottom:2px solid greenyellow"
+                      onclick="document.getElementById('company_modal').style.display='block'"
+                      >PHONE NUMBER</button>
+                      <button class="w3-button w3-ripple w3-hover-aqua" 
+                      style="border-bottom:2px solid greenyellow"
+                      onclick="document.getElementById('company_modal').style.display='block'"
+                      >EMAIL</button>
+                      <button class="w3-button w3-ripple w3-hover-aqua" 
+                      style="border-bottom:2px solid greenyellow">SOCIAL MEDIA</button>
+                    </span>
+             
+               </div>
+
+               <img src="firework.gif" width="100%" class="w3-bar-item">
+               <img src="firework2.gif" width="100%" class="w3-bar-item">
+        </nav>
+
+
+        <script>
+            function open_sidebar1(){
+              document.getElementById("sidebar1").style.display="block";
+              document.getElementById("overlay1").style.display="block";
+            }
+            function close_sidebar1(){
+              document.getElementById("sidebar1").style.display="none";
+              document.getElementById("overlay1").style.display="none";
+            }
+
+            function open_employee_dropdown(){
+              var get_dropdown_cont_id = document.getElementById("employee_dropdown_content");
+              if(get_dropdown_cont_id.className.indexOf("w3-show")==-1){
+                get_dropdown_cont_id.className+=" w3-show";
+              } else{
+                get_dropdown_cont_id.className=get_dropdown_cont_id.className.replace(" w3-show","");
+              }
+            }
+            function open_reward_dropdown(){
+              var get_dropdown_cont_id2 = document.getElementById("reward_dropdown_content");
+              if(get_dropdown_cont_id2.className.indexOf("w3-show")==-1){
+                get_dropdown_cont_id2.className+=" w3-show";
+              } else{
+                get_dropdown_cont_id2.className=get_dropdown_cont_id2.className.replace(" w3-show","");
+              }
+            }
+        </script>
+
+      
+
+
+        <div id="block3" class="w3-grid" style="z-index:0">
+                 
+
+             
+                 <div id="block3_1" class="w3-col" style="width:450px;margin-left:30px;margin-top:20px">
+                  
+
+
+
+                    <div class="w3-display-container" style="height:900px;border:3px dotted rgb(250, 20, 20)">
+                              <img src="reward5.jpg" width="100%" height="200px" class="reward_welcome"> 
+                              <img src="firework.gif" width="100%" height="200px" class="reward_welcome w3-animate-zoom">
+                              <img src="firework2.gif" width="100%" height="200px" class="reward_welcome w3-animate-zoom">
+
+                              
+                              <script>
+                                    var slide_index0 = 0;
+                                    slideshow_firework();
+                                    function slideshow_firework(){
+                                      var x0 = document.getElementsByClassName("reward_welcome");
+                                      var i0;
+                                      for(i0=0;i0<x0.length;i0++){
+                                        x0[i0].style.display="none";
+                                      }
+                                      slide_index0++;
+                                      if(slide_index0>x0.length){slide_index0=1};
+                                      x0[slide_index0-1].style.display="block";
+                                      setTimeout(slideshow_firework,3000);
+                                    }
+                              </script>
+                          
+
+                              <img src="reward4.png" width="100%" height="700px" style="opacity:0.4">
+                              
+
+                              <div class="w3-display-middle">
+                                <span id="welcome_text"></span><br>
+                                <span id="welcome_text2" ></span><br>
+                                <span id="welcome_text3"></span><br>
+                                <span id="welcome_text4"></span><br>
+                                
+                              </div>
+                  
+                  
+                    </div>
+
+
+                    <div id="phuong_company" class="w3-bar-block w3-white w3-card-4" style="margin-top:40px;margin-bottom:100px">
+                            <img src="company1.jpg" width="100%">
+
+                            <span class="w3-bar-item w3-bar-block ">
+                                 <span class="w3-bar-item" style="border-bottom:1px solid rgb(219, 206, 206)">
+                                  <i class="fa fa-suitcase" style="padding-right:10px;color:blue"></i>
+                                  <b>  COMPANY: PHUONG A.I INC</b>
+                                 </span>
+
+                                 <span id="phuong_company_email" class="w3-bar-item" style="border-bottom:1px solid rgb(219, 209, 209)">
+                                  <i class="fa fa-envelope" style="padding-right:10px;color:red"></i>
+                                  <b>  EMAIL: phuongaiinc@gmail.com</b>
+                                 </span>
+
+                                 <span id="phuong_company_address" class="w3-bar-item" style="border-bottom:1px solid rgb(216, 207, 207)">
+                                  <i class="fa fa-map-marker" style="padding-right:10px;color:rgb(88, 182, 174)"></i>
+                                  <b>  ADDRESS: 825 42 ND ST , SAN DIEGO,CA 92115</b>
+                                 </span>
+
+                                 <span id="phuong_company_phone" class="w3-bar-item" >
+                                  <i class="fa fa-phone" style="padding-right:10px;color:rgb(38, 209, 38)"></i>
+                                  <b>  PHONE: 619-536-9423</b>
+                                 </span>
+                            </span>
+                    </div>
+                     
+                 </div>
+                
+
+
+
+
+
+
+                 <div class="w3-modal" id="company_modal" style="display:none;z-index:7">
+
+
+
+                        <div class="w3-modal-content">
+
+
+                              <div class="w3-display-container" style="margin-top:-80px">
+
+
+                                <button class="w3-button w3-ripple w3-display-topright"
+                                style="border:2px solid rgb(255, 255, 255);font-size:40px;color:white;z-index:2"
+                                 onclick="document.getElementById('company_modal').style.display='none'">X</button>
+
+                                <div id="phuong_company" class="w3-bar-block w3-white w3-card-4">
+
+                                    <div id="phuong_company_modal_slideshow" class="carousel slide" data-ride="carousel" data-interval="3000">
+                                                
+                                         <div class="carousel-inner" style="font-size:60px;color:white;z-index:1">
+                                               <span class="carousel-item active">
+                                                     <img  src="company1.jpg" width="100%" height="500px">
+                                                     <span class="carousel-caption">
+                                                          <b>PHUONG A.I INC</b>
+                                                     </span>
+                                               </span>
+                                               <span class="carousel-item">
+                                                     <img  src="company2.jpg" width="100%"  height="500px">
+                                                     <span class="carousel-caption">
+                                                      <b>PHUONG A.I INC</b>
+                                                     </span>
+                                               </span>
+                                               <span class="carousel-item">
+                                                     <img  src="company3.jpg" width="100%"  height="500px">
+                                                     <span class="carousel-caption">
+                                                      <b>PHUONG A.I INC</b>
+                                                     </span>
+
+                                               </span>
+                                         </div>
+
+
+                                         <div class="carousel-control-prev" href="#phuong_company_modal_slideshow" data-slide="prev">
+                                               <span class="carousel-control-prev-icon"></span>
+                                         </div>
+                                         <div class="carousel-control-next" href="#phuong_company_modal_slideshow" data-slide="next">
+                                               <span class="carousel-control-next-icon"></span>
+                                         </div>
+
+
+                                         <div class="carousel-indicators" style="position:relative;top:-500px">
+                                              <span style="border:2px solid white" class="active w3-opacity w3-hover-opacity-off">
+                                                  <img data-target="#phuong_company_modal_slideshow" data-slide-to="0"
+                                                  src="company1.jpg" width="100px" height="50px">
+                                              </span>
+                                              <span style="border:2px solid rgb(117, 199, 161)"  class=" w3-opacity w3-hover-opacity-off">
+                                                  <img data-target="#phuong_company_modal_slideshow" data-slide-to="1"
+                                                  src="company2.jpg" width="100px" height="50px">
+                                              </span>
+                                              <span style="border:2px solid rgb(141, 206, 223)"  class=" w3-opacity w3-hover-opacity-off">
+                                                  <img data-target="#phuong_company_modal_slideshow" data-slide-to="2"
+                                                  src="company3.jpg" width="100px" height="50px">
+                                              </span>
+                                         </div>
+                                                
+                                    </div>
+                                       
+            
+                                        <span class="w3-bar-item w3-bar-block ">
+                                            <span class="w3-bar-item" style="border-bottom:1px solid rgb(219, 206, 206)">
+                                              <i class="fa fa-suitcase" style="padding-right:10px;color:blue"></i>
+                                              <b>  COMPANY: PHUONG A.I INC</b>
+                                            </span>
+            
+                                            <span id="phuong_company_email" class="w3-bar-item" style="border-bottom:1px solid rgb(219, 209, 209)">
+                                              <i class="fa fa-envelope" style="padding-right:10px;color:red"></i>
+                                              <b>  EMAIL: phuongaiinc@gmail.com</b>
+                                            </span>
+            
+                                            <span id="phuong_company_address" class="w3-bar-item" style="border-bottom:1px solid rgb(216, 207, 207)">
+                                              <i class="fa fa-map-marker" style="padding-right:10px;color:rgb(88, 182, 174)"></i>
+                                              <b>  ADDRESS: 825 42 ND ST , SAN DIEGO,CA 92115</b>
+                                            </span>
+            
+                                            <span id="phuong_company_phone" class="w3-bar-item" >
+                                              <i class="fa fa-phone" style="padding-right:10px;color:rgb(38, 209, 38)"></i>
+                                              <b>  PHONE: 619-536-9423</b>
+                                            </span>
+                                        </span>
+                               </div>
+
+                              </div>
+                          
+                        </div>
+                 </div>
+
+
+
+
+
+                 <div class="w3-col" style="margin-left:30px;margin-top:20px;width:700px">
+                        
+                         <div class="w3-grid" >
+                                       
+                                   <div class="w3-col w3-card-4 w3-white" style="width:320px;border:3px dotted purple">
+                                         <span>
+                                             <img src="employee_john.jpg" width="100%" height="300px">
+                                         </span>
+
+                                         <span class="w3-container" id="john_reward">
+                                          <br>
+                                                <b id="john_reward_name" style="padding-left:20px"></b><br><br>
+                                                <b id="john_reward_age" style="padding-left:20px"></b><br><br>
+                                                <span style="padding-left:20px">
+                                                     
+                                                     <img class="w3-left w3-circle" src="rewardicon.png" width="50px">
+                                                     <p id="john_reward_get" style="font-size:20px;color:purple"></p>
+                                                </span>
+                                         </span>
+                                   </div>
+
+
+
+
+                                    <div class="w3-col w3-card-4 w3-white" style="margin-left:30px;width:320px;margin-bottom:40px;border:3px dotted orange">
+                                          <span>
+                                            <img src="employee_chris.jpg" width="100%" height="300px">
+                                        </span>
+
+                                        <span class="w3-container" id="chris_reward">
+                                          <br>
+                                          <b id="chris_reward_name" style="padding-left:20px"></b><br><br>
+                                          <b id="chris_reward_age" style="padding-left:20px"></b><br><br>
+                                          <span style="padding-left:20px">
+                                            <img class="w3-left w3-circle" src="rewardicon.png" width="50px">
+                                             <p id="chris_reward_get" style="font-size:20px;color:orange"></p>
+                                          </span>
+                                        </span>
+                                    </div>
+                         </div>
+
+                         <div class="w3-grid">
+
+                                <div class="w3-col w3-card-4 w3-white" style="width:320px;border:3px dotted blue">
+                                        <span>
+                                          <img src="employee_hana.jpg" width="100%" height="400px">
+                                      </span>
+
+                                      <span class="w3-container" id="hana_reward">
+                                        <br>
+                                        <b id="hana_reward_name" style="padding-left:20px"></b><br><br>
+                                        <b id="hana_reward_age" style="padding-left:20px"></b><br>
+                                        <br>
+                                        <span style="padding-left:20px">
+                                          <img class="w3-left w3-circle" src="rewardicon.png" width="50px">
+                                          <p id="hana_reward_get" style="font-size:20px;color:blue"></p>
+                                        </span>
+                                      </span>
+                                </div>
+
+
+
+
+                                <div class="w3-col w3-card-4 w3-white" style="width:320px;margin-left:30px;border:3px dotted green">
+
+
+                                        <span>
+                                          <img src="employee_jean.jpg" width="100%" height="400px">
+                                      </span>
+
+                                      <span class="w3-container" id="jean_reward">
+                                        <br>
+                                        <b id="jean_reward_name" style="padding-left:20px"></b><br><br>
+                                        <b id="jean_reward_age" style="padding-left:20px"></b><br>
+                                        <br>
+                                        <span style="padding-left:20px">
+                                          <img class="w3-left w3-circle" src="rewardicon.png" width="50px">
+                                          <p id="jean_reward_get" style="font-size:20px;color:green"></p>
+                                        </span>
+                                      </span>
+                                </div>
+                         </div>
+                 </div>
+
+
+
+
+
+                 <div class="w3-right w3-black w3-bar-block" style="right:0;width:300px; border:4px dotted yellow">
+                     <img  class="rewardicon" src="rewardicon.png" width="100%">
+                     <img  class="rewardicon" src="rewardicon3.png" width="100%">
+                     <span id="welcome_text5"></span><br>
+                     <img src="rewardicon2.jpg" width="100%">
+                    
+                      
+                </div>
+
+                <script>
+                     var slide_index = 0;
+                     slideshow_rewardicon();
+                     function slideshow_rewardicon(){
+                       var x1 = document.getElementsByClassName("rewardicon");
+                       var i1;
+                       for(i1=0;i1<x1.length;i1++){
+                         x1[i1].style.display="none";
+                       }
+                       slide_index++;
+                       if(slide_index>x1.length){slide_index=1};
+                       x1[slide_index-1].style.display="block";
+                       setTimeout(slideshow_rewardicon,2000);
+                     }
+                </script>
+        </div>
+    
+
+        
+        <nav class="w3-bar w3-black w3-bottom">
+            <span class="w3-left">
+                <button class="w3-button w3-ripple w3-hover-white w3-large">
+                  <i class="fa fa-facebook-official" style="color:rgb(4, 132, 236)"></i></button><span>|</span>
+
+
+                <button class="w3-button w3-ripple  w3-hover-aqua w3-large">
+                  <i class="fa fa-github"></i></button><span>|</span>
+
+
+                <button class="w3-button w3-ripple w3-hover-white w3-large">
+                  <i class="fa fa-google" style="color:rgb(230, 82, 82)"></i></button><span>|</span>
+
+
+                <button class="w3-button w3-ripple w3-hover-white w3-large">
+                  <i class="fa fa-instagram" style="color:rgb(255, 169, 39)"></i></button><span>|</span>
+
+
+                <button class="w3-button w3-ripple  w3-hover-white w3-large">
+                  <i class="	fa fa-linkedin-square" style="color:rgb(4, 201, 236)"></i></button><span>|</span>
+
+
+                <button class="w3-button w3-ripple w3-hover-none w3-hover-text-red w3-large">
+                  <i class="fa fa-pinterest-square" ></i></button><span>|</span>
+
+
+                <button class="w3-button w3-ripple w3-hover-white w3-large">
+                  <i class="fa fa-twitter" style="color:aqua"></i></button><span>|</span>
+
+
+                <button class="w3-button w3-ripple w3-hover-white w3-large">
+                  <i class="fa fa-youtube-square" style="color:rgb(214, 99, 99)"></i></button><span>|</span>
+
+
+            </span>
+
+
+
+
+             <span class="w3-right">
+                   <button class="w3-button w3-ripple w3-hover-none w3-hover-text-aqua w3-large"
+                   onclick="document.getElementById('company_modal').style.display='block'"
+                   >ABOUT</button><span>|</span>
+                   <button class="w3-button w3-ripple w3-hover-none w3-hover-text-aqua w3-large">POLICY</button><span>|</span>
+                   <button class="w3-button w3-ripple w3-hover-none w3-hover-text-aqua w3-large">TERM OF USE</button><span>|</span>
+                   <button class="w3-button w3-ripple w3-hover-none w3-hover-text-aqua w3-large">PRIVACY</button><span>|</span>
+                   <button class="w3-button w3-ripple w3-hover-none w3-hover-text-aqua w3-large">COPYRIGHT</button><span>|</span>
+                   <button class="w3-button w3-ripple w3-hover-none w3-hover-text-aqua w3-large"
+                   onclick="document.getElementById('company_modal').style.display='block'"
+                   >CONTACT</button><span>|</span>
+             </span>
+        </nav>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--john modal employee, use when user search something in the search bar input button-->
+
+
+
+            <div class="w3-modal" id="john_modal" style="display:none;">
+                  
+
+                  <div class="w3-modal-content w3-display-container w3-animate-zoom" style="width:1000px">
+                          
+
+
+                        <!--close button-->
+                        <button onclick="document.getElementById('john_modal').style.display='none'"
+                        class="w3-button w3-ripple w3-xxlarge w3-hover-red w3-display-topright">X</button>
+
+
+
+                                
+                            <div id="john_modal_content" class="w3-white" style="border:3px dotted purple">
+                                  
+                              <span style="padding:5px">
+                                  <img src="firework.gif" width="320px" height="300px">
+                                  <img src="employee_john.jpg" width="320px" height="300px">
+                                  <img src="firework2.gif" width="320px" height="300px">
+                              </span>
+
+                              <span class="w3-container" id="john_reward">
+
+                              <br>
+                                    <b id="john_modal_reward_name" style="padding-left:20px"></b><br><br>
+                                    <b id="john_modal_reward_age" style="padding-left:20px"></b><br><br>
+                                    <span>
+                                          
+                                          <img class="w3-left w3-circle" src="rewardicon.png" width="50px" height="50px">
+                                          <p id="john_modal_reward_get" style="font-size:20px;color:purple;padding-left:60px"></p>
+                                    </span>
+                              </span>
+
+
+                            </div>
+
+
+
+                              
+                  </div>
+                
+                
+                
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!--chris modal employee, use when user search something in the search bar input button-->
+
+
+
+            <div class="w3-modal" id="chris_modal" style="display:none">
+                  
+
+                  <div class="w3-modal-content w3-display-container w3-animate-zoom" style="width:1000px">
+                          
+
+
+                        <!--close button-->
+                        <button onclick="document.getElementById('chris_modal').style.display='none'"
+                        class="w3-button w3-ripple w3-xxlarge w3-hover-red w3-display-topright">X</button>
+
+
+                                
+                          
+                            <div id="chris_modal_content" class="w3-white" style="border:3px dotted orange">
+
+
+                                <span style="padding:5px">
+                                  <img src="firework.gif" width="320px" height="300px">
+                                  <img src="employee_chris.jpg" width="320px" height="300px">
+                                  <img src="firework2.gif" width="320px" height="300px">
+                                </span>
+
+
+
+                                <span class="w3-container" id="chris_reward">
+                                  
+                                    <br>
+                                    <b id="chris_modal_reward_name" style="padding-left:20px"></b><br><br>
+                                    <b id="chris_modal_reward_age" style="padding-left:20px"></b><br><br>
+
+
+                                    <span>
+                                      <img class="w3-left w3-circle" src="rewardicon.png" width="50px" height="50px">
+                                      <p id="chris_modal_reward_get" style="font-size:20px;color:orange;padding-left:60px"></p>
+                                    </span>
+
+
+                                </span>
+                            </div>
+
+
+
+                              
+                  </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!--hana modal employee, use when user search something in the search bar input button-->
+
+
+
+                    <div class="w3-modal" id="hana_modal" style="display:none">
+                              
+
+                              <div class="w3-modal-content w3-display-container w3-animate-zoom" style="width:1000px">
+                                      
+
+
+                                    <!--close button-->
+                                    <button onclick="document.getElementById('hana_modal').style.display='none'"
+                                    class="w3-button w3-ripple w3-xxlarge w3-hover-red w3-display-topright">X</button>
+
+
+
+
+
+
+                                  <div id="hana_modal_content" class="w3-white" style="border:3px dotted blue"></div>
+
+                                          <span style="padding:5px">
+                                            <img src="firework.gif" width="320px" height="400px">
+                                            <img src="employee_hana.jpg" width="320px" height="400px">
+                                            <img src="firework2.gif" width="320px" height="400px">
+                                          </span>
+
+                                          <span class="w3-container" id="hana_reward">
+                                                <br>
+                                                <b id="hana_modal_reward_name" style="padding-left:20px"></b><br><br>
+                                                <b id="hana_modal_reward_age" style="padding-left:20px"></b><br>
+                                                <br>
+
+
+                                                <span>
+                                                  <img class="w3-left w3-circle" src="rewardicon.png" width="50px" height="50px">
+                                                  <p id="hana_modal_reward_get" style="font-size:20px;color:blue;padding-left:60px"></p>
+                                                </span>
+
+
+                                          </span>
+
+
+                                    </div>
+
+                              </div>
+
+
+                              
+                    </div>
+
+
+
+
+
+
+
+
+                    <!--jean modal employee, use when user search something in the search bar input button-->
+
+                    <div class="w3-modal" id="jean_modal" style="display:none">
+                              
+
+                              <div class="w3-modal-content w3-display-container w3-animate-zoom" style="width:1000px">
+                                      
+
+
+                                    <!--close button-->
+                                    <button onclick="document.getElementById('jean_modal').style.display='none'"
+                                    class="w3-button w3-ripple w3-xxlarge w3-hover-red w3-display-topright">X</button>
+
+
+
+
+                                    <div id="jean_modal_content" class="w3-white" style="border:3px dotted green">
+
+
+                                            <span style="padding:5px">
+                                              <img src="firework.gif" width="320px" height="400px">
+                                              <img src="employee_jean.jpg" width="320px" height="400px">
+                                              <img src="firework2.gif" width="320px" height="400px">
+                                            </span>
+                            
+                                            <span class="w3-container" id="jean_reward">
+                                                    <br>
+                                                    <b id="jean_modal_reward_name" style="padding-left:20px"></b><br><br>
+                                                    <b id="jean_modal_reward_age" style="padding-left:20px"></b><br>
+                                                    <br>
+                                                    <span>
+                                                      <img class="w3-left w3-circle" src="rewardicon.png" width="50px" height="50px">
+                                                      <p id="jean_modal_reward_get" style="font-size:20px;color:green;padding-left:60px"></p>
+                                                    </span>
+                                            </span>
+                            
+                      
+                      
+                                    </div>
+
+                              </div>
+                  
+
+                          
+
+
+                              
+                    </div>
+
+
+
+
+
+
+
+
+
+
+       
+
+
+
+
+
+
+
+
+
+<script>
+  function search_submit_func(){
+         var search = document.getElementById("search_employee_input_bar");
+         if(search.value.toUpperCase()=="JOHN"){
+          document.getElementById('john_modal').style.display='block';
+        
+          
+
+         } else if(search.value.toUpperCase()=="CHRIS"){
+          document.getElementById('chris_modal').style.display='block';
+     
+
+        }else if(search.value.toUpperCase()=="HANA"){
+          document.getElementById('hana_modal').style.display='block';
+       
+      
+
+         }else if(search.value.toUpperCase()=="JEAN"){
+          document.getElementById('jean_modal').style.display='block';
+      
+       
+         } else {
+          console.log("Error when search employee!!!");
+         }
+  }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="login_form" class="w3-modal" style="display:none">
+         
+
+
+       <div class="w3-modal-content w3-bar-block w3-display-container w3-animate-zoom" 
+       style="width:1200px;height:700px;border:3px solid black;background-color:white">
+
+
+
+              <button class="w3-button w3-ripple w3-display-topright w3-xxlarge"
+              style="border:2px solid black"
+              onclick="document.getElementById('login_form').style.display='none'"
+              >X</button>
+             
+
+
+
+
+            <div class="w3-bar-item w3-center" style="background-image: url('company2.jpg');">
+                  
+              <i class="fa fa-building" style="font-size:40px;color:white;
+              padding-left:50px;"></i>
+              <b style="font-size:40px;color:greenyellow;padding-left:30px;">PHUONG A.I INC</b>
+ 
+
+            </div>
+            
+
+
+
+            <div class="w3-grid w3-bar-item" style="background-color:rgba(20, 19, 19, 0.363);height:630px">
+                  
+                      <div id="main_sign_in_form" class="w3-bar-block w3-col" style="background-color:rgba(243, 234, 234, 0.842);
+                      padding:20px;margin:30px;width:500px;border:1px solid rgba(0, 0, 0, 0.459)">
+          
+          
+                              <i class="fa fa-address-book-o w3-bar-item w3-center" style="font-size:80px"></i>
+                              <b class="w3-bar-item w3-center w3-xlarge" style="font-size:40px">SIGN IN</b>
+          
+          
+          
+          
+                                <form  method="POST" 
+                                style="background-color:rgba(255, 253, 253, 0.651);
+                                border:2px solid rgba(66, 64, 64, 0.226);
+                                padding:20px
+                                "
+                                action="test1.php"
+                                >
+                                    
+                                
+                          
+                  
+                  
+                                      <label for="username"><b>USERNAME OR EMAIL:</b></label><br>
+                  
+                                      <i class="fa fa-address-card" style="color:rgb(68, 0, 255);font-size:20px"></i> 
+          
+          
+                                      <input style="width:360px;height:30px;margin-left:10px;border-radius:16px" id="username_input"
+                                      name="username"  placeholder="  Username.....">
+                                      
+                                      <br><br>
+                    
+                    
+                    
+                                      <label for="password"><b>PASSWORD:</b></label><br>
+                    
+                                      <i class="fa fa-lock" style="color:rgb(4, 0, 255);font-size:20px;margin-left:5px"></i>
+          
+          
+                                      <input type="password" style="width:360px;height:30px;margin-left:15px;border-radius:16px" id="password_input"
+                                      name="password" placeholder="  Password....."><br>
+                                      
+          
+                                      <span class="w3-right">
+                                          
+                                        <input id="check_box_input" name="check_box" type="checkbox"
+                                        >
+                                        <label for="check_box">Remember me</label>
+          
+                                      </span>
+                                      
+                                      
+                                      <br>
+                                      
+                    
+                                      <input type="submit" class="w3-button w3-ripple w3-hover-aqua"
+                                      style="width:100%;height:40px;background-color:rgb(38, 163, 221);
+                                      color:white;text-align:center;padding:10px;border-radius:20px"
+                                      value="LOGIN"><br>
+          
+                                      <br>
+                  
+                  
+                  
+                  
+                                    
+                  
+                                    <div style="border-top:1px solid rgba(58, 56, 56, 0.171)">
+          
+                                      <br>
+                                          <button type="button" class="w3-button w3-ripple w3-hover-black w3-red w3-large"
+                                          onclick="document.getElementById('login_form').style.display='none'">CANCEL</button>
+                                        
+                                        
+                                          <a href="#" style="color:black;
+                                          text-decoration:underline;margin-left:100px">Sign Up</a>
+                                          
+                                          
+                                          
+                                          <span style="margin-left:20px">
+                                            Forgot <a href="#" style="color:black;text-decoration:underline">password?</a></a>
+                                          </span>
+          
+          
+                                      </div>
+                                      <br>
+
+                                      <span style="padding-left:60px;font-size:16px">Don't have an account? <a href="#">Register Here</a></span>
+                  
+                  
+                  
+                              </form>
+          
+  
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <!--facebook sign in form-->
+
+                      <div id="facebook_sign_in_form" class="w3-bar-block w3-col w3-display-container"
+                       style="display:none;background-color:rgba(243, 234, 234, 0.842);
+                      padding:20px;margin:30px;width:500px;border:1px solid rgba(0, 0, 0, 0.459)">
+          
+                               
+
+                              <button class="w3-display-topleft w3-button w3-ripple 
+                              w3-hover-blue w3-black" style="font-size:30px;"
+                              onclick="open_main_sign_in_form()"
+                              >
+                                &#8249;
+                              </button>
+
+
+
+                              <i class="fa fa-address-book-o w3-bar-item w3-center" style="font-size:80px"></i>
+
+
+                              <span class="w3-bar-item w3-center"> 
+                                <i class="fa fa-facebook-official" style="font-size:20px;color:blue;padding-right:10px"></i>
+                                <b style="font-size:20px">SIGN IN WITH FACEBOOK</b>
+                              </span>
+                             
+          
+          
+          
+          
+                                <form  method="POST" 
+                                style="background-color:rgba(255, 253, 253, 0.651);
+                                border:2px solid rgba(66, 64, 64, 0.226);
+                                padding:20px
+                                "
+                                action="test1.php"
+                                >
+                                    
+                                
+                          
+                  
+                  
+                                      <label for="username"><b>FACEBOOK USERNAME OR EMAIL:</b></label><br>
+                  
+                                      <i class="fa fa-address-card" style="color:rgb(68, 0, 255);font-size:20px"></i> 
+          
+          
+                                      <input style="width:360px;height:30px;margin-left:10px;border-radius:16px" id="username_input"
+                                      name="username"  placeholder="  Username.....">
+                                      
+                                      <br><br>
+                    
+                    
+                    
+                                      <label for="password"><b>FACEBOOK PASSWORD:</b></label><br>
+                    
+                                      <i class="fa fa-lock" style="color:rgb(4, 0, 255);font-size:20px;margin-left:5px"></i>
+          
+          
+                                      <input type="password" style="width:360px;height:30px;margin-left:15px;border-radius:16px" id="password_input"
+                                      name="password" placeholder="  Password....."><br>
+                                      
+          
+                                      <span class="w3-right">
+                                          
+                                        <input id="check_box_input" name="check_box" type="checkbox"
+                                        >
+                                        <label for="check_box">Remember me</label>
+          
+                                      </span>
+                                      
+                                      
+                                      <br>
+                                      
+                    
+                                      <button type="submit" class="w3-button w3-ripple w3-hover-aqua"
+                                      style="width:100%;height:40px;background-color:rgb(38, 163, 221);
+                                      color:white;text-align:center;padding:10px;border-radius:20px"
+                                      > <i class='fa fa-facebook-official' style="padding-right:10px"></i><b>LOGIN</b>
+                                    </button>
+          
+                                    <br>
+                                     <br>
+                  
+                  
+                  
+                  
+                                    
+                  
+                                    <div style="border-top:1px solid rgba(58, 56, 56, 0.171)">
+          
+                                      <br>
+                                          <button type="button" class="w3-button w3-ripple w3-hover-black w3-red w3-large"
+                                          onclick="document.getElementById('login_form').style.display='none'">CANCEL</button>
+                                        
+                                        
+                                          <a href="#" style="color:black;
+                                          text-decoration:underline;margin-left:100px">Sign Up</a>
+                                          
+                                          
+                                          
+                                          <span style="margin-left:20px">
+                                            Forgot <a href="#" style="color:black;text-decoration:underline">password?</a></a>
+                                          </span>
+          
+          
+                                      </div>
+                                      <br>
+
+                                      <span style="padding-left:60px;font-size:16px">Don't have an account? <a href="#">Register Here</a></span>
+                  
+                  
+                  
+                              </form>
+          
+  
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <!--google sign in form -->
+                      <div id="google_sign_in_form" class="w3-bar-block w3-col w3-display-container"
+                       style="display:none;background-color:rgba(243, 234, 234, 0.842);
+                      padding:20px;margin:30px;width:500px;border:1px solid rgba(0, 0, 0, 0.459)">
+          
+                             
+
+
+
+                                <button class="w3-display-topleft w3-button w3-ripple 
+                                w3-hover-blue w3-black" style="font-size:30px;"
+                                onclick="open_main_sign_in_form()"
+                                >
+                                  &#8249;
+                                </button>
+
+
+
+
+
+                               <i class="fa fa-address-book-o w3-bar-item w3-center" style="font-size:80px"></i>
+
+
+
+
+                                <span class="w3-bar-item w3-center"> 
+                                  <i class="fa fa-google" style="font-size:20px;color:red;padding-right:10px"></i>
+                                  <b style="font-size:20px">SIGN IN WITH GOOGLE</b>
+                                </span>
+          
+          
+          
+                                <form  method="POST" 
+                                style="background-color:rgba(255, 253, 253, 0.651);
+                                border:2px solid rgba(66, 64, 64, 0.226);
+                                padding:20px
+                                "
+                                action="test1.php"
+                                >
+                                    
+                                
+                          
+                  
+                  
+                                      <label for="username"><b>GOOGLE USERNAME OR EMAIL:</b></label><br>
+                  
+                                      <i class="fa fa-address-card" style="color:rgb(68, 0, 255);font-size:20px"></i> 
+          
+          
+                                      <input style="width:360px;height:30px;margin-left:10px;border-radius:16px" id="username_input"
+                                      name="username"  placeholder="  Username.....">
+                                      
+                                      <br><br>
+                    
+                    
+                    
+                                      <label for="password"><b>GOOGLE PASSWORD:</b></label><br>
+                    
+                                      <i class="fa fa-lock" style="color:rgb(4, 0, 255);font-size:20px;margin-left:5px"></i>
+          
+          
+                                      <input type="password" style="width:360px;height:30px;margin-left:15px;border-radius:16px" id="password_input"
+                                      name="password" placeholder="  Password....."><br>
+                                      
+          
+                                      <span class="w3-right">
+                                          
+                                        <input id="check_box_input" name="check_box" type="checkbox"
+                                        >
+                                        <label for="check_box">Remember me</label>
+          
+                                      </span>
+                                      
+                                      
+                                      <br>
+                                      
+                    
+                                      <button type="submit" class="w3-button w3-ripple w3-hover-aqua"
+                                      style="width:100%;height:40px;background-color:rgb(38, 163, 221);
+                                      color:white;text-align:center;padding:10px;border-radius:20px"
+                                      ><i class="fa fa-google" style="padding-right:10px"></i><b>LOGIN</b>
+                                      </button>
+          
+                                      <br>
+                                      <br>
+                  
+                  
+                  
+                  
+                                    
+                  
+                                    <div style="border-top:1px solid rgba(58, 56, 56, 0.171)">
+          
+                                      <br>
+                                          <button type="button" class="w3-button w3-ripple w3-hover-black w3-red w3-large"
+                                          onclick="document.getElementById('login_form').style.display='none'">CANCEL</button>
+                                        
+                                        
+                                          <a href="#" style="color:black;
+                                          text-decoration:underline;margin-left:100px">Sign Up</a>
+                                          
+                                          
+                                          
+                                          <span style="margin-left:20px">
+                                            Forgot <a href="#" style="color:black;text-decoration:underline">password?</a></a>
+                                          </span>
+          
+          
+                                      </div>
+                                      <br>
+
+                                      <span style="padding-left:60px;font-size:16px">Don't have an account? <a href="#">Register Here</a></span>
+                  
+                  
+                  
+                              </form>
+          
+  
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+                     <!--twitter sign in form -->
+                      <div id="twitter_sign_in_form" class="w3-bar-block w3-col w3-display-container"
+                       style="display:none;background-color:rgba(243, 234, 234, 0.842);
+                      padding:20px;margin:30px;width:500px;border:1px solid rgba(0, 0, 0, 0.459)">
+                             
+
+
+
+
+                             <button class="w3-display-topleft w3-button w3-ripple 
+                             w3-hover-blue w3-black" style="font-size:30px;"
+                             onclick="open_main_sign_in_form()"
+                             >
+                               &#8249;
+                              </button>
+
+
+
+
+
+
+          
+                              <i class="fa fa-address-book-o w3-bar-item w3-center" style="font-size:80px"></i>
+                             
+
+
+                              <span class="w3-bar-item w3-center"> 
+                                <i class="fa fa-twitter" style="font-size:20px;color:aqua;padding-right:10px"></i>
+                                <b style="font-size:20px">SIGN IN WITH TWIITER</b>
+                              </span>
+          
+          
+          
+          
+                                <form  method="POST" 
+                                style="background-color:rgba(255, 253, 253, 0.651);
+                                border:2px solid rgba(66, 64, 64, 0.226);
+                                padding:20px
+                                "
+                                action="test1.php"
+                                >
+                                    
+                                
+                          
+                  
+                  
+                                      <label for="username"><b>TWITTER USERNAME OR EMAIL:</b></label><br>
+                  
+                                      <i class="fa fa-address-card" style="color:rgb(68, 0, 255);font-size:20px"></i> 
+          
+          
+                                      <input style="width:360px;height:30px;margin-left:10px;border-radius:16px" id="username_input"
+                                      name="username"  placeholder="  Username.....">
+                                      
+                                      <br><br>
+                    
+                    
+                    
+                                      <label for="password"><b>TWITTER PASSWORD:</b></label><br>
+                    
+                                      <i class="fa fa-lock" style="color:rgb(4, 0, 255);font-size:20px;margin-left:5px"></i>
+          
+          
+                                      <input type="password" style="width:360px;height:30px;margin-left:15px;border-radius:16px" id="password_input"
+                                      name="password" placeholder="  Password....."><br>
+                                      
+          
+                                      <span class="w3-right">
+                                          
+                                        <input id="check_box_input" name="check_box" type="checkbox"
+                                        >
+                                        <label for="check_box">Remember me</label>
+          
+                                      </span>
+                                      
+                                      
+                                      <br>
+                                      
+                    
+                                      <button type="submit" class="w3-button w3-ripple w3-hover-aqua"
+                                      style="width:100%;height:40px;background-color:rgb(38, 163, 221);
+                                      color:white;text-align:center;padding:10px;border-radius:20px"
+                                      ><i class="fa fa-twitter" style="padding-right:10px"></i><b>LOGIN</b></button>
+          
+                                      <br>
+                                      <br>
+                  
+                  
+                  
+                  
+                                    
+                  
+                                    <div style="border-top:1px solid rgba(58, 56, 56, 0.171)">
+          
+                                      <br>
+                                          <button type="button" class="w3-button w3-ripple w3-hover-black w3-red w3-large"
+                                          onclick="document.getElementById('login_form').style.display='none'">CANCEL</button>
+                                        
+                                        
+                                          <a href="#" style="color:black;
+                                          text-decoration:underline;margin-left:100px">Sign Up</a>
+                                          
+                                          
+                                          
+                                          <span style="margin-left:20px">
+                                            Forgot <a href="#" style="color:black;text-decoration:underline">password?</a></a>
+                                          </span>
+          
+          
+                                      </div>
+                                      <br>
+
+                                      <span style="padding-left:60px;font-size:16px">Don't have an account? <a href="#">Register Here</a></span>
+                  
+                  
+                  
+                              </form>
+          
+  
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <!--microsoft sign in form-->
+                      <div id="microsoft_sign_in_form" class="w3-bar-block w3-col w3-display-container"
+                       style="display:none;background-color:rgba(243, 234, 234, 0.842);
+                      padding:20px;margin:30px;width:500px;border:1px solid rgba(0, 0, 0, 0.459)">
+          
+                             
+
+                               <button class="w3-display-topleft w3-button w3-ripple 
+                               w3-hover-blue w3-black" style="font-size:30px;"
+                               onclick="open_main_sign_in_form()"
+                               >
+                                 &#8249;
+                                </button>
+
+
+
+
+
+
+                              <i class="fa fa-address-book-o w3-bar-item w3-center" style="font-size:80px"></i>
+                              
+                              <span class="w3-bar-item w3-center"> 
+                                <img src="microsoft_icon.png" width="30px" style="padding-right:10px">
+                                <b style="font-size:20px">SIGN IN WITH MICROSOFT</b>
+                              </span>
+                              
+          
+          
+          
+                                <form  method="POST" 
+                                style="background-color:rgba(255, 253, 253, 0.651);
+                                border:2px solid rgba(66, 64, 64, 0.226);
+                                padding:20px
+                                "
+                                action="test1.php"
+                                >
+                                    
+                                
+                          
+                  
+                  
+                                      <label for="username"><b>MICROSOFT USERNAME OR EMAIL:</b></label><br>
+                  
+                                      <i class="fa fa-address-card" style="color:rgb(68, 0, 255);font-size:20px"></i> 
+          
+          
+                                      <input style="width:360px;height:30px;margin-left:10px;border-radius:16px" id="username_input"
+                                      name="username"  placeholder="  Username.....">
+                                      
+                                      <br><br>
+                    
+                    
+                    
+                                      <label for="password"><b>MICROSOFT PASSWORD:</b></label><br>
+                    
+                                      <i class="fa fa-lock" style="color:rgb(4, 0, 255);font-size:20px;margin-left:5px"></i>
+          
+          
+                                      <input type="password" style="width:360px;height:30px;margin-left:15px;border-radius:16px" id="password_input"
+                                      name="password" placeholder="  Password....."><br>
+                                      
+          
+                                      <span class="w3-right">
+                                          
+                                        <input id="check_box_input" name="check_box" type="checkbox"
+                                        >
+                                        <label for="check_box">Remember me</label>
+          
+                                      </span>
+                                      
+                                      
+                                      <br>
+                                      
+                    
+                                      <button type="submit" class="w3-button w3-ripple w3-hover-blue"
+                                      style="width:100%;height:40px;background-color:aqua;
+                                      color:white;text-align:center;padding:10px;border-radius:20px"
+                                     ><img src="microsoft_icon.png" width="30px" style="padding-right:10px"><b style="color:black">LOGIN</b></button>
+          
+                                      <br>
+                                      <br>
+                  
+                  
+                  
+                  
+                                    
+                  
+                                    <div style="border-top:1px solid rgba(58, 56, 56, 0.171)">
+          
+                                      <br>
+                                          <button type="button" class="w3-button w3-ripple w3-hover-black w3-red w3-large"
+                                          onclick="document.getElementById('login_form').style.display='none'">CANCEL</button>
+                                        
+                                        
+                                          <a href="#" style="color:black;
+                                          text-decoration:underline;margin-left:100px">Sign Up</a>
+                                          
+                                          
+                                          
+                                          <span style="margin-left:20px">
+                                            Forgot <a href="#" style="color:black;text-decoration:underline">password?</a></a>
+                                          </span>
+          
+          
+                                      </div>
+                                      <br>
+
+                                      <span style="padding-left:60px;font-size:16px">Don't have an account? <a href="#">Register Here</a></span>
+                  
+                  
+                  
+                              </form>
+          
+  
+                      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              <!--block 2 of login form -->
+
+
+
+
+                           <div class="w3-col" style="width:20px;height:600px">
+                                 <hr style="width:100px;transform:rotate(90deg);
+                                 margin-left:-40px;margin-top:200px;background-color:black">
+                                 <br>
+                                 <br>
+                                 <b>OR</b>
+                                 <br>
+                                 <br>
+                                 <hr style="width:100px;transform:rotate(90deg);
+                                 margin-left:-40px;margin-top:30px;background-color:black">
+                                 
+                           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+               <!--block 3 of login_form  -->
+            
+                          <div class="w3-bar-block w3-col" style="background-color:rgba(243, 234, 234, 0.842);
+                          padding:20px;margin:40px 20px;width:500px;border:1px solid rgba(0, 0, 0, 0.473)">
+
+                                  
+                                   <button class="w3-button w3-blue w3-ripple"
+                                    style="height:50px;width:100%;font-size:20px;border-radius:24px" 
+                                    onclick="open_facebook_sign_in_form()">
+                                    <i class="fa fa-facebook-official" style="margin-left:-120px"></i>
+                                     <b style="margin-left:30px">SIGN IN WITH FACEBOOK</b></button>
+
+                                   <br>
+                                   <br>
+
+
+
+                                   <button class="w3-button w3-red w3-ripple" 
+                                   style="height:50px;width:100%;font-size:20px;border-radius:24px"
+                                   onclick="open_google_sign_in_form()">
+                                   <i class="fa fa-google" style="margin-left:-140px"></i> 
+                                   <b style="margin-left:30px">SIGN IN WITH GOOGLE</b></button>
+
+
+                                   <br>
+                                   <br>
+
+
+
+                                   <button class="w3-button w3-aqua w3-ripple"
+                                    style="height:50px;width:100%;font-size:20px;border-radius:24px"
+                                    onclick="open_twitter_sign_in_form()">
+                                    <i class="fa fa-twitter" style="margin-left:-140px"></i> 
+                                    <b style="margin-left:30px">SIGN IN WITH TWITTER</b></button>
+                                
+                                   <br>
+                                   <br>
+
+                                   <button class="w3-button w3-white w3-ripple"
+                                    style="height:50px;width:100%;font-size:20px;border-radius:24px"
+                                    onclick="open_microsoft_sign_in_form()">
+                                    <img src="microsoft_icon.png" width="20px" height="16px" style="margin-left:-110px">
+                                    <b style="margin-left:30px">SIGN IN WITH MICROSOFT</b></button>
+                                
+                                 <br>
+                                 <br>
+
+
+
+                                  <span class="w3-display-container">
+                                      <img src="company1.jpg" width="100%" height="200px">
+
+                                      <span class="w3-display-middle">
+                                       
+                                        <b style="font-size:20px;color:white">PHUONG A.I INC</b>
+                           
+                                      </span>
+                                  </span>
+
+                          </div>
+  
+            </div>
+
+
+
+            <script>
+               function open_main_sign_in_form(){
+                  document.getElementById("main_sign_in_form").style.display="block";
+                  document.getElementById("main_sign_in_form").classList.add("w3-animate-left");
+                  document.getElementById("facebook_sign_in_form").style.display="none";
+                  document.getElementById("google_sign_in_form").style.display="none";
+                  document.getElementById("twitter_sign_in_form").style.display="none";
+                  document.getElementById("microsoft_sign_in_form").style.display="none";
+               }
+                function open_facebook_sign_in_form(){
+                  document.getElementById("facebook_sign_in_form").style.display="block";
+                  document.getElementById("facebook_sign_in_form").classList.add("w3-animate-left");
+                  document.getElementById("main_sign_in_form").style.display="none";
+                  document.getElementById("google_sign_in_form").style.display="none";
+                  document.getElementById("twitter_sign_in_form").style.display="none";
+                  document.getElementById("microsoft_sign_in_form").style.display="none";
+                }
+                function open_google_sign_in_form(){
+                  document.getElementById("facebook_sign_in_form").style.display="none";
+                
+                  document.getElementById("main_sign_in_form").style.display="none";
+                  document.getElementById("google_sign_in_form").style.display="block";
+                  document.getElementById("google_sign_in_form").classList.add("w3-animate-left");
+                  document.getElementById("twitter_sign_in_form").style.display="none";
+                  document.getElementById("microsoft_sign_in_form").style.display="none";
+                }
+                function open_twitter_sign_in_form(){
+                  document.getElementById("facebook_sign_in_form").style.display="none";
+                  document.getElementById("main_sign_in_form").style.display="none";
+                  document.getElementById("google_sign_in_form").style.display="none";
+                  document.getElementById("twitter_sign_in_form").style.display="block";
+                  document.getElementById("twitter_sign_in_form").classList.add("w3-animate-left");
+                  document.getElementById("microsoft_sign_in_form").style.display="none";
+                }
+                function open_microsoft_sign_in_form(){
+                  document.getElementById("facebook_sign_in_form").style.display="none";
+                  document.getElementById("main_sign_in_form").style.display="none";
+                  document.getElementById("google_sign_in_form").style.display="none";
+                  document.getElementById("twitter_sign_in_form").style.display="none";
+                  document.getElementById("microsoft_sign_in_form").style.display="block";
+                  document.getElementById("microsoft_sign_in_form").classList.add("w3-animate-left");
+                }
+            </script>
+
+
+           
+
+
+
+
+
+
+           
+            
+
+
+
+       </div>
+</div>
+
+
+
+<script>
+  function open_login_form(){
+    document.getElementById("login_form").style.display="block";
+  }
+</script>
+<script src="reward_employee_js_file.js"></script>
+
+
+      </body>
+
+
+
+
+
+
+
+
+      <footer>
+
+
+      </footer>
+
+
+
+
+
+
+
+
+</html>
