@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+
+
+
+
+
+  
+  <meta charset="UTF-8">
+
+
+  <meta name="keywords" content="HTML,CSS,JAVASCRIPT,BOOTSTRAP,W3CSS,JQUERY,ANGULAR JS,REACT JS">
+
+
+  <meta name="description"   content="THIS IS PHUONG WEBSITE">
+
+
+
+  <meta name="author"   content="PHUONG.TRIEU">
+
+
+
+  <meta name="viewport"      content="width=device-width, initial-scale=1.0">
+
+
+
+
+  <title>PHUONG WEBSITE</title>
+
+
+
+
+
+  <!--add w3.css-->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+
+  <!--add bootstrap 4-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+  <!--add font-awesome 4.7.0 in order to add icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+
+
+
+  <!--add photo|icon  into  title bar -->
+
+  <link rel="shortcut icon"   href="image/html_logo.png"  type="image/png">
+  
+  
+
+  <style>
+    #footer_nav1{
+      background-color:black;
+      position:fixed;
+      bottom:0;
+      left:0;
+      right:0;
+      width:100%;
+
+    }
+     #footer_nav1 span button{
+         color:white;
+         background-color:black;
+         font-size:15px;
+         padding:10px;
+         cursor:pointer;
+         border:none;
+     }
+     #footer_nav1 span b{
+       color:white;
+       font-size:15px;
+     }
+     #footer_nav1 span button:hover{
+       background-color:aqua;
+       color:red;
+     }
+     #footer_nav1 span button:active{
+       background-color:red;
+       color:white;
+       
+     }
+     ::selection{
+       background-color:aqua;
+       color:blue;
+       
+     }
+     ::marker{
+       color:cadetblue;
+       font-size:20px;
+     }
+     [id="slideshow_photo_inform"]{
+       text-decoration:overline;
+       letter-spacing:2px;
+       text-shadow:2px 3px 4px rgb(74, 226, 124);
+     }
+     [id="slideshow_photo_inform"]::before{
+       content:"!___";
+       font-size:40px;
+       color:rgb(0, 255, 98);
+     }
+     [id*="slideshow_photo_inform"]::after{
+       content:"___!";
+       font-size:40px;
+       color:rgb(0, 255, 221);
+     }
+
+
+    
+
+     [id="menu_navbar1_button_block1"]:hover,[id="menu_navbar1_button_block1"] a:hover,
+     [id="menu_navbar1_button_block2"]:hover,[id="menu_navbar1_button_block2"] a:hover,
+     [id="menu_navbar1_button_block3"]:hover,[id="menu_navbar1_button_block3"] a:hover,
+     [id="menu_navbar1_button_block4"]:hover,[id="menu_navbar1_button_block4"] a:hover,
+     [id="menu_navbar1_button_block5"]:hover,[id="menu_navbar1_button_block5"] a:hover
+     [id="menu_navbar1_button_block6"]:hover,[id="menu_navbar1_button_block6"] a:hover
+
+     {
+       background-color:aqua;
+       color:white;
+       text-decoration:none;
+       cursor:pointer;
+       
+     }
+
+
+
+
+     [id="menu_navbar1_right_block"]{
+       position:relative;
+       left:750px;
+     }
+
+
+     [id="menu_navbar1_button_block5"],[id="menu_navbar1_button_block6"]{
+       display:inline-block;
+     }
+
+
+
+     [id="sidebar1"]{
+       display:none;
+       background-color:black;
+       width:300px;
+       height:100%;
+       position:fixed;
+       top:0;
+       z-index:3;
+     }
+
+     [id="sidebar1"] button{
+       display:block;
+     }
+
+     [id="sidebar1_home_butt"]{
+       background-color:black;
+       color:white;
+       width:100%;
+       font-size:30px;
+     }
+     [id="sidebar1_keyword_butt"]{
+      background-color:black;
+       color:white;
+       width:100%;
+       font-size:30px;
+     }
+     [id="sidebar1_about_butt"]{
+       background-color:black;
+       color:white;
+       width:100%;
+       font-size:30px;
+     }
+     [id="sidebar1_contact_butt"]{
+       background-color:black;
+       color:white;
+       width:100%;
+       font-size:30px;
+     }
+     [id="sidebar1_account_butt"]{
+       background-color:black;
+       color:white;
+       width:100%;
+       font-size:30px;
+     }
+
+
+     [id="sidebar1_home_butt"]:hover, 
+     [id="sidebar1_keyword_butt"]:hover,
+     [id="sidebar1_about_butt"]:hover,
+     [id="sidebar1_contact_butt"]:hover, 
+     [id="sidebar1_account_butt"]:hover{
+       background-color:aqua;
+       color:white;
+     }
+   
+
+     [id="sidebar1_close_butt"]{
+      background-color:black;
+      color:red;
+      font-size:30px;
+      position:absolute;
+      top:0;
+      right:0;
+      cursor:pointer;
+      border:none"
+     }
+
+     [id="sidebar1_close_butt"]:hover{
+       background-color:aqua;
+       color:white;
+     }
+    
+    
+
+
+     [id="search_statistic_table"], tr, td{
+       border:2px solid aqua;
+       color:white;
+       font-size:16px;
+       border-collapse:collapse;
+       padding:10px;
+     }
+     [id="search_statistic_table2"], tr, td{
+       border:2px solid aqua;
+       color:white;
+       font-size:16px;
+       border-collapse:collapse;
+       padding:10px;
+     }
+     [id="search_statistic_table3"], tr, td{
+       border:2px solid aqua;
+       color:white;
+       font-size:16px;
+       border-collapse:collapse;
+       padding:10px;
+     }
+
+
+
+
+     [id="most_searching_tab_nav"]{
+       background-color:black;
+       font-size:20px;
+       padding:10px;
+       
+     }
+
+     [id="most_searching_tab_nav"] a{
+       text-decoration:none;
+       cursor:pointer;
+       padding:0px 10px;
+     }
+
+     [id="most_searching_tab_nav"] #tab1{
+       color:blue;
+     }
+     [id="most_searching_tab_nav"] #tab1:active{
+       color:white;
+     }
+
+
+     [id="most_searching_tab_nav"] #tab2{
+       color:greenyellow;
+     }
+     [id="most_searching_tab_nav"] #tab2:active{
+       color:white;
+     }
+     [id="most_searching_tab_nav"] #tab3{
+       color:red;
+     }
+     [id="most_searching_tab_nav"] #tab3:active{
+       color:white;
+     }
+
+
+   
+
+
+     [id="search_input_bar"]:focus{
+       background-color:lightblue;
+     }
+
+     [id="search_button"] i:hover{
+       color:aqua;
+     }
+     [id="search_voice_button"] i:hover{
+       color:darkturquoise;
+     }
+
+
+     [ id="progress_block_child1"],[ id="progress_block_child2"]{
+       display:inline-block;
+     }
+
+
+     [id="pagination1"]{
+       margin-top:30px;
+     }
+     [id="pagination1"] a{
+       cursor:pointer;
+     }
+
+     [id="pagination1"] a:hover{
+       background-color:aqua;
+       
+     }
+
+     [id="search_result_content"]{
+      width:800px;
+       height:300px;
+       border-top:2px solid green;
+       border-left:2px solid red;
+       border-right:2px solid blue;
+       border-bottom:2px solid orange;
+      outline:2px solid blue;
+       outline-offset:20px;
+       margin:20px;
+     }
+
+     [id="search_result_html_content"]{
+       display:none;
+       overflow-x:hidden;
+       overflow-y:scroll;
+       width:800px;
+       height:300px;
+       padding:10px;
+       font-size:30px;
+       text-indent:20px;
+       text-transform:capitalize;
+       letter-spacing:3px;
+       line-height:60px;
+       text-shadow:6px 6px 6px rgb(98, 228, 217);
+       background:rgb(211, 218, 217);
+       color:blue;
+     }
+    
+  </style>
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+
+
+
+  <header>
+
+
+       <!--add slideshow to welcome guests that provided 3 photo|picture-->
+
+
+
+        <div id="slideshow1" class="carousel slide"  data-ride="carousel"  data-interval="2000" style="z-index:1;">
+                 
+                <div class="carousel-inner">
+
+
+
+                       <div class="carousel-item active">
+                                <img src="logo1.jpg"  width="100%" height="200px">
+
+
+                                <span class="carousel-caption">
+                                     <b  id="slideshow_photo_inform" style="font-size:40px;">PHUONG'S SEARCH ENGINE WEBSITE</b>
+                                </span>
+                       </div>
+
+
+
+
+
+                       <div class="carousel-item">
+                                <img src="logo4.jpg"  width="100%" height="200px">
+
+
+                                <span class="carousel-caption">
+                                     <b id="slideshow_photo_inform" style="font-size:40px;">PHUONG'S SEARCH ENGINE WEBSITE</b>
+                                </span>
+                       </div>
+
+
+
+
+
+
+                       <div class="carousel-item">
+                                <img src="logo6.jpg"  width="100%" height="200px">
+
+
+                                <span class="carousel-caption">
+                                     <b id="slideshow_photo_inform" style="font-size:40px;">PHUONG'S SEARCH ENGINE WEBSITE</b>
+                                </span>
+                       </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+                <!--carousel indicator  block-->
+
+                <section class="carousel-indicators" style="position:relative;top:-200px;">
+
+
+
+                       <div class="active w3-display-container w3-opacity-min w3-hover-opacity-off">
+                             <img data-target="#slideshow1" data-slide-to="0" src="logo1.jpg" width="100px" height="20px">
+
+                             <span class="w3-display-middle">
+                               <b style="font-size:2px;color:white;">PHUONG'S SEARCH ENGINE WEBSITE</b>
+                             </span>
+                       </div>
+
+
+
+
+                       <div class="w3-display-container w3-opacity-min w3-hover-opacity-off">
+
+                            <img data-target="#slideshow1" data-slide-to="1" src="logo4.jpg" width="100px" height="20px">
+
+                            <span class="w3-display-middle">
+                              <b style="font-size:2px;color:white;">PHUONG'S SEARCH ENGINE WEBSITE</b>
+                            </span>
+
+
+
+                       </div>
+
+
+
+
+
+                       <div class="w3-display-container w3-opacity-min w3-hover-opacity-off">
+                        
+                            <img data-target="#slideshow1" data-slide-to="2" src="logo6.jpg" width="100px" height="20px">
+
+                            <span class="w3-display-middle">
+                              <b style="font-size:2px;color:white;">PHUONG'S SEARCH ENGINE WEBSITE</b>
+                            </span>
+
+
+
+                       </div>
+
+
+
+
+
+                </section>
+
+
+
+
+
+                <!--carousel  control prev or  next  icon-->
+                <section class="carousel-control-prev"  data-slide="prev"  href="#slideshow1">
+                         <span class="carousel-control-prev-icon"></span>
+                </section>
+                <section class="carousel-control-next"  data-slide="next"  href="#slideshow1">
+                         <span class="carousel-control-next-icon"></span>
+                </section>
+                  
+        </div>
+
+
+
+
+
+       <!--tip toast block-->
+        <div class="toast" style="border:2px solid greenyellow;position:absolute;top:0;width:800px;z-index:2">
+             
+             <div class="toast-header">
+                    <b>TODAY'S SEARCH KEYWORDS</b>
+
+                    <span style="position:relative;left:40px;">
+                        <i>5 minutes ago</i>
+                        <button style="background-color:black;color:white;cursor:pointer" data-dismiss="toast">x</button>
+                    </span>
+             </div>
+
+
+             <div class="toast-body">
+                 
+                  <p>HTML</p>
+                   
+             </div>
+
+
+
+        </div>
+
+
+        <script>
+          $(document).ready(function(){
+            $('.toast').toast({delay:8000});
+            $('.toast').toast("show");
+          
+          });
+        </script>
+
+
+
+  </header>
+
+
+
+
+  <main>
+      
+
+
+    <nav>
+        <ul id="menu_navbar1" class="nav bg-dark" style="margin-top:-20px;font-size:20px;border:2px solid greenyellow">
+        
+        
+        
+          <li id="menu_navbar1_button_block1" class="nav-item">
+              <a class="nav-link w3-text-white"><i class="fa fa-home w3-text-aqua"></i> HOME</a>
+          </li>
+
+
+
+          <li id="menu_navbar1_button_block2" class="nav-item">
+              <a class="nav-link w3-text-white" onclick="open_sidebar1()"><i class="fa fa-bars text-primary"></i> MENU</a>
+          </li>
+
+
+
+          <li id="menu_navbar1_button_block3" class="nav-item">
+              <a class="nav-link w3-text-white" data-toggle="popover"
+               data-placement="top" title="Google Mail:" data-content="phuongaiinc@gmail.com" ><i class="fa fa-envelope text-danger"></i> EMAIL</a>
+          </li>
+
+          <script>
+            $(document).ready(function(){
+              $('[data-toggle="popover"]').popover();
+            });
+          </script>
+
+
+
+          <li id="menu_navbar1_button_block4" class="nav-item dropdown">
+              <a class="nav-link w3-text-white dropdown-toggle" data-toggle="dropdown"><i class="fa fa-phone text-success"></i> CONTACT</a>
+
+              <div class="dropdown-menu bg-dark">
+                  <a class="dropdown-item text-light" onclick="open_company_modal_block1()">PHONE</a>
+                  <a class="dropdown-item text-light" onclick="open_company_modal_block1()">EMAIL</a>
+                  <a class="dropdown-item text-light" onclick="open_company_modal_block1()">SOCIAL MEDIA</a>
+              </div>
+          </li>
+
+          
+
+         <span id="menu_navbar1_right_block">
+          <li id="menu_navbar1_button_block5" class="nav-item">
+            <a class="nav-link w3-text-white"><i class="fa fa-address-card w3-text-yellow"></i>  ACCOUNT</a>
+          </li>
+      
+            <li id="menu_navbar1_button_block6" class="nav-item">
+                <a class="nav-link w3-text-white" onclick="open_company_modal_block1()"><i class="fa fa-info-circle w3-text-blue"></i>  ABOUT</a>
+            </li>
+         </span>
+         
+         
+
+        </ul>
+
+
+
+
+        <div id="overlay1" onclick="close_sidebar1()"
+        style="display:none;background-color:rgba(34, 30, 30, 0.445);position:fixed;top:0;left:0;right:0;
+        bottom:0;width:100%;height:100%;z-index:2;cursor:pointer"></div>
+
+        <aside id="sidebar1" class="w3-animate-left">
+               <button id="sidebar1_close_butt" onclick="close_sidebar1()"
+               >&times;</button>
+
+
+               <button id="sidebar1_home_butt"><i class="fa fa-home w3-text-aqua"></i> HOME</button>
+
+
+
+               <button id="sidebar1_keyword_butt" data-toggle="collapse" 
+               data-target="#keyword_block">
+               <i class="fa fa-search w3-text-red"></i> KEYWORDS <i class="fa fa-caret-down w3-text-white"></i>
+              </button>
+
+              <div class="collapse w3-bar-block w3-black"  id="keyword_block">
+                    <button class="w3-bar-item w3-btn w3-hover-white w3-ripple" style="font-size:30px">HTML</button>
+                    <button class="w3-bar-item w3-btn w3-hover-white w3-ripple" style="font-size:30px">JAVASCRIPT</button>
+                    <button class="w3-bar-item w3-btn w3-hover-white w3-ripple" style="font-size:30px">CSS3</button>
+              </div>
+
+              
+               <button id="sidebar1_contact_butt" onclick="open_sidebar_contact_block()"><i class="fa fa-phone w3-text-green"></i> CONTACT <i class="fa fa-caret-down w3-text-white"></i></button>
+               <div class="w3-bar-block w3-black"  id="sidebar_contact_block" style="display:none">
+
+
+                <button class="w3-bar-item w3-btn w3-hover-white w3-ripple"
+                onclick="open_company_modal_block1()"
+                style="font-size:30px">PHONE</button>
+
+
+                <button class="w3-bar-item w3-btn w3-hover-white w3-ripple"
+                onclick="open_company_modal_block1()"
+                style="font-size:30px">EMAIL</button>
+
+
+
+                <button class="w3-bar-item w3-btn w3-hover-white w3-ripple"
+                onclick="open_company_modal_block1()"
+                style="font-size:30px">SOCIAL MEDIA</button>
+
+
+               </div>
+              
+              
+               <button id="sidebar1_account_butt"><i class="fa fa-address-card w3-text-yellow"></i> ACCOUNT</button>
+               <button id="sidebar1_about_butt" onclick="open_company_modal_block1()"><i class="fa fa-info-circle w3-text-blue"></i> ABOUT <i class="fa fa-caret-right w3-text-white"></i></button>
+        </aside>
+
+
+
+        <script>
+          function open_sidebar1(){
+              document.getElementById("sidebar1").style.display="block";
+              document.getElementById("overlay1").style.display="block";
+          }
+          function close_sidebar1(){
+            document.getElementById("sidebar1").style.display="none";
+              document.getElementById("overlay1").style.display="none";
+          }
+          function open_sidebar_contact_block(){
+            var get_contact_block_id = document.getElementById("sidebar_contact_block");
+            if(get_contact_block_id.className.indexOf("w3-show") == -1){
+              get_contact_block_id.className+=" w3-show";
+            }else{
+              get_contact_block_id.className =  get_contact_block_id.className.replace(" w3-show","")
+            }
+          }
+        </script>
+
+
+
+
+
+        <aside class="w3-bar-block w3-right" style="right:0;background-color:indianred;height:500px;outline:2px solid blue;outline-offset:5px">
+
+
+             <div class="w3-bar-item">
+                  <img  class="navbar_right_img1"  src="bootstrap_logo.png" width="100px">
+                  <img  class="navbar_right_img1"  src="css3_logo.png" width="100px">
+             </div>
+
+
+
+
+             <div class="w3-bar-item">
+                <img  class="navbar_right_img2"  src="html_logo.png" width="100px">
+                <img  class="navbar_right_img2"  src="js_logo.png" width="100px">
+             </div>
+
+
+
+
+             <div class="w3-bar-item">
+              <img  class="navbar_right_img3"  src="php_logo.png" width="100px">
+              <img  class="navbar_right_img3"  src="w3_css_logo.jpg" width="100px">
+             </div>
+
+
+
+        </aside>
+
+
+
+
+        <script>
+          var slide_index1 = 0, slide_index2 = 0 , slide_index3 = 0;
+          navbar_right_slideshow1();
+          navbar_right_slideshow2();
+          navbar_right_slideshow3();
+
+
+          function  navbar_right_slideshow1(){
+               var x1 = document.getElementsByClassName("navbar_right_img1");
+               var i1;
+               for(i1=0;i1<x1.length;i1++){
+                 x1[i1].style.display="none";
+               }
+               slide_index1++;
+               if(slide_index1>x1.length){slide_index1=1}
+               x1[slide_index1-1].style.display="block";
+               setTimeout(navbar_right_slideshow1,2000);
+          }
+          function  navbar_right_slideshow2(){
+               var x2 = document.getElementsByClassName("navbar_right_img2");
+               var i2;
+               for(i2=0;i2<x2.length;i2++){
+                 x2[i2].style.display="none";
+               }
+               slide_index2++;
+               if(slide_index2>x2.length){slide_index2=1}
+               x2[slide_index2-1].style.display="block";
+               setTimeout(navbar_right_slideshow2,2000);
+          }
+          function  navbar_right_slideshow3(){
+               var x3 = document.getElementsByClassName("navbar_right_img3");
+               var i3;
+               for(i3=0;i3<x3.length;i3++){
+                 x3[i3].style.display="none";
+               }
+               slide_index3++;
+               if(slide_index3>x3.length){slide_index3=1}
+               x3[slide_index3-1].style.display="block";
+               setTimeout(navbar_right_slideshow3,2000);
+          }
+
+
+        </script>
+
+    </nav>
+
+
+
+
+
+
+
+
+    <div class="row">
+         
+
+
+       <!--main content column 1-->
+         <div class="col-sm-4" style="background-color:rgb(47, 90, 90)">
+                
+                 
+                 <h1 style="color:yellow;margin-top:10px;line-height:50px;text-shadow:2px 2px 2px aqua">TODAY'S MOST SEARCHING KEYWORDS</h1>
+
+                 <br><br>
+
+                 <nav class="nav-tabs"  id="most_searching_tab_nav">
+                     <a id="tab1" class="w3-border-black w3-hover-none w3-border-none
+                      w3-bottombar w3-rightbar w3-hover-border-aqua" data-toggle="tab" href="#search_statistic_block1">TAB1</a>
+
+
+                     <a id="tab2" class="w3-border-black w3-hover-none w3-border-none
+                     w3-bottombar w3-rightbar w3-hover-border-aqua"  data-toggle="tab"  href="#search_statistic_block2">TAB2</a>
+
+
+                     <a id="tab3" class="w3-border-black w3-hover-none w3-border-none
+                     w3-bottombar w3-rightbar w3-hover-border-aqua"  data-toggle="tab"  href="#search_statistic_block3">TAB3</a>
+                 </nav>
+
+
+
+                 <br>
+
+                 <div class="tab-content">
+                      
+
+                       <div id="search_statistic_block1" class="tab-pane active">
+
+
+                                      <table id="search_statistic_table">
+                                        <tr>
+                                            <td><b>NUMBER</b></td>
+                                            <td><b>KEYWORDS</b></td>
+                                            <td><b>TOTAL SEARCHING</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>CORONAVIRUS</td>
+                                            <td>325345346465656</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>COVID-19 DELTA</td>
+                                            <td>5675867867876</td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>JOE BIDEN</td>
+                                            <td>2352534645645</td>
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td>COVDE-19 CASES</td>
+                                            <td>568578698769879789</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>VACCINE SITE NEAR ME</td>
+                                            <td>252635675676867</td>
+                                        </tr>
+                                        <tr>
+                                            <td>06</td>
+                                            <td>COOKING MEAL</td>
+                                            <td>6785668686785685686578</td>
+                                        </tr>
+                                      
+                                  </table>
+
+
+
+                       </div>
+
+
+
+
+                       <div id="search_statistic_block2" class="tab-pane fade">
+
+
+
+
+                                      <table id="search_statistic_table2">
+                                        <tr>
+                                            <td><b>NUMBER</b></td>
+                                            <td><b>KEYWORDS</b></td>
+                                            <td><b>TOTAL SEARCHING</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>AMAZON</td>
+                                            <td>325345346465656</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>FACEBOOK</td>
+                                            <td>5675867867876</td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>YAHOO</td>
+                                            <td>2352534645645</td>
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td>INSTAGRAM</td>
+                                            <td>568578698769879789</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>NETFLIX</td>
+                                            <td>252635675676867</td>
+                                        </tr>
+                                        <tr>
+                                            <td>06</td>
+                                            <td>DISNEY PLUS</td>
+                                            <td>6785668686785685686578</td>
+                                        </tr>
+                                      
+                                  </table>
+
+
+
+
+                       </div>
+
+
+
+
+
+
+
+                       <div id="search_statistic_block3" class="tab-pane fade">
+
+
+
+
+                                      <table id="search_statistic_table3">
+                                        <tr>
+                                            <td><b>NUMBER</b></td>
+                                            <td><b>KEYWORDS</b></td>
+                                            <td><b>TOTAL SEARCHING</b></td>
+                                        </tr>
+                                        <tr>
+                                            <td>01</td>
+                                            <td>WEATHER</td>
+                                            <td>325345346465656</td>
+                                        </tr>
+                                        <tr>
+                                            <td>02</td>
+                                            <td>DISEASE</td>
+                                            <td>5675867867876</td>
+                                        </tr>
+                                        <tr>
+                                            <td>03</td>
+                                            <td>GOOGLE MAPS</td>
+                                            <td>2352534645645</td>
+                                        </tr>
+                                        <tr>
+                                            <td>04</td>
+                                            <td>PAYPAL</td>
+                                            <td>568578698769879789</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05</td>
+                                            <td>WALMART</td>
+                                            <td>252635675676867</td>
+                                        </tr>
+                                        <tr>
+                                            <td>06</td>
+                                            <td>COSTCO</td>
+                                            <td>6785668686785685686578</td>
+                                        </tr>
+                                      
+                                  </table>
+
+
+
+
+                       </div>
+
+
+
+
+
+                 </div>
+
+              
+
+
+                 <br>
+                 <br>
+         </div>
+
+
+
+
+
+
+          <!--main content column 2-->
+         <div class="col-sm-8">
+
+            <span style="font-size:30px; position:relative;left:300px;top:20px;">
+              <b style="color:rgb(224, 64, 176)">PH</b><b style="color:red">UO</b><b style="color:blue">NG</b> 
+              <b style="color:rgb(122, 192, 18)">SE</b><b style="color:blueviolet">AR</b><b style="color:orange">CH</b> 
+              <b style="color:purple">EN</b><b style="color:black">GI</b><b style="color:green">NE</b>
+            </span>
+          
+
+            <br>
+            <br>
+            <br>
+            
+
+
+            <div style="border:1px solid rgba(112, 109, 109, 0.247);width:850px;
+            padding-left:10px;border-radius:50px 50px">
+
+
+                 <input id="search_input_bar" type="text" placeholder="SEARCHING..." style="border:none;width:750px;height:50px;font-size:25px">
+                
+                
+                 <button id="search_button" type="submit" 
+                 style="border:none;background-color:white;color:red;font-size:30px"
+                 onclick="search_func()"
+                 ><i class="fa fa-search"></i></button>
+
+
+                 <button id="search_voice_button" type="submit" data-toggle="tooltip" data-placement="bottom" title="SEARCH BY VOICE"
+                  style="border:none;background-color:white;color:blue;font-size:30px">
+                  <i class="fa fa-microphone"></i></button>
+
+                  <script>
+                    $(document).ready(function(){
+                      $('[data-toggle="tooltip"]').tooltip();
+                    });
+                  </script>
+
+
+
+                
+            </div>
+
+
+
+            <div id="progress_block">
+               
+              <span id="progress_block_child1" style="visibility:hidden">
+
+
+
+                  <span id="progress_search_bar_block" class="progress" style="width:500px;">
+                      <span id="progress_search_bar" class="progress-bar  progress-bar-striped progress-bar-animated bg-primary" style="color:white;padding-top:5px;text-align:center">60%</span>
+                  </span>
+                   
+                  <span id="upload_file_inform_block">
+                    <p>Loading data... <i id="upload_file_inform">0</i>%</p>
+                  </span>
+                  
+
+              </span>
+
+              <span  id="progress_block_child2" style="position:relative;left:150px;">
+                <input id="search_checkbox"  type="checkbox">
+                <label> Remember Cookies? <span class="badge bg-dark text-white w3-round-xxlarge">1</span></label>
+              </span>
+             
+            </div>
+           
+            
+
+
+
+
+            <article id="search_result_content">
+              
+              <div id="search_result_wallpaper">
+                    <img src="wallpaper1.jpg" width="100%" height="300px">
+              </div>
+
+
+              <div id="search_result_html_content">
+                HTML is the standard markup language for Web pages.<br>
+
+                With HTML you can create your own Website.<br>
+                
+                HTML is easy to learn <br>
+       
+                HTML stands for Hyper Text Markup Language  <br>
+       HTML is the standard markup language for creating Web pages  <br>
+       HTML describes the structure of a Web page  <br>
+       HTML consists of a series of elements   <br>
+       HTML elements tell the browser how to display the content   <br>
+       HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.<br>
+       
+       
+       The &lt;!DOCTYPE html&gt; declaration defines that this document is an HTML5 document  <br>
+       The &lt;html&gt; element is the root element of an HTML page  <br>
+       The &lt;head&gt; element contains meta information about the HTML page  <br>
+       The &lt;title&gt; element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)  <br>
+       The &lt;body&gt; element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <br>
+       The &lt;h1&gt; element defines a large heading  <br>
+       The &lt;p&gt; element defines a paragraph  <br>
+              </div>
+           
+     
+            </article>
+
+
+
+            <script>
+                function  search_func(){
+                      document.getElementById("progress_block_child1").style.visibility="visible";
+                      var x = document.getElementById("search_input_bar").value;
+                      var x2 = document.getElementById("search_checkbox").checked;
+                      var progress_bar_get_id = document.getElementById("progress_search_bar");
+                      var setInterval_progress_bar = setInterval(progress_bar_func,50);
+                      var width=0;
+                   
+                          function progress_bar_func(){
+                            if(x.toUpperCase()=="HTML" && x2==true ){
+                                if(width>=100){
+                                  clearInterval(setInterval_progress_bar);
+                                document.getElementById("upload_file_inform_block").className="w3-text-green w3-animate-opacity";
+                                
+                                document.getElementById("upload_file_inform_block").innerHTML="Successfully Loaded Data From Web Server";
+                                document.getElementById("progress_search_bar_block").style.display="none";
+                                document.getElementById("search_result_html_content").style.display="block";
+                                document.getElementById("search_result_wallpaper").style.display="none";
+                                
+                                }else{
+                                  width++;
+                                  progress_bar_get_id.style.width= width+"%";
+                                  progress_bar_get_id.innerHTML = width*1+"%";
+                                  var num1 = width*1+(1/100);
+                                  num1 = num1.toFixed(0);
+                                  document.getElementById("upload_file_inform").innerHTML = num1;
+
+                                }
+                          }
+                          
+                        }
+                 }
+            </script>
+
+
+
+            <nav id="pagination1" class="pagination" style="font-size:20px;position:relative;left:100px">
+                
+                    <a  id="pagination1_previous_butt" style="color:black;text-decoration:none;border:1px solid black;padding:5px"><i class="fa fa-caret-left"></i> PREVIOUS</a>
+               
+              
+                    <a  id="pagination1_number_one_butt" style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">1</a>
+               
+               
+                    <a id="pagination1_number_two_butt"  style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">2</a>
+                
+                
+                    <a  style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">3</a>
+               
+                
+                    <a style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">4</a>
+               
+               
+                    <a  style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">5</a>
+                
+                    <a  style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">6</a>
+               
+                    <a  style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">7</a>
+               
+                    <a style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">8</a>
+               
+                    <a  style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">9</a>
+               
+                    <a  style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">10</a>
+               
+                    <a  style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px">...</a>
+               
+                    <a style="color:black;text-decoration:none;border:1px solid black;padding:5px 10px"> NEXT <i class="fa fa-caret-right"></i></a>
+               
+            </nav>
+
+
+            <br>
+            <br>
+         </div>
+
+
+
+
+    </div>
+
+
+
+  </main>
+
+
+
+
+
+
+  <div id="overlay2" onclick="close_company_modal_block1()" style="display:none;
+  background-color:rgba(0, 0, 0, 0.589);position:fixed;top:0;bottom:0;
+  left:0;right:0;width:100%;height:100%;z-index:4;cursor:pointer"></div>
+
+
+  <summary id="company_modal_block1" style="display:none;position:fixed;top:50px;left:250px;
+  background-color:white;z-index:6;width:1000px"
+  class="w3-animate-zoom">
+     
+           <button style="font-size:50px;background-color:rgba(255, 255, 255, 0.123);color:white;border:2px solid black;
+           position:absolute;top:0;right:0;z-index:4"
+           onclick="close_company_modal_block1()">&times;</button>
+            
+            <div id="modal_company_slideshow1" class="carousel slide"  data-ride="carousel" data-interval="2000">
+                  
+
+                    <div class="carousel-inner">
+                          
+                            <div class="carousel-item active">
+                                <img src="company1.jpg" width="1000px" height="400px">
+
+                                <span class="carousel-caption">
+                                      <b style="font-size:50px;color:white">PHUONG A.I COMPANY</b>
+                                </span>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <img src="company2.jpg" width="1000px" height="400px">
+
+                                <span class="carousel-caption">
+                                      <b style="font-size:50px;color:white">PHUONG A.I COMPANY</b>
+                                </span>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <img src="company3.jpg" width="1000px" height="400px">
+
+                                <span class="carousel-caption">
+                                      <b style="font-size:50px;color:white">PHUONG A.I COMPANY</b>
+                                </span>
+                            </div>
+                    </div>
+
+
+                    <div class="carousel-indicators" style="position:relative;top:-400px;">
+                          
+
+                          <div class="active w3-display-container w3-opacity-min w3-hover-opacity-off" >
+                              <img data-target="#modal_company_slideshow1" data-slide-to="0" src="company1.jpg" width="100px" height="40px">
+                              <span class="w3-display-middle">
+                                <b style="font-size:3px;color:white">PHUONG A.I COMPANY</b>
+                              </span>
+                          </div>
+
+
+
+                          <div class="w3-display-container w3-opacity-min w3-hover-opacity-off" >
+                              <img data-target="#modal_company_slideshow1" data-slide-to="1" src="company2.jpg" width="100px" height="40px">
+                              <span class="w3-display-middle">
+                                <b style="font-size:3px;color:white">PHUONG A.I COMPANY</b>
+                              </span>
+                          </div>
+
+
+
+
+                          <div class="w3-display-container w3-opacity-min w3-hover-opacity-off" >
+                              <img data-target="#modal_company_slideshow1" data-slide-to="2" src="company3.jpg" width="100px" height="40px">
+                              <span class="w3-display-middle">
+                                <b style="font-size:3px;color:white">PHUONG A.I COMPANY</b>
+                              </span>
+                          </div>
+                    </div>
+
+
+                    <div class="carousel-control-prev" href="#modal_company_slideshow1" data-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                    </div>
+                    <div class="carousel-control-next" href="#modal_company_slideshow1" data-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                    </div>
+
+
+          
+
+
+
+
+
+            </div>
+
+
+
+
+
+            <div>
+              <div style="padding:10px 30px;border-bottom:0.5px solid rgba(0, 0, 0, 0.13)"><i class="fa fa-suitcase w3-text-blue"></i>  <b style="padding-left:20px">COMPANY: PHUONG A.I INC</b></div>
+              <div style="padding:10px 30px;border-bottom:0.5px solid rgba(0, 0, 0, 0.13)"><i class="fa fa-envelope w3-text-red"></i>  <b style="padding-left:20px">EMAIL: phuongaiinc@gmail.com</b></div>
+              <div style="padding:10px 30px;border-bottom:0.5px solid rgba(0, 0, 0, 0.13)"><i class="fa fa-map-marker w3-text-aqua"></i> <b style="padding-left:25px">ADDRESS: 825 42 ND ST , SAN DIEGO,CA 92115</b></div>
+              <div style="padding:10px 30px;border-bottom:0.5px solid rgba(0, 0, 0, 0.13)"><i class="fa fa-phone w3-text-green"></i>  <b style="padding-left:20px">PHONE: 619-536-9423</b></div>
+            </div>
+
+     
+
+  
+             
+
+
+
+
+  </summary>
+
+
+
+  <script>
+    function open_company_modal_block1(){
+      document.getElementById("company_modal_block1").style.display="block";
+      document.getElementById("overlay2").style.display="block";
+      
+    }
+    function close_company_modal_block1(){
+      document.getElementById("company_modal_block1").style.display="none";
+      document.getElementById("overlay2").style.display="none";
+     
+    }
+  </script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+<footer>
+      <nav id="footer_nav1">
+            <span style="float:right">
+                  <button>ABOUT</button>
+                  <b>|</b>
+                  <button>CONTACT</button>
+                  <b>|</b>
+                  <button>CAREER | JOBS</button>
+                  <b>|</b>
+                  <button>HELP</button>
+                  <b>|</b>
+                  <button>ADVERTISE</button>
+                  <b>|</b>
+                  <button>TOURS</button>
+                  <b>|</b>
+                  <button>SITE MAP</button>
+                  <b>|</b>
+                  <button>PRIVACY & SECURITY</button>
+                  <b>|</b>
+                  <button>TERM OF USE</button>
+                  <b>|</b>
+                  <button>COPYRIGHT</button>
+                  <b>|</b>
+                  <button>COOKIES</button>
+                  <b>|</b>
+                  <button>FAQS</button>
+                  <b>|</b>
+            </span>
+      </nav>
+</footer>
+
+
+
+
+
+
+
+</html>
