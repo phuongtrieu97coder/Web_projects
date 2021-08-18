@@ -1,0 +1,56 @@
+@media screen and (max-width:800px) and (min-width:600px){
+    [id="navbar_top"] button{
+        font-size:14px;
+    }
+
+    [id="band_article_block"]{
+        width:100%;
+    }
+
+    [id="title_intro"]{
+        font-size:30px;
+    }
+    [id="what_we_love_intro"]{
+        margin-left:240px;
+    }
+    [id="info_para_intro"]{
+        font-size:15px;
+    }
+
+        
+
+    [id="band_name_block"]{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        margin-left:50px;
+    }
+
+
+    [id="tour_remind"]{
+        margin:30px 150px;
+        font-size:20px;
+        color:gray;
+    }
+
+
+
+    [id="modal1"]{
+        width:500px;
+        height:500px;
+        position:fixed;
+        top:100px;
+        z-index:5;
+        left:50px;
+      
+    }
+    
+  
+    [id="contact_title"] {margin:20px 150px;}
+    [id="for_fan"] {margin:20px 150px;}
+
+
+    [id="footer_link_icon_block"]{
+        margin:100px 200px
+    }
+    
+}
