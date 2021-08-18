@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+
+
+
+  
+
+   <meta charset="UTF-8">
+
+
+   <meta name="keywords"   content="HTML,CSS,JAVASCRIPT,JQUERY,ANGULAR JS,REACT JS,PHP,MYSQL,BOOTSTRAP,W3CSS">
+
+
+
+   <meta name="description"   content="THIS IS PHUONG WEBSITE">
+
+
+   <meta name="author"    content="PHUONG.TRIEU">
+
+
+
+   <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+  
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+  
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+  
+  
+  
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+        
+
+   <title>PHUONG WEB</title>
+
+
+
+   <link rel="shortcut icon"   href="image/php_logo.png" type="image/png">
+
+
+   <link rel="stylesheet" type="text/css"  href="test1.css">
+
+
+  
+
+
+
+   <style>
+
+   </style>
+
+  </head>
+
+
+
+  <body>
+
+
+
+    <header>
+       <nav id="navbar_top">
+           <button id="home_butt">HOME</button>
+           <button id="band_butt">BAND</button>
+           <button id="tour_butt">TOUR</button>
+           <button id="contact_butt">CONTACT</button>
+           <div class="w3-dropdown-hover">
+                <button id="more_butt">MORE <i class="fa fa-caret-down"></i></button>
+                <div id="more_block" class="w3-dropdown-content">
+                    <button>Merchandise</button>
+                    <button>Extras</button>
+                    <button>Media</button>
+                </div>
+           </div>
+          
+
+
+           <div id="navbar_top_right_block">
+               <button id="search_button"><i class="fa fa-search"></i></button>
+           </div>
+       </nav>
+    </header>
+
+
+
+    <main>
+
+
+        <header>
+
+
+
+            <div>
+
+                <div class="intro_slideshow1 w3-display-container">
+                      <img src="https://www.w3schools.com/w3images/la.jpg"    width="100%" height="800px">
+
+                      <span class="w3-display-bottommiddle w3-text-white" style="margin:50px 0;">
+                        <h2 style="text-align:center">Los Angeles</h2>
+                        <h5>We had the best time playing at Venice Beach!</h5>
+                      </span>
+                </div>
+
+
+                <div class="intro_slideshow1  w3-display-container">
+                    <img src="https://www.w3schools.com/w3images/ny.jpg"   width="100%" height="800px">
+                    <span class="w3-display-bottommiddle w3-text-white" style="margin:50px 0;">
+                        <h2 style="text-align:center">New York</h2>
+                        <h5>The atmosphere in New York is lorem ipsum.</h5>
+                    </span>
+                   
+                </div>
+
+
+                <div class="intro_slideshow1  w3-display-container">
+                    <img src="https://www.w3schools.com/w3images/chicago.jpg"  width="100%" height="800px">
+                    <span class="w3-display-bottommiddle w3-text-white" style="margin:50px 0;">
+
+                        <h2 style="text-align:center">Chicago</h2>
+                        <h5>Thank you, Chicago - A night we won't forget.</h5>
+                    </span>
+                 
+                </div>
+            </div>
+        </header>
+
+        <script>
+            var slide_index1 = 0;
+            slideshow1_func();
+            function slideshow1_func(){
+                var x = document.getElementsByClassName("intro_slideshow1");
+                var i;
+                for(i =0; i<x.length; i++){
+                    x[i].style.display="none";
+                }
+                slide_index1++;
+                if(slide_index1 > x.length){slide_index1 =1};
+                x[slide_index1-1].style.display="block";
+                setTimeout(slideshow1_func,2000);
+            }
+        </script>
+
+
+
+
+
+
+      <article id="band_article_block" class="w3-content">
+
+        <div >
+
+            <p id="title_intro">THE BAND</p>
+
+            <i id="what_we_love_intro">We love music</i>
+  
+  
+  
+            <p id="info_para_intro">
+              We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br>
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum<br>
+              dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit<br>
+              anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut<br>
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
+            </p>
+  
+  
+            <div id="band_name_block">
+                <div id="band_name_1">
+                    <p>Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="100%"  height="200px">
+                </div>
+                <div id="band_name_2">
+                    <p>Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="100%"  height="200px">
+                </div>
+                <div id="band_name_3">
+                    <p>Name</p>
+                    <img src="https://www.w3schools.com/w3images/bandmember.jpg" width="100%" height="200px">
+                </div>
+            </div>
+  
+
+        </div>
+        
+      </article>
+
+
+
+
+
+
+
+      <section id="tour_block">
+
+         <div id="tour_block1" class="w3-content" style="padding-top:70px">
+
+            <p id="tour_title" style="text-align:center;font-size:30px;letter-spacing:2px;color:white;">TOUR DATES</p>
+
+            <i id="tour_remind" style="margin:30px 300px;font-size:25px;color:gray">Remember to book your tickets!</i>
+  
+  
+  
+            <div id="tour_date_block" style="margin-top:30px;">
+                <div id="tour_september" style="padding:10px 20px">
+                    <h4 style="color:rgb(92, 86, 86);font-size:20px;float:left;">September</h4>
+                    <mark style="background-color:rgb(236, 56, 56);color:white;font-size:20px;clear:right;margin-left:20px;">Sold out</mark>
+                </div>
+  
+  
+  
+                <div id="tour_october" style="padding:10px 20px">
+                    <h4 style="color:rgb(95, 88, 88);font-size:20px;float:left">October</h4>
+                    <mark style="background-color:rgb(236, 56, 56);color:white;font-size:20px;clear:right;margin-left:20px;">Sold out</mark>
+                </div>
+  
+  
+  
+                <div id="tour_november" style="position:relative;padding:10px 20px">
+                    <p style="color:rgb(88, 82, 82);font-size:20px">November</p>
+                    
+                    <b class="w3-badge w3-black" style="position:absolute;right:0;top:10px;font-size:20px">3</b>
+                    
+                    
+                </div>
+  
+  
+  
+            </div>
+  
+  
+            <div id="tour_destination_block">
+                <div id="tour_ny">
+                    
+                    <img class="w3-hover-opacity" src="https://www.w3schools.com/w3images/newyork.jpg" width="100%"  height="200px">
+  
+  
+                    <div style="background-color:white;padding:20px">
+                      <b style="color:black;font-size:20px">New York</b>
+                      
+                      <p style="color:rgb(95, 89, 89);font-size:20px">Fri 27 Nov 2016</p>
+                      
+                      <p style="color:black;font-size:20px">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+  
+                      <br>
+
+                      <button id="buy_ticket_butt1" onclick="open_modal1()">Buy Tickets</button>
+                    </div>
+  
+  
+                </div>
+  
+  
+  
+  
+                <div id="tour_prs">
+                    
+                    <img class="w3-hover-opacity" src="https://www.w3schools.com/w3images/paris.jpg" width="100%"  height="200px">
+  
+                    <div style="background-color:white;padding:20px">
+  
+                      <b style="color:black;font-size:20px">Paris</b>
+  
+                      <p style="color:rgb(95, 89, 89);font-size:20px">Sat 28 Nov 2016</p>
+  
+                      <p style="color:black;font-size:20px">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+  
+                      <br>
+                      <button id="buy_ticket_butt2" onclick="open_modal1()">Buy Tickets</button>
+                    </div>
+                </div>
+  
+  
+  
+  
+                <div id="tour_s_f_c">
+                    
+                    <img class="w3-hover-opacity" src="https://www.w3schools.com/w3images/sanfran.jpg" width="100%" height="200px">
+  
+  
+                    <div style="background-color:white;padding:20px">
+                      <b style="color:black;font-size:20px">San Francisco</b>
+  
+                      <p style="color:rgb(95, 89, 89);font-size:20px">Sun 29 Nov 2016</p>
+                      
+                     <p style="color:black;font-size:20px">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p> 
+                      <br>
+                      <button id="buy_ticket_butt3" onclick="open_modal1()">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+        
+
+
+
+          
+
+        </section>
+
+
+
+
+        <div id="overlay1" onclick="close_modal1()"></div>
+
+
+        <aside id="modal1">
+            <div id="ticket_title_block">
+                <button id="close_butt1" onclick="close_modal1()">&times;</button>
+                <p id="ticket_title"><i class="fa fa-suitcase"></i>  Tickets</p>
+            </div>
+
+            <div id="ticket_info_block">
+                <label style="margin:5px 0"><i class="fa fa-shopping-cart"></i> Tickets,$15 per person</label>
+                <input class="w3-block" placeholder="How many?" style="margin:10px 0">
+                <label style="margin:5px 0"><i class="fa fa-user"></i> Send To</label>
+                <input class="w3-block" placeholder="Enter email" style="margin:10px 0">
+                <button class="w3-block w3-hover-gray" style="background-color:rgb(72, 185, 185);color:white;
+                text-align:center;margin:10px 0 20px" type="submit">PAY <i class="fa fa-check"></i></button>
+
+
+                <div>
+                    <button class="btn btn-danger text-white w3-hover-gray" onclick="close_modal1()">Close &times;</button>
+                    <span class="w3-right">Need <a href="#" style="text-decoration:underline">help?</a></span>
+                </div>
+            </div>
+        </aside>
+
+
+        <script>
+             function open_modal1(){
+                 document.getElementById("modal1").style.display="block";
+                 document.getElementById("overlay1").style.display="block";
+             }
+             function close_modal1(){
+                 document.getElementById("modal1").style.display="none";
+                 document.getElementById("overlay1").style.display="none";
+             }
+        </script>
+
+
+   
+    </main>
+
+
+
+    <summary style="background-color:white;" class="w3-content">
+
+        <div style="margin:50px">
+              <p style="color:black;font-size:30px;letter-spacing:2px;margin:20px 350px">CONTACT</p>
+              <i style="color:gray;font-size:18px;;margin:20px 350px">Fan?Drop a note!</i>
+
+
+              <div class="w3-row" style="margin:50px 0;">
+                  <div class="w3-half">
+                      <p style="font-size:20px;color:black;"><i class="fa fa-map-marker" style="margin-right:10px"></i> Chicago,US</p>
+                      <p style="font-size:20px;color:black;"><i class="fa fa-phone" style="margin-right:10px"></i> Phone:+00 151515</p>
+                      <p style="font-size:20px;color:black;"><i class="fa fa-envelope" style="margin-right:10px"></i> Email:mail@mail.com</p>
+                  </div>
+
+                  <div class="w3-half">
+
+                    <input placeholder="Name" style="width:220px;font-size:20px"><input placeholder="Email" style="width:220px;font-size:20px">
+                    <input class="w3-block" placeholder="Message" style="margin:10px 0 20px;font-size:20px;">
+                    <button class="w3-black w3-hover-gray w3-btn w3-ripple w3-right" >SEND</button>
+                  </div>
+              </div>
+        </div>
+
+
+        
+    </summary>
+
+
+    <img src="https://www.w3schools.com/w3images/map.jpg" width="100%" height="1000px">
+
+
+
+
+  </body>
+
+
+
+
+  <footer class="w3-content">
+
+        <div  style="margin:100px 400px;font-size:30px;width:300px;">
+              <div>
+                  <i class="fa fa-facebook-square  w3-hover-opacity"></i> <i class="fa fa-instagram w3-hover-opacity"></i>
+                   <i class="fa fa-snapchat w3-hover-opacity"></i>  <i class="fa fa-pinterest-p w3-hover-opacity"></i> 
+                   <i class="fa fa-twitter  w3-hover-opacity"></i>  <i class="fa fa-linkedin w3-hover-opacity"></i>
+              </div>
+
+              <p>Powered by <a style="text-decoration:underline;color:black;" href="#">w3.css</a></p>
+        </div>
+
+  </footer>
+
+</html>
