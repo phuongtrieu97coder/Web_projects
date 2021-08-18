@@ -1,0 +1,220 @@
+body {font-family: "Lato", sans-serif}
+
+::selection{
+    background-color:green;
+    color:red;
+
+}
+
+::marker{
+    color:green;
+    font-size:14px;
+
+}
+
+[id="navbar_top"]{
+    position:fixed;
+    top:0;
+    z-index:2;
+    background-color:black;
+    width:100%;
+}
+
+[id="navbar_top"] button{
+    font-size:20px;
+    color:white;
+    background-color:black;
+    padding:10px 30px;
+    border:none;
+}
+
+[id="navbar_top"] button:hover{
+    background-color:white;
+    color:black;
+}
+
+
+
+
+
+[id="more_block"] button{
+    display:block;
+    width:200px;
+    text-align:left;
+    background-color:white;
+    color:black;
+}
+
+[id="more_block"] button:hover{
+    background-color:rgb(180, 170, 170);
+    color:black;
+}
+
+[id="navbar_top_right_block"]{
+    float:right;
+}
+
+[id="band_article_block"]{
+    width:1000px;
+ 
+}
+
+[id="title_intro"]{
+    font-size:40px;
+    text-align:center;
+}
+
+[id="what_we_love_intro"]{
+    font-size:20px;
+    color:rgb(160, 152, 152);
+    margin-left:430px;
+}
+
+
+[id="info_para_intro"]{
+    font-size:18px;
+    padding:20px;
+}
+
+
+
+[id="band_name_block"]{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    margin-left:50px;
+}
+
+[id="band_name_1"],[id="band_name_2"],[id="band_name_3"]{
+    margin:20px 40px;
+    text-align:center;
+    font-size:20px;
+}
+
+[id="band_name_1"] p, img{
+    display:block;
+}
+[id="band_name_2"] p, img{
+    display:block;
+}
+[id="band_name_3"] p, img{
+    display:block;
+}
+
+
+
+
+[id="tour_block"]{
+    background-color:black;
+}
+
+
+
+
+
+
+
+[id="tour_date_block"]{
+    background-color:white;
+}
+
+[ id="tour_september"],[ id="tour_october"]{
+    border-bottom:2px solid rgba(0, 0, 0, 0.233);
+}
+
+
+
+
+[id="tour_destination_block"]{
+    display:grid;
+    grid-template-columns:auto auto auto;
+    margin-top:40px;
+}
+
+[id="tour_ny"],[id="tour_prs"],[id="tour_s_f_c"]{
+    margin:10px;
+}
+
+
+[id*="buy_ticket_butt"]{
+    background-color:black;
+    color:white;
+    font-size:20px;
+    padding:10px;
+}
+[id*="buy_ticket_butt"]:hover{
+    background-color:rgb(172, 164, 164);
+    color:black;
+}
+[id*="buy_ticket_butt"]:active{
+   border:4px solid red;
+}
+
+
+
+[id="overlay1"]{
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    width:100%;height:100%;
+    z-index:3;
+    background-color:rgba(0, 0, 0, 0.603);
+    display:none;
+
+}
+
+
+[id="modal1"]{
+    width:1000px;
+    height:500px;
+    position:fixed;
+    top:100px;
+    z-index:5;
+    left:300px;
+    display:none;
+    animation-name:modal1;
+    animation-duration:1s;
+    animation-delay:none;
+    animation-iteration-count:1;
+    animation-fill-mode:both;
+}
+
+[id="ticket_title_block"]{
+    background-color:rgb(72, 185, 185);
+    
+}
+
+[id="close_butt1"]{
+    color:white;
+    background-color:rgba(0, 0, 0, 0);
+    border:none;
+    font-size:35px;
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+[id="close_butt1"]:hover{
+    background-color:rgb(184, 176, 176);
+}
+
+[id="ticket_title"]{
+    color:white;
+    font-size:25px;
+    margin-bottom:0px;
+    text-align:center;
+    padding:40px;
+    letter-spacing:3px;
+}
+
+
+[id="ticket_info_block"]{
+    background-color:white;
+    padding:20px;
+    font-size:20px;
+}
+
+@keyframes modal1{
+    from {top:-100px;}
+    to {top:100px;}
+}
+
+
