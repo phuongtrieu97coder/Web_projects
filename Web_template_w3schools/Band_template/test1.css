@@ -74,6 +74,7 @@ body {font-family: "Lato", sans-serif}
 [id="info_para_intro"]{
     font-size:18px;
     padding:20px;
+    letter-spacing:2px;
 }
 
 
@@ -115,6 +116,13 @@ body {font-family: "Lato", sans-serif}
 
 [id="tour_date_block"]{
     background-color:white;
+}
+
+
+[id="tour_remind"]{
+    margin:30px 300px;
+    font-size:25px;
+    color:gray;
 }
 
 [ id="tour_september"],[ id="tour_october"]{
@@ -218,3 +226,10 @@ body {font-family: "Lato", sans-serif}
 }
 
 
+
+
+[id="contact_title"] {color:black;font-size:30px;letter-spacing:2px;margin:20px 350px;}
+[id="for_fan"] {color:gray;font-size:18px;margin:20px 350px;}
+
+
+[id="footer_link_icon_block"] {margin:100px 400px;font-size:30px;width:300px;}
