@@ -1,0 +1,214 @@
+body {font-family: "Times New Roman", Georgia, Serif;}
+
+@mixin block_color1{
+    background-color:white;
+    color:black;
+}
+@mixin hover1{
+    background-color:rgba(199, 190, 190, 0.562);
+}
+@mixin font1($f-z1) {
+  font-size:$f-z1;
+  @if $f-z1 == 35px {
+      letter-spacing:5px;
+  }
+}
+
+[id="navbar_top"]{
+    @include block_color1;
+    position:fixed;
+    top:0;
+    z-index:2;
+    width:100%;
+    box-shadow:2px 2px 2px 2px rgba(77, 70, 70, 0.233);
+}
+[id="navbar_top"] button{
+    @include block_color1;
+    @include font1(23px);
+    &:hover{
+        @include hover1;
+    }
+    border:none;
+    letter-spacing:3px;
+    padding:10px 20px;
+}
+
+[id="catering_name_butt"]{
+    margin:10px;
+}
+
+
+[id="navbar_right_butt_block"]{
+    float:right;
+    margin:10px;
+}
+
+[id="navbar_right_butt_block"] button a{
+    color:black;
+    text-decoration:none;
+}
+
+
+[id="catering_name"]{
+    color:gray;
+    @include font1(45px);
+    letter-spacing:7px;
+    padding:20px;
+}
+
+
+[id="content_block1"]{
+    margin:100px 300px 100px;
+    display:grid;
+    grid-template-columns:auto auto;
+
+    
+    [id="content_block1_1"]{
+        img{
+            width:700px;
+            height:700px;
+        }
+    }
+    [id="content_block1_2"]{
+       width:700px;
+                
+            [id="content_block1_2_intro"]{
+                font-size:40px;
+                letter-spacing:10px;
+                margin-left:100px;
+                
+            }
+
+
+                        
+            [id="content_block1_2_intro2"]{
+                font-size:25px;
+                letter-spacing:7px;
+                text-align:center;
+                color:gray;
+            }
+
+
+
+                        
+
+            [id="content_block1_2_main_content1"]{
+                font-size:25px;
+            }
+            
+            [id="content_block1_2_main_content2"]{
+                font-size:25px;
+                color:rgb(151, 142, 142);
+            }
+
+
+    }
+}
+
+
+
+
+
+
+
+
+
+[id="content_block2"]{
+    margin:100px 300px 100px;
+    display:grid;
+    grid-template-columns:auto auto;
+
+
+              
+
+        [id="menu1_block"],[id="menu2_block"],
+        [id="menu3_block"],[id="menu4_block"]{
+            margin:80px 0;
+        }
+
+
+
+
+                
+        [id="menu_intro"]{
+            font-size:60px;
+            margin-left:200px;
+            letter-spacing:6px;
+        }
+
+
+
+                
+
+        [id="meal"]{
+            letter-spacing:4px;
+            margin-bottom:20px;
+        }
+        [id="ingredient"]{
+            font-size:23px;
+            color:gray;
+        }
+
+
+}
+
+
+
+
+ 
+[id="contact_block"]{
+    margin-left:300px;
+    width:1600px;
+
+
+    
+        [id="contact_title"]{
+            font-size:40px;
+            letter-spacing:8px;
+        }
+
+
+        [id="contact_intro1"]{
+            font-size:20px;
+
+        }
+
+
+        [id="contact_address"]{
+            font-size:25px;
+            color:rgb(76, 141, 143);
+        }
+
+
+
+                
+        [id="contact_intro2"]{
+            @extend [id="contact_intro1"];
+        }
+}
+
+
+
+[id="input_name"],[id="input_number_people"],
+[id="input_appoinment_date"],[id="input_message"]{
+    height:80px;
+    font-size:22px;
+    padding:0 20px;
+    border:none;
+    border-bottom:0.5px solid rgba(0, 0, 0, 0.295);
+}
+
+
+[id="send_ms_butt"]{
+    @include block_color1;
+    background-color:rgba(221, 213, 213, 0.644);
+    &:hover{
+        @include hover1;
+    }
+    font-size:20px;
+    border:none;
+    padding:20px;
+
+}
+
+@import "media_queries_tablet";
