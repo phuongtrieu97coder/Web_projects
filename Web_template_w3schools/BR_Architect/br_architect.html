@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+
+
+        <meta charset="UTF-8">
+
+
+        <meta name="keywords"  content="HTML,CSS,SASS,JAVASCRIPT,BOOSTRAP,W3CSS,JQUERY,ANGULAR JS,REACT JS, PHP, MYSQL">
+
+
+        <meta name="description"   content="THIS IS PHUONG ARCHITECTS WEBSITE">
+
+        <meta name="author"   content="PHUONG TRIEU">
+
+
+        <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+
+
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+   
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+        
+
+
+
+        <title>PHUONG BR ARCHITECT</title>
+
+        <link rel="shortcut icon" href="image/html_logo.png" type="image/png">
+
+
+
+        <link rel="stylesheet" type="text/css" href="Sass_Css_file/test1.css">
+
+
+
+
+
+
+
+        <style>
+
+        </style>
+
+    </head>
+
+
+
+    <body>
+
+
+        <header>
+            <nav id="navbar_top">
+                <a id="button1">Architects</a>
+
+                <span class="w3-right">
+                    <a id="button2">Projects</a>
+                    <a id="button3">About</a>
+                    <a id="button4">Contact</a>
+                </span>
+            </nav>
+        </header>
+
+
+
+        <main>
+
+
+
+            <article id="intro_block" class="w3-display-container">
+                <img src="https://www.w3schools.com/w3images/architect.jpg" width="100%" height="1000px">
+                <p id="intro_logo" class="w3-display-middle">Architects</p>
+            </article>
+
+
+            <br><br><br>
+
+
+
+            <section>
+
+                <p style="font-size:30px;margin-left:30px">Projects</p>
+
+
+                <hr>
+
+
+                <br><br>
+
+
+                <div class="card-group" id="project_block">
+
+
+                    <div class="card" id="project1">
+                          <img src="https://www.w3schools.com/w3images/house5.jpg" width="100%">
+                          <p class="card-img-overlay bg-dark text-white" style="font-size:30px;width:260px;height:60px;padding:10px" >Summer Hourse</p>
+                    </div>
+
+                    <div class="card"  id="project2">
+                          <img src="https://www.w3schools.com/w3images/house2.jpg"  width="100%">
+                          <p class="card-img-overlay bg-dark text-white" style="font-size:30px;width:200px;height:60px;padding:10px" >Brick Hourse</p>
+                    </div>
+
+                    <div class="card"  id="project3">
+                          <img src="https://www.w3schools.com/w3images/house3.jpg"  width="100%">
+                          <p class="card-img-overlay bg-dark text-white" style="font-size:30px;width:180px;height:60px;padding:10px" >Renovated</p>
+                    </div>
+
+                    <div class="card"  id="project4">
+                          <img src="https://www.w3schools.com/w3images/house4.jpg"  width="100%">
+                          <p class="card-img-overlay bg-dark text-white" style="font-size:30px;width:180px;height:60px;padding:10px" >Barn House</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <script>
+                    
+
+                    function func1(x){
+                        var a = document.getElementById("project_block");
+                        if(x.matches){
+                            a.className="card-columns";
+                        } else{
+                            a.className="card-group";
+                        }
+                    }
+                    var x = window.matchMedia("(max-width:1000px)");
+                    func1(x);
+                    x.addListener(func1);
+                </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div class="card-group" id="project_block2">
+
+
+                    <div class="card" id="project5">
+                          <img src="https://www.w3schools.com/w3images/house2.jpg" width="100%">
+                          <p class="card-img-overlay bg-dark text-white" style="font-size:30px;width:260px;height:60px;padding:10px" >Summer Hourse</p>
+                    </div>
+
+                    <div class="card"  id="project6">
+                          <img src="https://www.w3schools.com/w3images/house5.jpg"  width="100%">
+                          <p class="card-img-overlay bg-dark text-white" style="font-size:30px;width:200px;height:60px;padding:10px" >Brick Hourse</p>
+                    </div>
+
+                    <div class="card"  id="project7">
+                          <img src="https://www.w3schools.com/w3images/house4.jpg"  width="100%">
+                          <p class="card-img-overlay bg-dark text-white" style="font-size:30px;width:180px;height:60px;padding:10px" >Renovated</p>
+                    </div>
+
+                    <div class="card"  id="project8">
+                          <img src="https://www.w3schools.com/w3images/house3.jpg"  width="100%">
+                          <p class="card-img-overlay bg-dark text-white" style="font-size:30px;width:180px;height:60px;padding:10px" >Barn House</p>
+                    </div>
+
+
+
+                </div>
+
+
+
+                <script>
+                    
+
+                    function func2(x2){
+                        var a2 = document.getElementById("project_block2");
+                        if(x2.matches){
+                            a2.className="card-columns";
+                        } else{
+                            a2.className="card-group";
+                        }
+                    }
+                    var x2 = window.matchMedia("(max-width:1000px)");
+                    func2(x2);
+                    x2.addListener(func2);
+                </script>
+
+
+
+
+
+
+
+
+            </section>
+
+
+
+            <br><br><br>
+
+            <section style="margin:20px;">
+
+                <p style="font-size:30px">About</p>
+
+
+                <br>
+
+                <hr>
+
+
+                <br>
+
+                <p style="font-size:25px;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+                    ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum consectetur 
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                     ea commodo consequat.
+                </p>
+
+
+
+
+                <br><br>
+
+                <div class="card-group" id="employee_block">
+
+
+
+
+                    <div class="card" id="employee1">
+                        <img src="https://www.w3schools.com/w3images/team2.jpg" width="100%">
+                        <br>
+                        <div class="card-body">
+                            <h2>John Doe</h2>
+                            <br>
+                            <h3 style="font-size:23px;color:rgba(128, 128, 128, 0.726);">CEO & Founder</h3>
+                            <br>
+                            <p style="font-size:25px">
+                                Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+
+                            </p><br>
+
+                            <button class="w3-block" id="contact_butt">Contact</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <div class="card" id="employee2">
+                        <img src="https://www.w3schools.com/w3images/team1.jpg" width="100%">
+                        <br>
+                        <div class="card-body">
+                            <h2>Jane Doe</h2><br>
+                            <h3 style="font-size:23px;color:rgba(128, 128, 128, 0.726);">Architect</h3><br>
+                            <p style="font-size:25px">
+                                Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+
+                            </p><br>
+
+                            <button class="w3-block" id="contact_butt">Contact</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card" id="employee3">
+                        <img src="https://www.w3schools.com/w3images/team3.jpg" width="100%">
+                        <br>
+                        <div class="card-body">
+                            <h2>Mike Ross</h2><br>
+                            <h3 style="font-size:23px;color:rgba(128, 128, 128, 0.726);">Architect</h3><br>
+                            <p style="font-size:25px">
+                                Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+
+                            </p>
+                            <br>
+
+                            <button class="w3-block" id="contact_butt">Contact</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="card" id="employee4">
+                        <img src="https://www.w3schools.com/w3images/team4.jpg" width="100%">
+                        <br>
+                        <div class="card-body">
+                            <h2>Dan Star</h2><br>
+                            <h3 style="font-size:23px;color:rgba(128, 128, 128, 0.726);">Architect</h3><br>
+                            <p style="font-size:25px">
+                                Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+
+                            </p><br>
+
+                            <button class="w3-block" id="contact_butt">Contact</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </section>
+
+
+
+            <script>
+                    
+
+                function func3(x3){
+                    var a3 = document.getElementById("employee_block");
+                    if(x3.matches){
+                        a3.className="card-columns";
+                    } else{
+                        a3.className="card-group";
+                    }
+                }
+                var x3 = window.matchMedia("(max-width:1000px)");
+                func1(x3);
+                x3.addListener(func3);
+            </script>
+
+
+
+            <br><br><br>
+
+
+
+            <summary style="margin:40px;">
+                <p style="font-size:30px">Contact</p>
+
+
+                <br>
+
+                <hr>
+
+
+                <br>
+
+                <p style="font-size:25px">Lets get in touch and talk about your next project.</p>
+                <br>
+
+
+                <input class="w3-block" type="text" placeholder="Name" style="font-size:20px;padding:20px">
+                <br>
+
+                
+                <input class="w3-block"  type="email" placeholder="Email" style="font-size:20px;padding:20px">
+                <br>
+
+                <input class="w3-block"  type="text" placeholder="Subject" style="font-size:20px;padding:20px">
+                <br>
+
+                <input class="w3-block"  type="text" placeholder="Comment" style="font-size:20px;padding:20px">
+                <br><br>
+
+                <button class='w3-btn w3-ripple w3-black w3-hover-gray w3-hover-text-white' style="font-size:20px;padding:20px">SEND MESSAGE</button>
+
+
+
+                <br>
+
+                <br>
+                <br>
+
+
+                <img src="https://www.w3schools.com/w3images/map.jpg" width="100%" height="1200px">
+
+            </summary>
+
+        </main>
+
+    </body>
+
+
+
+    <footer class="bg-dark" style="height:80px">
+
+        <p style="text-align:center;font-size:30px;color:white;padding-top:20px">Power by <a style="text-decoration:underline">w3.css</a></p>
+    </footer>
+
+
+
+
+</html>
