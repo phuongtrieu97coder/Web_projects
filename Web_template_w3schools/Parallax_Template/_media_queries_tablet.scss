@@ -1,0 +1,48 @@
+@media screen and (max-width:800px){
+    [id="nav2_top"]{
+        display:block;
+        
+    }
+    [id="nav1_top"]{
+        display:none;
+    }
+
+    
+    [id="contact_img_block"]{
+        width:100%;
+    }
+
+    [id="input_name"],[id="input_email"],[id="input_message"]{
+        display:block;
+        width:100%;
+    }
+
+    
+
+}
+
+
+
+
+@media screen and (max-width:600px){
+    [id="nav2_top"]{
+        display:block;
+        
+    }
+    [id="nav1_top"]{
+        display:none;
+    }
+
+    
+    [id="contact_img_block"]{
+        width:100%;
+    }
+
+    [id="input_name"],[id="input_email"],[id="input_message"]{
+        display:block;
+        width:100%;
+    }
+
+    
+
+}

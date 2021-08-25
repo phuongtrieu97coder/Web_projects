@@ -1,0 +1,190 @@
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  color: gray;
+}
+
+[id="nav1_top"] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 3;
+}
+
+[id="nav1_top"] button {
+  font-size: 20px;
+}
+
+[id="nav1_top"] button a {
+  text-decoration: none;
+  color: gray;
+}
+
+[id="nav2_top"] {
+  background-color: rgba(255, 255, 255, 0);
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+[id="nav2_top"] button {
+  font-size: 20px;
+}
+
+[id="nav2_top"] button a {
+  text-decoration: none;
+  color: gray;
+}
+
+[id="nav2_top"] [id="dropdown_content1"] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+[id="nav2_top"] [id="dropdown_content1"] button {
+  color: black;
+}
+
+[id="nav2_top"] [id="dropdown_content1"] button a {
+  color: black;
+}
+
+[id="nav2_top"] [id="dropdown_content1"] button:hover {
+  background-color: #beb6b6;
+}
+
+p, em {
+  font-size: 20px;
+  color: gray;
+}
+
+[id="about1"] [id="about1_1"] {
+  text-align: center;
+  margin-top: 40px;
+}
+
+[id="author1"] [id="author1_intro1"] {
+  width: 400px;
+  margin-right: 60px;
+  text-align: center;
+}
+
+[id="author1"] [id="author1_intro1"] [id="author1_intro1_title"] {
+  font-size: 20px;
+}
+
+[id="author1"] [id="author1_intro2"] {
+  width: 460px;
+}
+
+[id="project_info_block"] {
+  background-color: black;
+  height: 200px;
+  opacity: 0.7;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+}
+
+[id="project_info_block"] h2, [id="project_info_block"] p {
+  color: white;
+}
+
+[id="project_info_block"] [id="partner_intro"], [id="project_info_block"] [id="project_done_intro"],
+[id="project_info_block"] [id="happy_client_intro"], [id="project_info_block"] [id="meeting_intro"] {
+  text-align: center;
+  padding-top: 50px;
+}
+
+[id="overlay1"] {
+  display: none;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+
+[id="modal1"] {
+  display: none;
+  position: fixed;
+  top: 300px;
+  left: 800px;
+  width: 500px;
+  z-index: 5;
+  -webkit-animation-name: modal1;
+          animation-name: modal1;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes modal1 {
+  from {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  to {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+  }
+}
+
+@keyframes modal1 {
+  from {
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  to {
+    -webkit-transform: scale(2, 2);
+            transform: scale(2, 2);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  [id="nav2_top"] {
+    display: block;
+  }
+  [id="nav1_top"] {
+    display: none;
+  }
+  [id="contact_img_block"] {
+    width: 100%;
+  }
+  [id="input_name"], [id="input_email"], [id="input_message"] {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  [id="nav2_top"] {
+    display: block;
+  }
+  [id="nav1_top"] {
+    display: none;
+  }
+  [id="contact_img_block"] {
+    width: 100%;
+  }
+  [id="input_name"], [id="input_email"], [id="input_message"] {
+    display: block;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=test1.css.map */

@@ -1,0 +1,144 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;color:gray;}
+
+[id="nav1_top"]{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0);
+     z-index:3;
+    button{
+   font-size:20px;
+
+     a{
+         text-decoration:none;
+         color:gray;
+     }
+    }
+
+}
+
+[id="nav2_top"]{
+    background-color:rgba(255, 255, 255, 0);
+    display:none;
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+    z-index:3;
+    button{
+   font-size:20px;
+     a{
+         text-decoration:none;
+         color:gray;
+     }
+    }
+
+    [id="dropdown_content1"]{
+        position:fixed;
+        left:0;
+        right:0;
+        width:100%;
+        button{
+             color:black;
+             a{
+                 color:black;
+             }
+            &:hover{
+                background-color:rgb(190, 182, 182);
+            }
+           
+        }
+    }
+
+    
+}
+
+p,em{
+    font-size:20px;
+    color:gray;
+}
+
+[id="about1"]{
+
+     
+    [id="about1_1"]{
+        text-align:center;
+        margin-top:40px;
+    }
+      
+}
+
+
+
+[id="author1"]{
+    [id="author1_intro1"]{
+        width:400px;
+        margin-right:60px;
+        text-align:center;
+        [id="author1_intro1_title"]{
+            
+            font-size:20px;
+        }
+    }
+    [id="author1_intro2"]{
+        width:460px;
+    }
+}
+
+
+
+[id="project_info_block"]{
+    background-color:black;
+    height:200px;
+    opacity:0.7;
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+    h2,p{
+        color:white;
+    }
+
+   
+
+
+    [id="partner_intro"], [id="project_done_intro"],
+    [id="happy_client_intro"], [id="meeting_intro"]{
+        
+            text-align:center;
+            padding-top:50px;
+   
+    }
+}
+
+
+
+[id="overlay1"]{
+    display:none;
+    background-color:black;
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    z-index:4;
+}
+
+[id="modal1"]{
+    display:none;
+    position:fixed;
+    top:300px;
+    left:800px;
+    width:500px;
+    z-index:5;
+    animation-name:modal1;
+    animation-duration:1s;
+    animation-iteration-count:1;
+    animation-fill-mode:both;
+}
+
+@import 'animation';
+
+@import "media_queries_tablet";
