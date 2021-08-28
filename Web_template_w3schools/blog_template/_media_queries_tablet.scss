@@ -1,0 +1,18 @@
+@media screen and (max-width:800px){
+    [id="main_content_container"]{
+        display:grid;
+        grid-template-columns:750px;
+        grid-template-rows:auto auto;
+    }
+
+    
+}
+@media screen and (max-width:600px){
+    [id="main_content_container"]{
+        display:grid;
+        grid-template-columns:550px;
+        grid-template-rows:auto auto;
+    }
+
+    
+}

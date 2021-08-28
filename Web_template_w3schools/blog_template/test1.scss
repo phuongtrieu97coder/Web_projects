@@ -1,0 +1,128 @@
+::selection{
+    background-color:blue;
+    color:yellow;
+}
+
+body{
+    background-color:rgba(182, 178, 178, 0.151);
+}
+
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+[id="intro_top"]{
+    text-align:center;
+    margin-top:50px;
+
+    p span{
+        font-size:12px;
+        font-weight:400;
+    }
+}
+
+
+[id="main_content_container"]{
+    display:grid;
+    grid-template-columns:900px 450px;
+
+   
+    [id="main_block1"]{
+       
+        margin:0 0 30px 50px;
+
+        [id="main_block1_1"]{
+            
+            box-shadow:1px 1px 10px 3px gray;
+        }
+
+        [id="main_block1_2"]{
+            @extend [id="main_block1_1"];
+        }
+
+        [id="main_block1_1_content"]{
+            padding:20px;
+            background-color:white;
+        }
+
+        [id="main_block1_2_content"]{
+            @extend [id="main_block1_1_content"];
+        }
+
+        [id="read_more_butt"]{
+            padding:10px 20px;
+            background-color:white;
+            border:1px solid rgba(128, 128, 128, 0.486);
+            &:hover{
+                background-color:rgb(207, 199, 199);
+            }
+        }
+    }
+    
+    [id="main_block2"]{
+       
+        margin-bottom:30px;
+        margin-left:50px;
+
+
+        [id="main_block2_1"]{
+            
+            box-shadow:1px 1px 10px 3px gray;
+
+            [id="main_block2_1_content"]{
+                padding:20px;
+                background-color:white;
+            }
+        }
+
+       
+
+        [ id="main_block2_2"]{
+
+            @extend [id="main_block2_1"];
+
+            [id="main_block2_2_1"]{
+               padding-top:20px;
+               padding-left:20px;
+               
+               p{
+                   font-size:18px;
+               }
+            
+            }
+
+
+            [id="main_block2_2_2"]{
+                padding-top:10px;
+                padding-left:20px;
+                border-bottom:1px solid black;
+                background-color:white;
+
+               
+            }
+
+            [id="main_block2_2_3"]{
+                @extend  [id="main_block2_2_2"];
+            }
+            [id="main_block2_2_4"]{
+                @extend  [id="main_block2_2_2"];
+            }
+            [id="main_block2_2_5"]{
+                @extend  [id="main_block2_2_2"];
+            }
+
+          
+        }
+
+
+       
+
+
+        [ id="main_block2_3"]{
+
+            @extend [id="main_block2_1"];
+        }
+    }
+}
+
+
+@import "media_queries_tablet";
+
