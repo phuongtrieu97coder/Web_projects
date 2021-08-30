@@ -1,0 +1,152 @@
+::selection{
+    background-color:blue;
+    color:red;
+}
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+
+body main{
+    margin:0 150px;
+}
+
+@mixin grid_style0{
+    display:grid;
+    grid-template-columns:auto auto auto;
+}
+
+#navtop1{
+    position:fixed;
+    top:0;
+    right:150px;
+    left:150px;
+    background-color:white;
+    z-index:2;
+
+    @include grid_style0;
+   
+
+    [id="menu_butt"]{
+        border:none;background-color:white;
+        font-size:20px;
+        padding:10px 10px;
+        &:hover{
+            background-color:rgba(189, 184, 184, 0.514);
+        }
+    }
+
+    [id="title_web"]{
+        font-size:20px;
+        padding-top:10px;
+    }
+
+
+    [id="mail_intro"]{
+        float:right;
+        font-size:20px;
+        padding-top:10px;
+    }
+
+   
+}
+
+
+[id="sidebar1"]{
+    display:none;
+    position:fixed;
+    background-color:white;
+    box-shadow:1px 0 3px 1px gray;
+    top:0;
+    left:0;
+    z-index:4;
+    width:500px;
+    height:100%;
+   
+    button{
+        display:block;
+        width:100%;
+        font-size:25px;
+        text-align:left;
+        border:none;
+        padding:20px;
+        background-color:white;
+        &:hover{
+            background-color:rgba(211, 205, 205, 0.514);
+        }
+    }
+}
+
+
+
+@mixin grid_style{
+    display:grid;
+    grid-template-columns:auto auto auto auto;
+}
+
+[id="menu_block"]{
+   
+@include  grid_style;
+
+    [id*="menu_"]{
+        margin:10px;
+    }
+
+    [id="wercvb"]{
+        font-size:18px;
+        text-align:center;
+        text-shadow:0.2px 0 0 black;
+    }
+
+    [id="wercvionhjjhk"]{
+        font-size:14px;
+    }
+}
+
+[id="menu_block2"]{
+    @extend [id="menu_block"];
+}
+
+
+[id="pagination1"]{
+      align-items:center;
+      justify-content:center;
+
+    li a {
+         border:none;
+         color:black;
+         cursor:pointer;
+         &:hover{
+             background-color:black;
+             color:white;
+         }
+    }
+}
+
+[id="footer_block"]{
+    display:grid;
+    grid-template-columns:350px 350px 350px;
+
+    [id="footer_block1"]{
+        margin:20px;
+    }
+
+    [id="footer_block2"]{
+        margin-right:90px;
+        
+    }
+
+    [id="footer_block2_2"],[id="footer_block2_3"]{
+        padding-top:20px;
+        padding-left:20px;
+        padding-bottom:5px;
+        &:hover{
+            background-color:rgba(189, 182, 182, 0.781);
+        }
+        img{
+            float:left;
+            margin-right:20px;
+        }
+    }
+}
+
+
+@import  "media_queries_tablet";
