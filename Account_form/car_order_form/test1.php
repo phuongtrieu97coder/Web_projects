@@ -23,7 +23,7 @@
      
 
 
-     <link rel="stylesheet" type='text/css' href="Sass_Css_file/test1.css">
+     <link rel="stylesheet" type='text/css' href="test1.css">
            
   
 
@@ -123,7 +123,7 @@
 
 
 
-      <script src="Javascript_file/test1.js"></script>
+      <script src="test1.js"></script>
  
    
        
