@@ -66,41 +66,41 @@ var get_car_name = document.getElementById("car_name_intro").innerHTML;
 
 
 if(get_car_name == car_collection_obj.car_name[0]){
-        document.getElementById("car_img_item").src = "image/car/mclarenspeedtail.jpg";
+        document.getElementById("car_img_item").src = "img/car/mclarenspeedtail.jpg";
         document.getElementById("car_price_intro").innerHTML = car_collection_obj.car_price[0];
         document.getElementById("order_code").innerHTML = car_collection2_obj.car_id[0];
     } 
   else if(get_car_name == car_collection_obj.car_name[1]){
-        document.getElementById("car_img_item").src = "image/car/ferrari_laFerrari_Aperta.jpg";
+        document.getElementById("car_img_item").src = "img/car/ferrari_laFerrari_Aperta.jpg";
         document.getElementById("car_price_intro").innerHTML = car_collection_obj.car_price[1];
         document.getElementById("order_code").innerHTML = car_collection2_obj.car_id[1];
     } 
   else if(get_car_name == car_collection_obj.car_name[2]){
-        document.getElementById("car_img_item").src = "image/car/bugatti_chiron_pur_sport.jpg";
+        document.getElementById("car_img_item").src = "img/car/bugatti_chiron_pur_sport.jpg";
         document.getElementById("car_price_intro").innerHTML = car_collection_obj.car_price[2];
         document.getElementById("order_code").innerHTML = car_collection2_obj.car_id[2];
     } 
   else if(get_car_name == car_collection_obj.car_name[3]){
-        document.getElementById("car_img_item").src = "image/car/2020_Pagani_Huayra_Roadster_BC.jpg";
+        document.getElementById("car_img_item").src = "img/car/2020_Pagani_Huayra_Roadster_BC.jpg";
         document.getElementById("car_price_intro").innerHTML = car_collection_obj.car_price[3];
         document.getElementById("order_code").innerHTML = car_collection2_obj.car_id[3];
     } 
   else if(get_car_name == car_collection_obj.car_name[4]){
-        document.getElementById("car_img_item").src = "image/car/lamborghini_sian.jpg";
+        document.getElementById("car_img_item").src = "img/car/lamborghini_sian.jpg";
         document.getElementById("car_price_intro").innerHTML = car_collection_obj.car_price[4];
         document.getElementById("order_code").innerHTML = car_collection2_obj.car_id[4];
     } 
   else if(get_car_name == car_collection_obj.car_name[5]){
-        document.getElementById("car_img_item").src = "image/car/lamborghini_veneno.jpg";
+        document.getElementById("car_img_item").src = "img/car/lamborghini_veneno.jpg";
         document.getElementById("car_price_intro").innerHTML = car_collection_obj.car_price[5];
         document.getElementById("order_code").innerHTML = car_collection2_obj.car_id[5];
     } 
   else if(get_car_name == car_collection_obj.car_name[6]){
-        document.getElementById("car_img_item").src = "image/car/bugattilavoiturenoire.jpg";
+        document.getElementById("car_img_item").src = "img/car/bugattilavoiturenoire.jpg";
         document.getElementById("car_price_intro").innerHTML = car_collection_obj.car_price[6];
         document.getElementById("order_code").innerHTML = car_collection2_obj.car_id[6];
     } else {
-        document.getElementById("car_img_item").src = "image/car/car_icon.png";
+        document.getElementById("car_img_item").src = "img/car/car_icon.png";
         document.getElementById("car_name_intro").innerHTML = "CAR NAME";
         document.getElementById("car_price_intro").innerHTML = "CAR PRICE"; 
 }
