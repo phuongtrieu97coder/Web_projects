@@ -132,7 +132,7 @@
  
    
 
-      <script src="Javascript_file/test2.js"></script>
+      <script src="test2.js"></script>
        
 
 
