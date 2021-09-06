@@ -198,7 +198,7 @@
                }
            }
        }
-       xml.open("GET","Json_file/test1.json",true);
+       xml.open("GET","test1.json",true);
        xml.send();
         </script>
 
