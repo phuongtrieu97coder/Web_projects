@@ -1,0 +1,6 @@
+{
+    "language":{
+        "_front_end":["html","css","sass","javascript"],
+        "_back_end":["php","mysql","nodejs","asp"]
+    }
+}
