@@ -1,0 +1,65 @@
+@media screen and (max-width:1200px) and (min-width:1000px){
+    [id="main_content_block"]{
+        display:grid;
+        grid-template-columns:700px 400px;
+    }
+}
+
+@media screen and (max-width:1000px) and (min-width:800px){
+    [id="main_content_block"]{
+        display:grid;
+        grid-template-columns:500px 400px;
+    }
+}
+
+
+@media screen and (max-width:800px) and (min-width:400px){
+    [id="main_content_block"]{
+        display:grid;
+        grid-template-columns:100%;
+
+        [id="main_content_block2"]{
+
+
+            [id="main_content_block2_5"]{
+                [id="inspire_people"]{
+                    padding:10px;
+                    display:grid;
+                    grid-template-columns:auto;
+    
+    
+                    [id="inspire_people1"]
+                  
+                    {
+                        width:100%;
+                        height:400px;
+                       
+                        
+                    }
+    
+                    [id="inspire_people2"]{
+                        width:100%;
+                        height:400px;
+                        
+                        
+                    }
+    
+                    [id="inspire_people3"]{
+                        width:100%;
+                        height:400px;
+                        
+                        
+                    }
+    
+                    [id="inspire_people4"]{
+                        width:100%;
+                        height:400px;
+                        
+                       
+                    }
+                }
+            }
+        }
+        
+    }
+}
