@@ -177,6 +177,13 @@
                     style="width:100%;">SAVE INFORMATION</button>
 
                     <br><br>
+                 
+                 
+                 <button class="w3-button w3-ripple w3-text-white w3-blue w3-hover-red" type="button"
+                    title="Remove information button" name="save_info_butt" onclick="remove_info()"
+                    style="width:100%;">REMOVE INFORMATION</button>
+
+                    <br><br>
   
   
   
@@ -314,6 +321,20 @@
                                  localStorage.setItem("user_password",document.getElementById("pass_input").value);
                                  localStorage.setItem("user_dob",document.getElementById("dob_input").value);
                                  localStorage.setItem("user_feedback",document.getElementById("feedback_input").value);
+                          }else{
+                                 alert("Sorry. Your browser does not support Web Storage!!!");
+                          }
+                   }
+             
+             
+               function remove_info(){
+                     if(typeof(Storage)!=="undefined"){
+                                 localStorage.removeItem("user_name");
+                                 localStorage.removeItem("user_age");
+                                 localStorage.removeItem("user_email");
+                                 localStorage.removeItem("user_password");
+                                 localStorage.removeItem("user_dob");
+                                 localStorage.removeItem("user_feedback");
                           }else{
                                  alert("Sorry. Your browser does not support Web Storage!!!");
                           }
