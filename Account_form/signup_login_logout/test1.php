@@ -164,7 +164,7 @@
              style="border:none;position:absolute;top:0;right:0;font-size:40px">&times;</button>
 
                <div class="w3-center">
-                      <img src="image/avatar/avatar1.png" width="80px" height="80px" alt="avatar1">
+                      <img src="image/avatar1.png" width="80px" height="80px" alt="avatar1">
                       <b style="font-size:40px;color:aqua;">REGISTER</b>
                </div>
               
@@ -227,7 +227,7 @@
              style="border:none;position:absolute;top:0;right:0;font-size:40px">&times;</button>
 
                <div class="w3-center">
-                      <img src="image/avatar/avatar1.png" width="80px" height="80px" alt="avatar1">
+                      <img src="image/avatar1.png" width="80px" height="80px" alt="avatar1">
                       <b style="font-size:40px;color:aqua;">LOG-IN</b>
                </div>
               
