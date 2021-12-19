@@ -1,0 +1,33 @@
+using PHP,MySQL,Javascript,html,css , and at least 3 document to make a website that  
+
+Lead users to three different page 
+
+One page has login ,sign up button with login, and sign up form 
+
+a page for thank you user because they have registered information, an another page 
+
+That show the information of user and main content  
+
+ 
+
+They are two different forms, user needs to register information before accessing to the third page 
+
+After they registered information, they will see a page that thanks them 
+
+Now when they click the button to return to the first page, this page always lead users to page 3 
+
+ 
+
+On page 3 we have a button call log-out and a button has the name of user  
+
+If user click log-out, all local storage information will be removed and returned to the first page 
+
+If user click the button has their name, a form will appear show them their information that they have registered 
+
+ 
+
+ 
+
+This project should use with mySQL to store information because when the local storage information has remove, then the user can not log-in anymore. They have to register again instead. 
+
+On the other hand, if local storage is exists, then the user can not come back to the first page 
