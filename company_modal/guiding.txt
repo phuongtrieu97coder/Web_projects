@@ -1,0 +1,41 @@
+ 
+
+ 
+
+ 
+
+In this example, I have a button to open the modal 
+
+ 
+
+When the modal open, it will display on the screen+ make appear overlay outside 
+
+ 
+
+ 
+
+When I click the overlay area, the modal will disappear 
+
+ 
+
+ 
+
+When I click the close button, the modal will disappear 
+
+ 
+
+This modal has 3 areas includes one for the poster of each company, one for the navbar with each button represent each company , and the last one is for the content intro of each company 
+
+ 
+
+If I click each button, the poster and the intro content will change to display exactly what kind of company it is 
+
+ 
+
+ 
+
+ 
+
+This project uses HTML,CSS, 
+
+BOOTSTRAP, and JavaScript 
