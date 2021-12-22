@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+       <head>
+              <meta charset="UTF-8">
+
+
+              <meta name="keywords"  content="HTML,CSS,JAVASCRIPT,BOOSTRAP,W3CSS,
+              SASS,JQUERY,ANGULAR JS, REACT JS, PHP, MYSQL, NODE.JS, ASP.NET">
+
+
+              <meta name="description"   content="THIS IS TEMPLATE FASHION BLOG">
+
+
+              <meta name="author"   content="PHUONG.TRIEU">
+
+
+
+              <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+
+
+
+
+              <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+              <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+
+
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              
+              
+              <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+              
+
+
+
+
+
+              <link rel="shortcut icon" href="image/html_logo.png" type="image/x-icon">
+
+
+              <title>PHUONG WEBSITE</title>
+
+
+
+              <link rel="stylesheet"  type="text/css" href="test1.css">
+
+
+
+
+              <style>
+[id="mod1"]{
+       width:600px;
+       padding:20px;
+       position:fixed;
+       top:50px;
+       left:350px;
+}
+
+
+[id="img2_block"],[id="img3_block"]{
+       display:none;
+}
+
+         
+              </style>
+       </head>
+
+
+
+
+       <body>
+
+    
+          <header>
+            
+       
+
+          </header>
+
+
+         
+       
+
+
+           
+            
+          <main>
+
+
+          <button id="butt0" title="button0" type="button" name="butt0"
+               class="btn btn-warning text-white w3-hover-blue" data-toggle="modal" data-target="#mod1">Open Modal
+          </button>
+
+
+
+          <div id="mod1" class="modal">
+                 <div class="modal-dialog">
+                        <div class="modal-content">
+                        <button id="butt0_1" title="button0_1" type="button" name="butt0_1"
+                                   class="btn btn-danger text-white w3-hover-blue" data-dismiss="modal"
+                                  style="position:absolute;top:0;right:0;z-index:2;" >&times;
+                        </button>
+
+
+                       
+                               <div id="img1_block" class="carousel">
+                                    <img id="img1" src="image/company1.jpg" alt="company1" width="100%" height="300px">
+
+                                    <h1 class="carousel-caption text-white">TPG COMPANY</h1>
+                               </div>
+                              
+                              
+                               <div id="img2_block" class="carousel">
+                                   <img id="img2" src="image/company2.jpg" alt="company2" width="100%" height="300px">
+                                   <h1 class="carousel-caption text-white">HTR COMPANY</h1>
+                               </div>
+                              
+
+                               <div id="img3_block" class="carousel">
+                                  <img id="img3" src="image/company3.jpg" alt="company3" width="100%" height="300px">
+                                  <h1 class="carousel-caption text-white">TRPH COMPANY</h1>
+                               </div>
+                               
+                        
+                        
+
+
+                        <nav class="nav nav-pills bg-dark" style="width:100%;">
+               <a id="butt1" title="button1" type="button" name="butt1"
+               class="btn text-white w3-hover-blue nav-link active" data-toggle="pill" href="#tab1" onclick="open_img('im1')">TPG CORP</a>
+
+
+               <a id="butt2" title="button2" type="button" name="butt2"
+               class="btn text-white w3-hover-blue nav-link" data-toggle="pill" href="#tab2" onclick="open_img('im2')">HTR CORP</a>
+
+
+               <a id="butt3" title="button3" type="button" name="butt3"
+               class="btn text-white w3-hover-blue nav-link" data-toggle="pill" href="#tab3" onclick="open_img('im3')">TRPH CORP</a>
+        </nav>
+
+
+        <div class="tab-content">
+               <div class="tab-pane active" id="tab1" style="border:2px solid green;padding:20px;">
+                       <h1 class="text-success">TPG Company</h1>
+                       <p>CEO T.H.Phuong</p>
+               </div>
+               <div class="tab-pane fade" id="tab2" style="border:2px solid blue;padding:20px;">
+                            <h1 class="text-primary">HTR Company</h1>
+                            <p>CEO T.H.Phuong</p>
+               </div>
+               <div class="tab-pane fade" id="tab3" style="border:2px solid purple;padding:20px;">
+                           <h1 class="w3-text-purple">TRPH Company</h1>
+                            <p>CEO T.H.Phuong</p>
+               </div>
+        </div>
+
+       
+
+
+                        </div>
+                 </div>
+          </div>
+       
+        <script>
+     var im1 = document.getElementById("img1_block");
+     var im2 = document.getElementById("img2_block");
+     var im3 = document.getElementById("img3_block");
+
+     function open_img(a){
+        if(a == "im1"){
+               im1.style.display = "block";
+               im2.style.display = "none";
+               im3.style.display = "none";
+        }else if(a == "im2"){
+              im2.style.display = "block";
+              im1.style.display = "none";
+              im3.style.display = "none";
+        }else if(a == "im3"){
+              im3.style.display = "block";
+              im1.style.display = "none";
+              im2.style.display = "none";
+        }else{
+              im1.style.display = "block";
+        }
+     }
+       
+              
+              
+        </script>
+
+          </main>
+
+
+        
+          <!--$_COOKIE
+       
+       
+       
+       
+       -->
+       
+       
+       
+       </body>
+
+
+
+
+
+       <footer>
+
+       </footer>
+
+
+
+</html>
