@@ -1,47 +1,312 @@
-  <video id="video1" width="100%" height="300px" controls muted autoplay
-          onended="func1()">
-                 <source  src="video/bugatti_chiron.mp4" type="video/mp4">
-                 Sorry, your video is not working!!!
-          </video>
+<!DOCTYPE html>
+<html lang="en">
+
+
+       <head>
+              <meta charset="UTF-8">
+
+
+              <meta name="keywords"  content="HTML,CSS,JAVASCRIPT,BOOSTRAP,W3CSS,
+              SASS,JQUERY,ANGULAR JS, REACT JS, PHP, MYSQL, NODE.JS, ASP.NET">
+
+
+              <meta name="description"   content="THIS IS TEMPLATE FASHION BLOG">
+
+
+              <meta name="author"   content="PHUONG.TRIEU">
+
+
+
+              <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+
+
+
+
+              <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+       
+              <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+
+
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              
+              
+              <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+              
+
+
+
+
+
+              <link rel="shortcut icon" href="image/html_logo.png" type="image/x-icon">
+
+
+              <title>PHUONG WEBSITE</title>
+
+
+
+              <link rel="stylesheet"  type="text/css" href="test1.css">
+
+
+
+
+              <style>
+[id="video1_block"],[id="video2_block"],[id="video3_block"]{
+       position:relative;top:0;
+}                     
+[id="bar1_block"]{
+  border:6px solid white;
+  border-top:6px solid red;
+  border-radius:50%;
+  width: 20px;
+  height: 20px;
+  animation-name:brd1;
+  animation-duration:142s;
+  animation-fill-mode:forwards;
+  animation-delay:none;
+  animation-iteration-count:1;
+  position:absolute;
+  top:270px;
+  left:700px;
+  z-index:1;
+ 
+ 
+}
+
+
+@keyframes brd1 {
+       from{transform:rotate(0);}
+       to{transform:rotate(360deg);}
+}
+
+
+
+[id="bar2_block"]{
+       display:none;
+  border:6px solid white;
+  border-top:6px solid green;
+  border-radius:50%;
+  width: 20px;
+  height: 20px;
+  animation-name:brd2;
+  animation-duration:142s;
+  animation-fill-mode:forwards;
+  animation-delay:none;
+  animation-iteration-count:1;
+  position:absolute;
+  top:270px;
+  left:700px;
+  z-index:1;
+ 
+ 
+ 
+}
+
+
+@keyframes brd2 {
+       from{transform:rotate(0);}
+       to{transform:rotate(360deg);}
+}
+
+
+[id="bar3_block"]{
+       display:none;
+  border:6px solid white;
+  border-top:6px solid blue;
+  border-radius:50%;
+  width: 20px;
+  height: 20px;
+  animation-name:brd3;
+  animation-duration:486s;
+  animation-fill-mode:forwards;
+  animation-delay:none;
+  animation-iteration-count:1;
+  position:absolute;
+  top:270px;
+  left:700px;
+  z-index:1;
+ 
+ 
+ 
+}
+
+
+@keyframes brd3 {
+       from{transform:rotate(0);}
+       to{transform:rotate(360deg);}
+}
+
+
+
+
+/*
+
+
+
+
+*/
+
          
-          <video id="video2" width="100%" height="300px" controls muted autoplay 
-          style="display:none;" onended="func2()">
+              </style>
+       </head>
+
+
+
+
+       <body>
+
+    
+        
+
+       
+          </nav>
+       
+
+          </header>
+
+
+         
+       
+
+
+           
+            
+          <main>
+
+          <div id="video1_block">
+
+              <video id="video1"  width="100%" height="300px" controls muted autoplay
+              onended="func1()" onplay="play_func()">
+                     <source  src="video/bugatti_chiron.mp4" type="video/mp4">
+                     Sorry, your video is not working!!!
+
+                     
+              </video>
+
+
+                <div id="bar1_block"></div>
+          </div>
+         
+         
+
+          <div id="video2_block" style="display:none;">
+          <video id="video2" width="100%" height="300px" controls  muted autoplay 
+           onended="func2()">
                  <source  src="video/Lamborghini_Sian.mp4" type="video/mp4">
                  Sorry, your video is not working!!!
-          </video>
-         
-          <video id="video3" width="100%" height="300px" controls muted autoplay 
-          style="display:none;" onended="func3()">
-                 <source  src="video/Pagani Huayra.mp4" type="video/mp4">
-                 Sorry, your video is not working!!!
+
+                
           </video>
 
+              <div id="bar2_block"></div>
+          </div>
+         
+
+          <div id="video3_block"  style="display:none;">
+
+                     <video id="video3" width="100%" height="300px" controls muted autoplay 
+                     onended="func3()">
+                            <source  src="video/Pagani Huayra.mp4" type="video/mp4">
+                            Sorry, your video is not working!!!
+
+                            
+                     </video>
+
+                   <div id="bar3_block"></div>
+          </div>
+         
+         
+
+
+
+          <br><br>
+
+
+         
+
+         
+
+         
+
+
+
           <script>
+                 var vb1 = document.getElementById("video1_block");
+                 var vb2 = document.getElementById("video2_block");
+                 var vb3 = document.getElementById("video3_block");
                  var v1 = document.getElementById("video1");
                  var v2 = document.getElementById("video2");
                  var v3 = document.getElementById("video3");
+                 var b_b = document.querySelectorAll("#bar1_block")[0];
+                 var b_b2 = document.querySelectorAll("#bar2_block")[0];
+                 var b_b3 = document.querySelectorAll("#bar3_block")[0];
+                 
+                 
+               
+              
+
+             
+
                  function  func1(){
-                     v1.style.display = "none";
-                     v2.style.display = "block";
+                     vb1.style.display = "none";
+                     vb2.style.display = "block";
                      v2.play();
+                     b_b2.style.display = "block";
+                     b_b.style.display = "none";
                  }
                     
 
                  function func2(){
-                     v2.style.display = "none";
-                     v3.style.display = "block";
+                     vb2.style.display = "none";
+                     vb3.style.display = "block";
                      v3.play();
+                     b_b3.style.display = "block";
+                     b_b2.style.display = "none";
                  }
 
                     
 
 
                  function func3(){
-                     v3.style.display = "none";
-                     v1.style.display = "block";
+                     vb3.style.display = "none";
+                     vb1.style.display = "block";
                      v1.play();
+                     b_b.style.display = "block";
+                     b_b3.style.display = "none";
                  }
                     
 
                  
           </script>
+         
+
+
+     
+          </main>
+
+
+        
+          <!--
+       
+       
+       
+       -->
+       
+       
+       
+       </body>
+
+
+
+
+
+       <footer>
+
+       </footer>
+
+
+
+</html>
