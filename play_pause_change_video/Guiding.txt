@@ -1,2 +1,4 @@
 In this project, we can see a autoplay video when we visit this webpage, after this video end, another video will play, after the final video end, it will return to the first video,
 and it will autoplay
+
+While video is playing, a spinning as loader bar appear and the color bar will rotate 360 degree with the duration as same as the duration of each video
