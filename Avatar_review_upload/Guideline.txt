@@ -1,0 +1,22 @@
+In this project, I use HTML,CSS,Bootstrap,W3css,JavaScript,Jquery to handle input file
+in order to upload, update avatar
+
+This project can be used when making an user information page to help user create,change, update avatar
+
+
+First, I have a circle Avatar block contains user avatar and an avatar button.
+If user click the avatar picture=> a block will display show the avatar picture
+
+If user click the avatar button=> a block will display includes 'Upload Avatar from your local folder' button
+, "upload" button, "X" button, a block contains "You Recent Avatar File" title, below is Recent Avatar photo
+
+If user click the "Upload Avatar...." a local folder will appear help user choose any image file to upload,
+after choosing, that image will display inside a block contain "Your Avatar Uploaded File" title, below is
+the image that they just chose
+
+When user click "Upload" button => a progress block will appear showing a progress bar move from left 
+to right with the percent number increase steadily or quickly. After it reach 100%, an alert box will display
+telling us "Successfully uploaded your Avatar!!!" and the main Avatar and Recent Avatar will change.
+
+
+In this project I use localStorage to store image. In the future I will use Database like mySQL to store Image
