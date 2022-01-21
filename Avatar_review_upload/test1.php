@@ -44,15 +44,14 @@
 
 
 
-              <link rel="shortcut icon" href="image/html_logo.png" type="image/x-icon">
+             
 
 
               <title>PHUONG WEBSITE</title>
 
 
 
-              <link rel="stylesheet"  type="text/css" href="test1.css">
-
+          
 
 
 
