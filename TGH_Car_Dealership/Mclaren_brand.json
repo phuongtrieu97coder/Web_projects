@@ -1,0 +1,246 @@
+{
+
+  "Model_collection": {
+
+       "Model1":{
+                             "Name":"Mclaren 600LT Green",
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"204 m/h | 328 km/h",
+
+                                 "Price":["$256,500","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_600LT_green.jpg"
+                           
+                         
+
+
+       },
+   
+   
+
+       "Model2": {
+                             "Name":"Mclaren 620r",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"200 m/h | 322 km/h",
+
+                                 "Price":["$299,000","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_620r.jpg"
+                            
+                           
+
+       },
+
+
+
+
+
+       "Model3": {
+                             "Name":"Mclaren 720S GT3X",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"212 m/h | 341 km/h",
+
+                                 "Price":["$299,000","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_720S_GT3X.jpg"
+                            
+                           
+
+       },
+
+
+
+       "Model4": {
+                             "Name":"Mclaren 600LT",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"204 m/h | 328 km/h",
+
+                                 "Price":["$256,500","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_600LT.jpg"
+                            
+                           
+
+       },
+
+
+
+
+       "Model5": {
+                             "Name":"Mclaren 720S Spider",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"212 m/h | 341 km/h",
+
+                                 "Price":["$299,000","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_720S_spider.jpg"
+                            
+                           
+
+       },
+
+
+        "Model6": {
+                             "Name":"Mclaren 720S",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"212 m/h | 341 km/h",
+
+                                 "Price":["$299,000","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_720S.jpg"
+                            
+                           
+
+       },
+
+
+
+
+
+
+       "Model7": {
+                             "Name":"Mclaren P1",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"217 m/h | 350 km/h",
+
+                                 "Price":["$1,999,990","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_p1.jpg"
+                            
+                           
+
+       },
+
+
+
+
+
+
+       "Model8": {
+                             "Name":"Mclaren P1_2",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"217 m/h | 350 km/h",
+
+                                 "Price":["$1,699,990","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/Mclaren_p1_2.jpg"
+                            
+                           
+
+       },
+
+
+
+
+       "Model9": {
+                             "Name":"Mclaren P1_3",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"217 m/h | 350 km/h",
+
+                                 "Price":["$2,199,990","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_p1_3.jpg"
+                            
+                           
+
+       },
+
+
+
+
+
+
+       "Model10": {
+                             "Name":"Mclaren P1_4",
+                       
+                             "Condition": ["old","new"],
+                         
+                             "Year": [
+                               "2022","2021","2020","2019",
+                               "2018","2017","2016","2015",
+                               "2014","2013","2012","2011",
+                               "2010","2009","2008","2007"    
+                               ],
+                                 "Speed":"217 m/h | 350 km/h",
+
+                                 "Price":["$2,399,990","","",""],
+                                 "Image_src":"/web_develop_project/TGH_Car_Dealership/image/mclaren_p1_4.jpg"
+                            
+                           
+
+       }
+
+
+
+
+
+
+
+   }
+
+   
+
+
+}
