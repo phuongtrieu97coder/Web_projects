@@ -1,0 +1,20 @@
+TGH Car Dealership Project 
+
+ 
+
+ 
+
+Getting idea from Lamborghini, Porche, Bugatti, BMW, Chervolet, Honda  website 
+
+ 
+
+ 
+
+1)Make sure I have a top navbar contains logo of company,
+ menu button 
+ 
+ 
+ 
+ a)menu button open a sidebar contains  Brand button, Company Button, News Button 
+
+ 
