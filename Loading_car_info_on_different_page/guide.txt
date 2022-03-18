@@ -1,0 +1,5 @@
+In this project, we got 3 file test1.php, test2.php, and car_list.json
+ we get car data from  a json file and display it on test1.php using .directive() method of angularJS
+This directive method will help test2.php automatically create more and more element by itself and display it on test1.php as long as car_list.json expand more data.
+
+Notice that we can see content of test2.php on a web browser loading test1.php page, we can not see these content on a web browser loading test2.php because all the new data element syntax just appear in web browser that load test1.php file when we inspect this page, not in test2.php file.
