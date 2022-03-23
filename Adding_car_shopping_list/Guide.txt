@@ -1,0 +1,121 @@
++In this project I used ReactJS, AngularJS, javaScript, jQuery, Html, Css, PHP to get car data to add to a car shopping list
+
++User when enter this test1.php just see a form that have 2 input field and a +add button
+
++ Below input field is a text called "Your Car info is:"
+
++If user fill out the the first input field the car model name that match  lamborghini aventador,  lamborghini huracan, or  lamborghini veneno, 
+then the test1.php page will take data from test2.php and display the correct block that has image and title of the exact same car
+
++If user click +add button, new car model name will be added into this form list
+
+
++User can not add the same car model into this form list
+
++User can remove a car that have been added into this list by click the x button that placed on the right of a block contain a new car added into this list
+
++I used some syntax to convert each first letter to uppercase letter that user input into the input field if they separate each word with a whitespace
+
++I placed syntax of two input field into ReactJS syntax block
+
++Notice that because some element being made by ReactJS doesn't appear in the test1.php when working with VS Code. I have to use JQuery for selector, not javaScript
+
++Notice that I meet some error like below, yet this program still working properly
+
+babel.min.js:13 
+        
+       You are using the in-browser Babel transformer. Be sure to precompile your scripts for production - https://babeljs.io/docs/setup/
+(anonymous) @ babel.min.js:13
+K0 @ babel.min.js:13
+V0 @ babel.min.js:13
+react-dom.development.js:61 
+        
+       Warning: The tag <test1> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.
+    at test1
+    at div
+printWarning @ react-dom.development.js:61
+error @ react-dom.development.js:37
+createElement @ react-dom.development.js:9057
+createInstance @ react-dom.development.js:10222
+completeWork @ react-dom.development.js:19494
+completeUnitOfWork @ react-dom.development.js:22845
+performUnitOfWork @ react-dom.development.js:22817
+workLoopSync @ react-dom.development.js:22737
+renderRootSync @ react-dom.development.js:22700
+performSyncWorkOnRoot @ react-dom.development.js:22323
+scheduleUpdateOnFiber @ react-dom.development.js:21911
+updateContainer @ react-dom.development.js:25512
+(anonymous) @ react-dom.development.js:26051
+unbatchedUpdates @ react-dom.development.js:22461
+legacyRenderSubtreeIntoContainer @ react-dom.development.js:26050
+render @ react-dom.development.js:26133
+(anonymous) @ Inline Babel script:55
+P0 @ babel.min.js:13
+n @ babel.min.js:13
+_0 @ babel.min.js:13
+(anonymous) @ babel.min.js:13
+K0 @ babel.min.js:13
+V0 @ babel.min.js:13
+react-dom.development.js:61 
+        
+       Warning: The tag <test2> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.
+    at test2
+    at div
+printWarning @ react-dom.development.js:61
+error @ react-dom.development.js:37
+createElement @ react-dom.development.js:9057
+createInstance @ react-dom.development.js:10222
+completeWork @ react-dom.development.js:19494
+completeUnitOfWork @ react-dom.development.js:22845
+performUnitOfWork @ react-dom.development.js:22817
+workLoopSync @ react-dom.development.js:22737
+renderRootSync @ react-dom.development.js:22700
+performSyncWorkOnRoot @ react-dom.development.js:22323
+scheduleUpdateOnFiber @ react-dom.development.js:21911
+updateContainer @ react-dom.development.js:25512
+(anonymous) @ react-dom.development.js:26051
+unbatchedUpdates @ react-dom.development.js:22461
+legacyRenderSubtreeIntoContainer @ react-dom.development.js:26050
+render @ react-dom.development.js:26133
+(anonymous) @ Inline Babel script:55
+P0 @ babel.min.js:13
+n @ babel.min.js:13
+_0 @ babel.min.js:13
+(anonymous) @ babel.min.js:13
+K0 @ babel.min.js:13
+V0 @ babel.min.js:13
+react-dom.development.js:61 
+        
+       Warning: The tag <test3> is unrecognized in this browser. If you meant to render a React component, start its name with an uppercase letter.
+    at test3
+    at div
+printWarning @ react-dom.development.js:61
+error @ react-dom.development.js:37
+createElement @ react-dom.development.js:9057
+createInstance @ react-dom.development.js:10222
+completeWork @ react-dom.development.js:19494
+completeUnitOfWork @ react-dom.development.js:22845
+performUnitOfWork @ react-dom.development.js:22817
+workLoopSync @ react-dom.development.js:22737
+renderRootSync @ react-dom.development.js:22700
+performSyncWorkOnRoot @ react-dom.development.js:22323
+scheduleUpdateOnFiber @ react-dom.development.js:21911
+updateContainer @ react-dom.development.js:25512
+(anonymous) @ react-dom.development.js:26051
+unbatchedUpdates @ react-dom.development.js:22461
+legacyRenderSubtreeIntoContainer @ react-dom.development.js:26050
+render @ react-dom.development.js:26133
+(anonymous) @ Inline Babel script:55
+P0 @ babel.min.js:13
+n @ babel.min.js:13
+_0 @ babel.min.js:13
+(anonymous) @ babel.min.js:13
+K0 @ babel.min.js:13
+V0 @ babel.min.js:13
+VM654 angular.min.js:348 WARNING: Tried to load AngularJS more than once.
+VM666 angular.min.js:348 WARNING: Tried to load AngularJS more than once.
+angular.js:36440 WARNING: Tried to load AngularJS more than once.
+21test1.php:231 
+
+
+
