@@ -1,0 +1,71 @@
+[id="block1"]{
+    background-color:rgb(49, 45, 45);
+    border:5px solid green;
+    width:600px;
+    padding:20px;
+}
+
+[id="company_intro"]{
+    font-size:15px;
+    color:white;
+    font-weight:800;
+}
+
+[id="block1_1"]{
+display:grid;
+grid-template-columns:auto auto;
+}
+
+[id="block1_1_1"]{
+ margin-right:20px;
+}
+
+[id="block1_1_2"]{
+    text-align:center;
+    font-size:20px;
+    color:aqua;
+    border-left:3px solid blue;
+}
+
+[id="user_card_icon"]{
+    font-size:50px;
+    color:yellow;
+}
+
+[id="block1_2"]{
+display:grid;
+grid-template-columns:auto auto auto;
+
+}
+
+[id="block1_2_1"],[id="block1_2_2"]{
+    margin-right:20px;
+}
+
+
+
+[id="card_id"]{
+    font-size:18px;
+    color:rgb(150, 248, 51);
+    text-shadow:2px 2px 2px green;
+}
+
+[id="email_intro"]{
+    color:cornflowerblue;
+    font-size:15px;
+}
+[id="age_gender_intro"]{
+    color:rgb(200, 237, 100);
+    font-size:15px;
+}
+
+[id="expiration_date"]{
+    color:white;
+    font-size:16px;
+}
+
+
+[id="card_icon"]{
+    font-size:40px;
+    color:orange;
+}
