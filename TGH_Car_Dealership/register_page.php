@@ -35,6 +35,11 @@
               
               
               
+              <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 
 
@@ -357,7 +362,7 @@
                
                   <br>
                  <input id="phonenumber_input" type="tel" name="phonenumber1"  
-                 placeholder="Ex: (619)-345-5647" maxlength="10"
+                 placeholder="Ex: (619)-345-5647" maxlength="12"
               
                  style="width:100%" required>
                 
@@ -431,6 +436,47 @@
                  
                     
                     $(document).ready(function(){
+
+
+                         $("#firstname_input").change(function(){
+                                var first_name_input_array = $(this).val().split(" ");
+                                var first_name_input_txt = "";
+                                for(let first_name_input_i = 0;first_name_input_i<first_name_input_array.length;first_name_input_i++){
+                                   first_name_input_txt += 
+                                   first_name_input_array[first_name_input_i].charAt(0).toUpperCase()+
+                                   first_name_input_array[first_name_input_i].slice(1)+" ";
+                                   $(this).val(first_name_input_txt);
+                                }
+                         });
+                         $("#lastname_input").change(function(){
+                                var last_name_input_array = $(this).val().split(" ");
+                                var last_name_input_txt = "";
+                                for(let last_name_input_i = 0;last_name_input_i<last_name_input_array.length;last_name_input_i++){
+                                   last_name_input_txt += 
+                                   last_name_input_array[last_name_input_i].charAt(0).toUpperCase()+
+                                   last_name_input_array[last_name_input_i].slice(1)+" ";
+                                   $(this).val(last_name_input_txt);
+                                }
+                         });
+
+
+                            $("#phonenumber_input").on("keyup",function(event){
+                                                                      
+                                   if($(this).val().length>2 && $(this).val().length<4){
+                                          $(this).val($(this).val()+"-");
+                                   }
+                                   if($(this).val().length>6 && $(this).val().length<9){
+                                          $(this).val($(this).val()+"-");
+                                   }
+                                                                      
+                                   if($(this).val().length=12){
+                                          $(this).val($(this).val().slice(0,12));
+                                   }
+                                                        
+                            });
+
+
+
                         var n = 1;
                        $("#male_check").click(function(){
                               if(n==1){

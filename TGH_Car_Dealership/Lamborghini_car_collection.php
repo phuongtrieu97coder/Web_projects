@@ -1120,6 +1120,24 @@ function open_order_form_page(car_model_name){
     
 }
 
+
+
+var jq_lamborghini_car_collection = $.noConflict();
+jq_lamborghini_car_collection(document).ready(function($){
+     $(`[id='lamborghini_car1_img'],[id='lamborghini_car2_img'],
+     [id='lamborghini_car3_img'],[id='lamborghini_car4_img'],
+     [id='lamborghini_car5_img'],[id='lamborghini_car6_img'],
+     [id='lamborghini_car7_img'],[id='lamborghini_car8_img'],
+     [id='lamborghini_car9_img'],[id='lamborghini_car10_img']
+     `).mousedown(function(event){
+          if(event.button == 2){
+               $(event.currentTarget).contextmenu(function(event){
+                    event.preventDefault();
+               })
+          }
+     })
+})
+
  </script>
 
 

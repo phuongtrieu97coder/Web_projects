@@ -1122,6 +1122,25 @@ function open_order_form_page(car_model_name){
     
 }
 
+
+
+
+var jq_mclaren_car_collection = $.noConflict();
+jq_mclaren_car_collection(document).ready(function($){
+     $(`[id='mclaren_car1_img'],[id='mclaren_car2_img'],
+     [id='mclaren_car3_img'],[id='mclaren_car4_img'],
+     [id='mclaren_car5_img'],[id='mclaren_car6_img'],
+     [id='mclaren_car7_img'],[id='mclaren_car8_img'],
+     [id='mclaren_car9_img'],[id='mclaren_car10_img']
+     `).mousedown(function(event){
+          if(event.button == 2){
+               $(event.currentTarget).contextmenu(function(event){
+                    event.preventDefault();
+               })
+          }
+     })
+})
+
  </script>
 
 

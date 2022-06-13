@@ -38,6 +38,11 @@
               
 
 
+              <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 
 
@@ -181,7 +186,7 @@
 
 [id="block3"]{
        display:grid;
-       grid-template-columns: 800px 400px;
+       grid-template-columns: 800px 600px;
       
 }
 
@@ -191,6 +196,30 @@
 }
 
 
+[id*='color_input']{
+    width:30px;height:30px;padding:2px;
+}
+
+[id="block3_2"]{
+       margin-left:-50px;
+}
+
+[id="block3_2"] h1{
+       text-shadow:4px 4px 4px yellowgreen;
+       letter-spacing:5px;
+}
+
+[id="block3_2_car_info_table"]{
+       width:700px;
+}
+[id="block3_2_car_info_table"] td{
+       font-size:20px;
+       padding:10px;
+       border-right:3px solid greenyellow;
+       border-collapse:collapse;
+       letter-spacing:2px;
+       line-height:40px;
+}
 
 
 
@@ -297,11 +326,43 @@
 
 [id="block5"]{
        display:grid;
-       grid-template-columns:600px 800px;
+       grid-template-columns:700px 800px;
+}
+
+[id*='block5_1_color_input']{
+    width:30px;height:30px;padding:2px;
+}
+
+[id="block5_1"]{
+       margin-left:10px;
+}
+
+[id="block5_1"] h1{
+       text-shadow:4px 4px 4px aquamarine;
+       letter-spacing:8px;
+       font-weight:bold;
+       margin-left:100px;
+}
+
+[id="block5_1_car_info_table"]{
+       width:850px;
+}
+
+[id="block5_1_car_info_table_column1"]{
+       border-right:3px solid greenyellow;
+       border-collapse:collapse;
+}
+
+
+[id="block5_1_car_info_table"] td{
+       font-size:20px;
+       padding:10px;
+       letter-spacing:2px;
+       line-height:40px;
 }
 
 [id="block5_2"]{
-       margin-left:-60px;
+       margin-left:-220px;
        clip-path:polygon(50% 0, 0 100%, 100% 100%, 100% 0);
 }
 
@@ -325,6 +386,23 @@
        margin-left:-355px;
        clip-path:polygon(37% 0, 27% 100%, 100% 100%, 100% 0);
        
+}
+
+[id="navbottom_block"]{
+       border-top:5px double greenyellow;
+}
+
+[id="navbottom_block_1"] a{
+       font-weight:bold;
+       font-size:13px;
+       border-right:2px solid greenyellow;
+       padding:5px 10px;
+}
+
+
+
+[id="navbottom_block_1"] a:hover{
+       text-decoration:none;
 }
  
          
@@ -783,41 +861,7 @@
 
           <script>
               
-                $(document).ready(function(){
-                     $("#login_form_block").css({
-                         "display":"none",
-                         "position":"fixed",
-                         "top":"50px",
-                         "left":"350px",
-                         "width":"700px",
-                         
-                         "z-index":"2",
-                         "font-size":"25px",
-                         "background-color":"black",
-                         "color":"white",
-                         "border":"5px solid yellow",
-                         "box-shadow":"3px 3px 6px 6px aqua,-3px -3px 6px 6px aqua"
-                     });
-
-                     
-                         $("[id='close_login_form_butt']").css({
-                              "position":"absolute",
-                              "top":"0","right":"0","font-size":"50px",
-                              "font-weight":"bold"
-                         });
-
-
-                         $("[id='login_form_overlay']").css({
-                              "display":"none",
-                              "width":"100%","height":"100%",
-                              "position":"fixed","top":"0","left":"0","right":"0",
-                              "bottom":"0","z-index":"1",
-                              "background-color":"rgba(0, 0, 0, 0.637)"
-                         });
-
-
-                });
-
+               
 
          
 
@@ -1332,13 +1376,13 @@
 
 
                        <div id="block3_1">
-                              <img src="image/lamborghini_sian3.jpg" alt="sian3" width="100%"
-                              height="400px">
+                              <img id="block3_1_img" src="image/lamborghini_sian3.jpg" alt="sian3" width="100%"
+                              height="800px">
                        </div>
 
 
                        <div id="block3_2">
-                              <h1 class="text-white">This is CAR Information block</h1>
+                              
                        </div>
 
 
@@ -1356,13 +1400,13 @@
 
           <div id="block4">
           <div id="block4_1" class="w3-hover-sepia">
-                  <img src="image/car_wallpaper3.jpg" width="100%" height="100%">
+                  <img id="block4_1_img" src="image/car_wallpaper3.jpg" width="100%" height="100%">
             </div>
             <div id="block4_2" class="w3-hover-sepia">
-                  <img src="image/car_wallpaper8.jpg" width="100%" height="100%">
+                  <img id="block4_2_img" src="image/car_wallpaper8.jpg" width="100%" height="100%">
             </div>
             <div id="block4_3" class="w3-hover-sepia">
-                  <img src="image/car_wallpaper5.jpg" width="100%" height="100%">
+                  <img id="block4_3_img" src="image/car_wallpaper5.jpg" width="100%" height="100%">
             </div>
           </div>
 
@@ -1381,30 +1425,30 @@
 
 
            <div id="dealership_icon_block0">
-                 <img src="image/car_icon2.png" width="150px" height="150px">
+                 <img id="dealership_icon_block0_img" src="image/car_icon2.png" width="150px" height="150px">
                  <b id="dealership_icon_company_title">TGH</b>
                  <i id="dealership_flag_icon" class="fa fa-flag-checkered" style="font-size:35px;"></i>
           </div>   
 
 
           <div id="dealership_icon_block1">
-               <img src="image/bugatti_chiron3.jpg" width="100%" height="100%">
+               <img id="dealership_icon_block1_img" src="image/bugatti_chiron3.jpg" width="100%" height="100%">
           </div>
 
 
           <div id="dealership_icon_block2">
-          <img src="image/pagani_huayra.jpg" width="100%" height="100%">
+          <img id="dealership_icon_block2_img" src="image/pagani_huayra.jpg" width="100%" height="100%">
           </div>
 
 
           <div id="dealership_icon_block3">
-          <img src="image/lamborghini_aventador2.jpg" width="100%" height="100%">
+          <img id="dealership_icon_block3_img" src="image/lamborghini_aventador2.jpg" width="100%" height="100%">
           </div>
 
 
 
           <div id="dealership_icon_block4">
-          <img src="image/mclaren_p1_2.jpg" width="100%" height="100%">
+          <img id="dealership_icon_block4_img" src="image/mclaren_p1_2.jpg" width="100%" height="100%">
           </div>
 
 
@@ -1422,16 +1466,16 @@
 
               <div id="block5">
                             <div id="block5_1">
-                               <h1 class="text-white">This is CAR Information block</h1>
+                               
                             </div>
 
 
                        <div id="block5_2">
                             
-                              <img src="image/lamborghini_veneno2.jpg" 
-                              alt="pagani"
+                              <img id="block5_2_img" src="image/lamborghini_veneno2.jpg" 
+                              alt="lamborghini_veneno"
                                width="100%"
-                              height="500px">
+                              height="700px">
                        </div>
               </div>
 
@@ -1447,7 +1491,7 @@
 
               <div id="block6">
                             <div id="block6_1" class="w3-hover-sepia">
-                            <img src="image/car_wallpaper7.jpg" 
+                            <img id="block6_1_img" src="image/car_wallpaper7.jpg" 
                               alt="pagani"
                                width="100%"
                               height="500px">
@@ -1456,7 +1500,7 @@
 
                        <div id="block6_2" class="w3-grayscale-min w3-hover-sepia">
                             
-                              <img src="image/car_wallpaper6.png" 
+                              <img id="block6_2_img" src="image/car_wallpaper6.png" 
                               alt="pagani"
                                width="100%"
                               height="500px">
@@ -1477,14 +1521,106 @@
 
 
 
+       
        <footer>
-        
+              <nav id="navbottom_block" class="w3-bar w3-bottom w3-black"
+               data-navbottom_block="navbottom_block">
+
+                 <span id="navbottom_block_1" style="float:right;" 
+                 data-navbottom_block_1="navbottom_block_1">
+
+
+                     <a id="navbottom_account_button" 
+                     class="navbottom_account_button text-white w3-hover-green"
+                     title="navbottom_account_button" name="navbottom_account_button"
+                     type="button" href="user_info_page.php" target="_self" 
+                     data-navbottom-button1="navbottom_account_button">ACCOUNT</a>
+
+
+                     <a id="navbottom_about_button" 
+                     class="navbottom_about_button text-white w3-hover-green"
+                     title="navbottom_about_button" name="navbottom_about_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button2="navbottom_about_button">ABOUT</a>
+
+
+
+
+                     <a id="navbottom_cookie_button" 
+                     class="navbottom_cookie_button  text-white w3-hover-green"
+                     title="navbottom_cookie_button" name="navbottom_cookie_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button3="navbottom_cookie_button">COOKIES</a>
+
+
+                     <a id="navbuttom_policy_button" 
+                     class="navbottom_policy_button  text-white w3-hover-green"
+                     title="navbottom_policy_button" name="navbottom_policy_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button4="navbottom_policy_button">POLICY</a>
+
+
+                     <a id="navbottom_copyright_button" 
+                     class="navbottom_copyright_button  text-white w3-hover-green"
+                     title="navbottom_copyright_button" name="navbottom_copyright_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button5="navbottom_copyright_button">COPYRIGHT</a>
+
+
+                     <a id="navbuttom_privacy_security_button" 
+                     class="navbottom_privacy_security_button  text-white w3-hover-green"
+                     title="navbottom_privacy_security_button" name="navbottom_privacy_security_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button6="navbottom_privacy_security_button">PRIVACY & SECURITY</a>
+
+
+                     <a id="navbottom_jobs_careers_button" 
+                     class="navbottom_jobs_careers_button  text-white w3-hover-green"
+                     title="navbottom_jobs_careers_button" name="navbottom_jobs_careers_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button7="navbottom_jobs_careers_button">JOBS | CAREERS</a>
+
+
+                     <a id="navbottom_partnerships_button" 
+                     class="navbottom_partnerships_button  text-white w3-hover-green"
+                     title="navbottom_partnerships_button" name="navbottom_partnerships_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button8="navbottom_partnerships_button">PARTNERSHIPS</a>
+
+
+                     <a id="navbuttom_term_of_use_button" 
+                     class="navbottom_term_of_use_button  text-white w3-hover-green"
+                     title="navbottom_term_of_use_button" name="navbottom_term_of_use_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button9="navbottom_term_of_use_button">TERM OF USE</a>
+
+
+                     <a id="navbuttom_help_button" 
+                     class="navbottom_help_button  text-white w3-hover-green"
+                     title="navbottom_help_button" name="navbottom_help_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button10="navbottom_help_button">HELP</a>
+
+
+                     <a id="navbottom_faqs_button" 
+                     class="navbottom_faqs_button  text-white w3-hover-green"
+                     title="navbottom_faqs_button" name="navbottom_faqs_button"
+                     type="button" href="#" target="_self" 
+                     data-navbottom-button11="navbottom_faqs_button">FAQs</a>
+
+
+
+                  </span>
+
+              </nav>
+      
        </footer>
        
 
        <script src="main_page_slideshow_behavior.js"></script>
        <script src="main_page_modal_behavior.js"></script>
        <script src="main_page_tab_behavior.js"></script>
+       <script src="mainpage_react_module/render_file.js" type="text/babel"></script>
 
        
        <script>
@@ -1527,6 +1663,77 @@ function load_user(){
 }
 
 
+
+
+var jq_mainpage_behavior = $.noConflict();
+jq_mainpage_behavior(document).ready(function($){
+
+      
+                     $("#login_form_block").css({
+                         "display":"none",
+                         "position":"fixed",
+                         "top":"50px",
+                         "left":"350px",
+                         "width":"700px",
+                         
+                         "z-index":"2",
+                         "font-size":"25px",
+                         "background-color":"black",
+                         "color":"white",
+                         "border":"5px solid yellow",
+                         "box-shadow":"3px 3px 6px 6px aqua,-3px -3px 6px 6px aqua"
+                     });
+
+                     
+                         $("[id='close_login_form_butt']").css({
+                              "position":"absolute",
+                              "top":"0","right":"0","font-size":"50px",
+                              "font-weight":"bold"
+                         });
+
+
+                         $("[id='login_form_overlay']").css({
+                              "display":"none",
+                              "width":"100%","height":"100%",
+                              "position":"fixed","top":"0","left":"0","right":"0",
+                              "bottom":"0","z-index":"1",
+                              "background-color":"rgba(0, 0, 0, 0.637)"
+                         });
+
+
+
+
+                     $(`[id='video_car1'],[id='video_car2'],
+                     [id='video_car3'],[id='block1_content1_1_img'],[id='block1_content1_2_img'],
+                     [id='block1_content1_3_img'],[id='block1_content1_4_img'],
+                     [id='block1_content2_1_img'],[id='block1_content2_2_img'],
+                     [id='block1_content2_3_img'],[id='block1_content2_4_img'],
+                     [id='TGH_San_Diego_Dealership_block_img'],
+                     [id='TGH_San_Francisco_Dealership_block_img'],
+                     [id='TGH_Los_Angeles_Dealership_block_img'],
+                     [id='TGH_San_Jose_Dealership_block_img'],
+                     [id='TGH_Sacramento_Dealership_block_img'], [id="block3_1_img"],
+                     [id="block4_1_img"],[id="block4_2_img"],[id="block4_3_img"],
+                     [id="dealership_icon_block0_img"],[id="dealership_icon_block1_img"],
+                     [id="dealership_icon_block2_img"],[id="dealership_icon_block3_img"],
+                     [id="dealership_icon_block4_img"],
+                     [id="block5_2_img"],[id="block6_1_img"],[id="block6_2_img"]
+                     `).mousedown(function(event){
+                            if(event.button == 2){
+                                   $(event.currentTarget).contextmenu(function(event){
+                                   event.preventDefault();
+                                   });
+                            }
+                     });
+
+
+
+
+
+                  
+});
+
+
        </script>
 
 
@@ -1538,6 +1745,8 @@ function load_user(){
 
 
 
+
+      
 
 
      

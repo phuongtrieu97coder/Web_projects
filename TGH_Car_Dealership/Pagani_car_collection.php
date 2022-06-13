@@ -1120,6 +1120,24 @@ function open_order_form_page(car_model_name){
     
 }
 
+
+
+var jq_pagani_car_collection = $.noConflict();
+jq_pagani_car_collection(document).ready(function($){
+     $(`[id='pagani_car1_img'],[id='pagani_car2_img'],
+     [id='pagani_car3_img'],[id='pagani_car4_img'],
+     [id='pagani_car5_img'],[id='pagani_car6_img'],
+     [id='pagani_car7_img'],[id='pagani_car8_img'],
+     [id='pagani_car9_img'],[id='pagani_car10_img']
+     `).mousedown(function(event){
+          if(event.button == 2){
+               $(event.currentTarget).contextmenu(function(event){
+                    event.preventDefault();
+               })
+          }
+     })
+})
+
  </script>
 
 

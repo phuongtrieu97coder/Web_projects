@@ -1123,6 +1123,23 @@ function open_order_form_page(car_model_name){
     
 }
 
+
+var jq_bugatti_car_collection = $.noConflict();
+jq_bugatti_car_collection(document).ready(function($){
+     $(`[id='bugatti_car1_img'],[id='bugatti_car2_img'],
+     [id='bugatti_car3_img'],[id='bugatti_car4_img'],
+     [id='bugatti_car5_img'],[id='bugatti_car6_img'],
+     [id='bugatti_car7_img'],[id='bugatti_car8_img'],
+     [id='bugatti_car9_img'],[id='bugatti_car10_img']
+     `).mousedown(function(event){
+          if(event.button == 2){
+               $(event.currentTarget).contextmenu(function(event){
+                    event.preventDefault();
+               })
+          }
+     })
+})
+
  </script>
 
 
