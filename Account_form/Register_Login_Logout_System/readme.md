@@ -50,6 +50,10 @@
 
 ![image](https://user-images.githubusercontent.com/82598726/180519059-5df9db48-0bca-47ae-8693-4e5c4b197e21.png)
 
+> If any user register an account that already exists, an error message will appear on the Thank_you_register.php page:
+![image](https://user-images.githubusercontent.com/82598726/180520238-916846b7-8421-40d5-9788-ed8f13964517.png)
+
+
 > User's data is stored in MySQL database:
 
 ![image](https://user-images.githubusercontent.com/82598726/180510071-6d088a23-a016-429e-8c32-6a1e9916c87d.png)
@@ -71,6 +75,11 @@
 ![image](https://user-images.githubusercontent.com/82598726/180519525-61e8009a-d7eb-4dca-9aeb-36b9980c19b3.png)
 
 ![image](https://user-images.githubusercontent.com/82598726/180519553-276d4743-c199-4559-b941-85f2b690f1c0.png)
+
+> What may happen if a user logged in with wrong information? Then, they will see the main page as normal as before and they can see an erro message on the login form if they decide to open it again like below:
+
+![image](https://user-images.githubusercontent.com/82598726/180522785-fd1bcc3a-dff3-444e-9b31-679a4bb8619a.png)
+
 
 
 
