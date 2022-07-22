@@ -85,11 +85,35 @@
 
 # 5.How it work:
 > When a user goes to main_page.php, he or she can see login and sign up button.
-> By clicking login button, a login form from 'Login_form.php' will appear on 'main_page.php'. If this user fills in correct username, password, and click log-in button, the form will submit data to 'Validate_login.php' page. 
+
+> By clicking the sign up button, a user can see the content from 'Register_form.php' file with a register form.
+
+>  After user register an account successfully, they can see a 'Thank_you_register.php' page with thank you message appear inform them that they have registered their account successfully, and they can go back to the main_page.php to login their account.
+
+> During the process above, the 'Thank_you_register.php' page was processing data and validating it through data connected and selected from MySQL database. It also automatically create an user information page with filename as same as username combines with '.php' extension by using PHP file handling technique.
+
+> I want the program creates a filename like that to help each user only be able to access a specificly distinct user information page after they logged in their account later.
+ 
+> If user register an existent account, they still see Thank_you_register.php page, but an error message will inform them this time.   
+
+> By clicking login button on the main_page.php, a login form from 'Login_form.php' will appear on 'main_page.php'. If this user fills out correct username, password, and click log-in button, the form will submit data to 'Validate_login.php' page. 
+
 > 'Validate_login.php' page will handle and validate the login information by connecting data to MySQL database, select the required data, evaluate it with logged in data to see if it matches or not.
+
 >  If the logged in data matches with data from MySQL database, the page will store session variables as user login id and username, then redirect user back to main_page.php.
+
 >  User can't see the process above, all they can see is the main_page.php reload after they logged in. 
+
 >  On the other hand, if user filled out the wrong information, Validate_login.php file still redirect user to the main_page.php, but this time this validate page store a user logged in failed session variable value to true to make sure that the login form will display the text 'Sorry, your username or password doesn't match our record!!!' after login form page checked if the $_SESSION['user_loggedin_failed'] isset.
+
 > After user logged in successfully their account, they can see the log out button, and their account button. The account button shows them their username, and links them to their specific user information page.
+
 > In order to link a user to their specific user information page, the href attribute needs to link to a php file that has filename as session variable username that was stored after user logged in and extension '.php'.
-> That means we must program this big project in a way that let it automatically create a user information file with a filename as same as a specific username after a user register succesfully their account   
+
+> That means we must program this big project in a way that let it automatically create a user information file with a filename as same as a specific username after a user register succesfully their account like the ways I mentioned above.
+
+
+# 6.Warning:
+> In this repository, I'm not going to save all the syntaxes for the 'User_information_page.php' file because it contains so much things that I still haven't finished yet from my TGH_Car_Dealership project. In addition, this repository is all about login, logout, and register system, and we don't work with the user information page website.  
+
+> I don't place any image file into this repository because I take this project from the TGH_Car_Dealership project. If you are a visitor who visit this repository to learn about the register, login, and logout system, it would be better if you try to replace all the image input in my project to the things that you like. 
