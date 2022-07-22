@@ -19,12 +19,15 @@
 
 <br>
 <br>
+
 # 3.Programming languages, Database, Server, IDE:
+
 > Html, CSS, JavaScript, Bootstrap, W3CSS, PHP, SQL, MySQL, Xampp, VS Code, jQuery
+
 <br>
 <br>
 
-# 3.Requirement steps:
+# 4.Requirement steps:
 
 > Must know about how to connect data to database.
 
@@ -37,12 +40,12 @@
 > I’m not going to explain all the thing in this document, I’m just copy and paste a lot of syntax that I used to make a login form in the TGH_Car_Dealership project into this document
 
 
-# 4.Make sure any user register their account so that users data are stored in MySQL database
+# 5.Make sure any user register their account so that users data are stored in MySQL database
 
 ##  Purpose: 
 >      Connect and transfer data through MySQL database, Login form, and Register form.
 
-# 5. Running
+# 6. Running
 
 ![image](https://user-images.githubusercontent.com/82598726/180518700-c211ed47-3683-45cc-a32f-71a11e4124d1.png)
 
@@ -87,7 +90,7 @@
 
 
 
-# 5.How it work:
+# 7.How it work:
 > When a user goes to main_page.php, he or she can see login and sign up button.
 
 > By clicking the sign up button, a user can see the content from 'Register_form.php' file with a register form.
@@ -117,7 +120,7 @@
 > That means we must program this big project in a way that let it automatically create a user information file with a filename as same as a specific username after a user register succesfully their account like the ways I mentioned above.
 
 
-# 6.Warning:
+# 8.Warning:
 > In this repository, I'm not going to save all the syntaxes for the 'User_information_page.php' file because it contains so much things that I still haven't finished yet from my TGH_Car_Dealership project. In addition, this repository is all about login, logout, and register system, and we don't work with the user information page website.  
 
 > I don't place any image file into this repository because I take this project from the TGH_Car_Dealership project. If you are a visitor who visit this repository to learn about the register, login, and logout system, it would be better if you try to replace all the image input in my project to the things that you like. 
