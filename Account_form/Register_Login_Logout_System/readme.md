@@ -15,7 +15,7 @@
 
 # 2.Files and Database are being used:
 
-- In this project, i work with 5 files and 1 database: main_page.php, Login_form.php, Validate_login.php, Logout_page.php, navtop_rightside.php, register_page.php, Thank_you_register.php, and MySQL database that run from Xampp server.
+- In this project, i work with 8 files and 1 database: main_page.php, Login_form.php, Validate_login.php, Logout_page.php, navtop_rightside.php, register_page.php, Thank_you_register.php, User_information_page.php, and MySQL database that run from Xampp server.
 
 <br>
 <br>
