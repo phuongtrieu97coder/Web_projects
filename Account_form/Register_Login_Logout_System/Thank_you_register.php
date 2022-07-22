@@ -165,7 +165,7 @@ try{
             $user_info_page = fopen('User_information_page.php','r') or die ('unable to open and read file!!!');
             $new_user_info_file = fopen(check_func($_POST['username1']).".php",'w+') or die('Unable to open and read test2.php file!!!');
             while(!feof($user_info_page)){
-            echo fwrite($new_user_info_file,fgets($user_info_page));
+              fwrite($new_user_info_file,fgets($user_info_page));
             }
             fclose($new_user_info_file);
             fclose($user_info_page);
