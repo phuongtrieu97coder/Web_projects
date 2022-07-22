@@ -72,9 +72,9 @@ session_start();
 
 
 $web_host = 'localhost';
-$admin = 'phuongcoderinfinity';
-$admin_database_pass='butcherfithack97';
-$database_name = 'tgh_car_dealership';
+$admin = 'youradmin_name';
+$admin_database_pass='youradmin_password';
+$database_name = 'yourdatabase_name';
 
 try{
  $access_database_info = 'mysql:host='.$web_host.';dbname='.$database_name;
