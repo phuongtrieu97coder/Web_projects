@@ -1,4 +1,4 @@
-#  ![image](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)  ![image](https://img.shields.io/badge/HTML5-black?style=for-the-badge&logo=html5) ![image](https://img.shields.io/badge/CSS3-black?style=for-the-badge&logo=css3)  ![image](https://img.shields.io/badge/Bootstrap-white?style=for-the-badge&logo=bootstrap) ![image](https://img.shields.io/badge/PHP-white?style=for-the-badge&logo=php) ![image](https://img.shields.io/badge/MYSQL-white?style=for-the-badge&logo=mysql) 
+#  ![image](https://img.shields.io/badge/JavaScript-black?style=for-the-badge&logo=javascript)  ![image](https://img.shields.io/badge/HTML5-black?style=for-the-badge&logo=html5) ![image](https://img.shields.io/badge/CSS3-black?style=for-the-badge&logo=css3)  ![image](https://img.shields.io/badge/Bootstrap-white?style=for-the-badge&logo=bootstrap) ![image](https://img.shields.io/badge/PHP-white?style=for-the-badge&logo=php) ![image](https://img.shields.io/badge/MYSQL-white?style=for-the-badge&logo=mysql) ![image](https://img.shields.io/badge/jQuery-black?style=for-the-badge&logo=jquery)
 
 <br>
 <br>
@@ -17,6 +17,10 @@
 
 - In this project, i work with 8 files and 1 database: main_page.php, Login_form.php, Validate_login.php, Logout_page.php, navtop_rightside.php, register_page.php, Thank_you_register.php, User_information_page.php, and MySQL database that run from Xampp server.
 
+<br>
+<br>
+# 3.Programming languages, Database, Server, IDE:
+> Html, CSS, JavaScript, Bootstrap, W3CSS, PHP, SQL, MySQL, Xampp, VS Code, jQuery
 <br>
 <br>
 
