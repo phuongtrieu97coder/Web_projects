@@ -59,9 +59,17 @@
           <main>
 <?php
 
-$login_err_message = "";
+
+$login_err_message = $username_err_message = $password_err_message = "";
+
 if(isset($_SESSION['user_loggedin_failed'])){
   $login_err_message = "Sorry, your username or password doesn't match our record!!!";
+}
+if(isset($_SESSION['username_err_message'])){
+  $username_err_message = $_SESSION['username_err_message'];
+}
+if(isset($_SESSION['password_err_message'])){
+  $password_err_message = $_SESSION['password_err_message'];
 }
 
 
@@ -97,12 +105,16 @@ if(isset($_SESSION['user_loggedin_failed'])){
 
                    <b class="text-danger"><?php echo $login_err_message;?></b><br/>
 
-                    <label for="username_input"><b>USERNAME:</b></label><br>
+                    <label for="username_input"><b>USERNAME:</b></label>
+                     <span class="text-danger"><b><?php echo $username_err_message;?></b></span>   
+                    <br>
                     <input id="username_input" name="username_input" type="text"
                     placeholder="Enter your username..." style="width:100%" required>
 
 
-                    <label for="password_input"><b>PASSWORD:</b></label><br>
+                    <label for="password_input"><b>PASSWORD:</b></label>
+                    <span class="text-danger"><b><?php echo $password_err_message;?></b></span>  
+                    <br>
 
                     <input id="password_input" name="password_input" type="password"
                     placeholder="Enter your password..." style="width:100%" required>
