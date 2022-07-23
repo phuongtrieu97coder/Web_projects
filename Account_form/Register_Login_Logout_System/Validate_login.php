@@ -113,12 +113,12 @@ FROM customers WHERE Customer_Username = :seek_username AND Customer_Password = 
  $stmt->bindParam(':seek_password',$seek_password);
 
  
-    if(empty($_POST['username_input'])){
-      $username_err_message = 'Username is required!!!';
+     if(empty($_POST['username_input'])){
+      $_SESSION['username_err_message'] = 'Username is required!!!';
     }
 
     if(empty($_POST['password_input'])){
-      $password_err_message = 'Password is required!!!';
+      $_SESSION['password_err_message'] = 'Password is required!!!';
     } 
     
     if(isset($_POST['username_input']) && isset($_POST['password_input'])){
