@@ -87,6 +87,10 @@
 
 ![image](https://user-images.githubusercontent.com/82598726/180522785-fd1bcc3a-dff3-444e-9b31-679a4bb8619a.png)
 
+> What may happen if a user didn't fill out any information and still click login button?
+![image](https://user-images.githubusercontent.com/82598726/180616945-cc7cbca3-98e7-48cc-8add-fa32aa25daa0.png)
+
+
 
 
 
