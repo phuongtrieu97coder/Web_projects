@@ -34,7 +34,17 @@ if else if else, document.getElementById('').innerHTML, document.getElementById(
 string trim(), function, document.getElementById("").style.display, onkeyup  event
 ```
 
+> CSS
+```
+background-color, color, font-size, border, box-shadow,padding, width, height, position, top, left
+```
+
+# Files: test1.php, data_json1.json, test2.php
+
 # Think to notice:
+
+> I don't upload images into this repositories. If you spend time doing research on this repository, please download or copy images from the internet.
+
 > I used jQuery to get data from JSON file, using JavaScript XMLHttpRequest can work just fine.
 
 > I can apply this project to built a movie online streaming service web application, software, mobile application in the future.\
