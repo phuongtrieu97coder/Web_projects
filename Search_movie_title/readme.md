@@ -209,7 +209,7 @@ background-color, color, font-size, border, box-shadow,padding, width, height, p
 
 ### Syntax in 'data_json1.json'
 
-```javascript
+```html
 [
   
     {
