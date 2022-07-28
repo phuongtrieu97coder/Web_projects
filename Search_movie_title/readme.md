@@ -62,7 +62,7 @@ background-color, color, font-size, border, box-shadow,padding, width, height, p
 
 ### Syntax in 'test1.php'
 
-```
+```html
 
 
   <form id='form1' name='form1' title='form1'
@@ -209,7 +209,7 @@ background-color, color, font-size, border, box-shadow,padding, width, height, p
 
 ### Syntax in 'data_json1.json'
 
-```
+```javascript
 [
   
     {
@@ -273,6 +273,9 @@ background-color, color, font-size, border, box-shadow,padding, width, height, p
 
 
 ![image](https://user-images.githubusercontent.com/82598726/181651322-c1f55e23-5d58-40c8-8656-11d146deb9f4.png)
+
+
+![image](https://user-images.githubusercontent.com/82598726/181651498-a6d311f5-5888-4b1d-a62b-15b25efcf780.png)
 
 
 ![image](https://user-images.githubusercontent.com/82598726/181651344-87a2b539-0c36-41fa-af46-f5899e1cc8c2.png)
