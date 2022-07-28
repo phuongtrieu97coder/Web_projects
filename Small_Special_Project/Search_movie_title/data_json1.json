@@ -1,0 +1,41 @@
+[
+  
+    {
+        "id":"mov_1",
+        "title":"Iron man",
+        "image":"<img src='image/iron_man_img1.jpg' alt='Iron man' width='50px' height='50px'>"
+    },
+   
+  
+    {
+        "id":"mov_2",
+        "title":"Wonder Woman",
+        "image":"<img src='image/wonder_woman_img1.jpg' alt='Wonder woman' width='50px' height='50px'>"
+    },
+  
+    {
+        "id":"mov_3",
+        "title":"Captain America",
+        "image":"<img src='image/captain_america_img1.jpg' alt='Captain america' width='50px' height='50px'>"
+    },
+ 
+    {
+        "id":"mov_4",
+        "title":"Spider man",
+        "image":"<img src='image/spiderman_img1.jpg' alt='Spiderman' width='50px' height='50px'>"
+    },
+   
+    {
+        "id":"mov_5",
+        "title":"X-men",
+        "image":"<img src='image/xmen_img1.jpg' alt='Xmen' width='50px' height='50px'>"
+    },
+
+    {
+        "id":"mov_6",
+        "title":"Pirate Of The Caribean",
+        "image":"<img src='image/pirate_of_caribean_img1.jpg' alt='Pirate of the caribean' width='50px' height='50px'>"
+    }
+
+
+]
