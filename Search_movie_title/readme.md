@@ -36,3 +36,14 @@ string trim(), function, document.getElementById("").style.display, onkeyup  eve
 
 # Think to notice:
 > I used jQuery to get data from JSON file, using JavaScript XMLHttpRequest can work just fine.
+
+> I can apply this project to built a movie online streaming service web application, software, mobile application in the future.\
+
+> It took me 3 days to finish two different kind of projects in this document.
+
+> This project took a lot of algorithm syntaxes that I created by myself.
+
+> Using jQuery is a good choice for this project since the .filter() method filter between data input and show hints faster than JavaScript.
+
+> Using JavaScript from start to the end is a bad idea because it made me find more syntaxes and algorithm to solve problems. 
+ 
