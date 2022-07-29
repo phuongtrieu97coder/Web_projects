@@ -30,7 +30,7 @@
  ![image](https://user-images.githubusercontent.com/82598726/181828843-3ba0f2e8-a5dc-4268-b646-5b21898e1139.png) ![image](https://user-images.githubusercontent.com/82598726/181828934-4524165b-801b-44a8-97b4-3966d2eb3c93.png)
 
 
-# 3. Resources:
+# 3. Resource documents:
 
 ![image](https://user-images.githubusercontent.com/82598726/181833270-3611211f-e087-4427-8cf3-b0af65c59c61.png)
 
