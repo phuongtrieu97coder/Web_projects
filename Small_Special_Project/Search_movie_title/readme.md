@@ -41,7 +41,7 @@ background-color, color, font-size, border, box-shadow,padding, width, height, p
 
 # Files: test1.php, data_json1.json, test2.php
 
-# Think to notice:
+# Things to notice:
 
 > I don't upload images into this repositories. If you spend time doing research on this repository, please download or copy images from the internet.
 
