@@ -12,7 +12,7 @@
 
 > If we use normal methods like above to make bottom bar effect, we have to write too many if...else if...else statement
 
-> To solve that problem, I make this small project that use just 2 function with for loop syntax to help make bottom bar effect. 
+> To solve that problem, I make this small project that use just 1-2 function with for loop syntax or setAttribute and removeAttribute to help make bottom bar effect. 
 
 
 # 2.How it work:
@@ -33,11 +33,11 @@
 
 > HTML5 button tags with all necessary attributes and 'onclick' event attribute | div tags | script tags | i tags 
 
->  JavaScript for loop | function | if condition | document.getElementsByClassName | var | let  | const
+>  JavaScript for loop | function | if condition | document.getElementsByClassName | var | let  | const | setAttribute | removeAttribute
 
 > Bootstrap button and button styling
 
->  CSS3 background or color styling, font size
+>  CSS3 background or color styling, font size, border-bottom, button[data-buttActive = 'true']
 
 >  W3css   w3-hover effect, w3-btn or w3-button  
 
@@ -48,6 +48,8 @@
 ### e. Syntaxes:
 
 #### Syntax in 'test1.php' or 'test1.html'
+
+> Method1:
 
 ```html
 
@@ -102,6 +104,65 @@ onclick='func1(2)' data-butt='button_data'><i class='fa fa-bars'></i>  Button2</
        </body>
 ```
 
+> Method2: 
+
+```html
+       <style>
+            
+         button[data-buttActive = 'true']{
+               border-bottom:5px solid yellow;
+         }
+
+
+          
+      
+              </style>
+       </head>
+
+
+
+
+       <body>
+          
+                
+
+
+<button id='butt1'  title='button 1' 
+type='button' class='click_butt btn w3-black text-white w3-hover-green'
+onclick="func1('butt1')"><i class='fa fa-home'></i>  Button1</button>
+       
+       
+<button id='butt2'  title='button 2' 
+type='button' class='click_butt w3-button w3-ripple w3-black w3-text-white w3-hover-red'
+onclick="func1('butt2')"><i class='fa fa-bars'></i>  Button2</button>
+
+
+    
+<div id='block1'></div>
+    
+     <script>
+
+       func1('butt1');     
+
+       function func1(val){
+             
+         if(val == 'butt1'){
+              document.getElementById('butt1').setAttribute('data-buttActive','true');
+              document.getElementById('butt2').removeAttribute('data-buttActive');
+         }else if(val == 'butt2'){
+              document.getElementById('butt2').setAttribute('data-buttActive','true');
+              document.getElementById('butt1').removeAttribute('data-buttActive');
+         }else{
+              console.log('');
+         }
+          
+
+       }
+     
+
+     </script>
+      
+```
 
 # 7. Running | Output:
 ![image](https://user-images.githubusercontent.com/82598726/182687871-f195cb64-dd44-48ca-8e88-5a158d6f485c.png)
