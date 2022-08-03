@@ -28,12 +28,17 @@
 ### a.Programming languages:
 
 > ![image](https://img.shields.io/badge/PHP-PHP-blueviolet) ![image](https://img.shields.io/badge/HTML-HTML5-orange)  ![image](https://img.shields.io/badge/CSS-CSS3-blue)  ![image](https://img.shields.io/badge/B-Bootstrap-blueviolet) ![image](https://img.shields.io/badge/W3CSS-W3CSS-green) ![image](https://img.shields.io/badge/JS-JavaScript-yellow)
+
 ### b.Algorithms, Data structures, Syntaxes, and Methods concepts:
 
 > HTML5 button tags with all necessary attributes and 'onclick' event attribute | div tags | script tags | i tags 
+
 >  JavaScript for loop | function | if condition | document.getElementsByClassName | var | let  | const
+
 > Bootstrap button and button styling
+
 >  CSS3 background or color styling, font size
+
 >  W3css   w3-hover effect, w3-btn or w3-button  
 
 ### c.IDE,Software:
