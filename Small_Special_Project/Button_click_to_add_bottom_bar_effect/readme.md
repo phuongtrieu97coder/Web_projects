@@ -33,11 +33,11 @@
 
 > HTML5 button tags with all necessary attributes and 'onclick' event attribute | div tags | script tags | i tags 
 
->  JavaScript for loop | function | if condition | document.getElementsByClassName | var | let  | const | setAttribute | removeAttribute
+>  JavaScript for loop | function | if condition | document.getElementsByClassName | var | let  | const | setAttribute | removeAttribute | querySelector
 
 > Bootstrap button and button styling
 
->  CSS3 background or color styling, font size, border-bottom, button[data-buttActive = 'true']
+>  CSS3 background or color styling, font size, border-bottom, button[data-buttActive = 'true'], button:not(button[data-butt1]), button[data-butt1]
 
 >  W3css   w3-hover effect, w3-btn or w3-button  
 
@@ -129,11 +129,13 @@ onclick='func1(2)' data-butt='button_data'><i class='fa fa-bars'></i>  Button2</
 
 <button id='butt1'  title='button 1' 
 type='button' class='click_butt btn w3-black text-white w3-hover-green'
+data-butt1='butt1'
 onclick="func1('butt1')"><i class='fa fa-home'></i>  Button1</button>
        
        
 <button id='butt2'  title='button 2' 
 type='button' class='click_butt w3-button w3-ripple w3-black w3-text-white w3-hover-red'
+data-butt2='butt2'
 onclick="func1('butt2')"><i class='fa fa-bars'></i>  Button2</button>
 
 
@@ -147,11 +149,11 @@ onclick="func1('butt2')"><i class='fa fa-bars'></i>  Button2</button>
        function func1(val){
              
          if(val == 'butt1'){
-              document.getElementById('butt1').setAttribute('data-buttActive','true');
-              document.getElementById('butt2').removeAttribute('data-buttActive');
+              document.querySelector("button[data-butt1]").setAttribute('data-buttActive','true');
+              document.querySelector("button:not(button[data-butt1])").removeAttribute('data-buttActive');
          }else if(val == 'butt2'){
-              document.getElementById('butt2').setAttribute('data-buttActive','true');
-              document.getElementById('butt1').removeAttribute('data-buttActive');
+              document.querySelector("button[data-butt2]").setAttribute('data-buttActive','true');
+              document.querySelector("button:not(button[data-butt2])").removeAttribute('data-buttActive');
          }else{
               console.log('');
          }
@@ -161,6 +163,7 @@ onclick="func1('butt2')"><i class='fa fa-bars'></i>  Button2</button>
      
 
      </script>
+
       
 ```
 
