@@ -151,6 +151,7 @@ onclick="func1('butt2')"><i class='fa fa-bars'></i>  Button2</button>
          if(val == 'butt1'){
               document.querySelector("button[data-butt1]").setAttribute('data-buttActive','true');
               document.querySelector("button:not(button[data-butt1])").removeAttribute('data-buttActive');
+               //for more specific, you can write  querySelector(“.click_butt:not(button[data-butt1])”)
          }else if(val == 'butt2'){
               document.querySelector("button[data-butt2]").setAttribute('data-buttActive','true');
               document.querySelector("button:not(button[data-butt2])").removeAttribute('data-buttActive');
