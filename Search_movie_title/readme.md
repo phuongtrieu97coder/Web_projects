@@ -57,6 +57,8 @@ background-color, color, font-size, border, box-shadow,padding, width, height, p
 
 > Using JavaScript from start to the end is a bad idea because it made me find more syntaxes and algorithm to solve problems. 
 
+> You can use PHP to connect data from MySQL database as a faster way to make this kind of project. For more information, please go to php_project repository on my github and find project: ConnectAJAXPHPMySQL_to_seach_something
+
 
 # Method1
 
