@@ -121,7 +121,7 @@
 
 - 'video' folder
 
-
+- MySQL_database folder (contains 'movies_collection.sql' and 'contents_starrating.sql' files)
 
 
 # 6. Sources:
