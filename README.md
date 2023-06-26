@@ -51,4 +51,8 @@
 ![image](https://user-images.githubusercontent.com/82598726/181833940-dcbcd73a-9671-4f1b-92e9-6de38a18213a.png)
 
 
+# 4. License:
+
+![image](https://github.com/phuongtrieu97coder/web_project/assets/82598726/d428f8f0-90c1-41e3-8167-e8e7d22b6d86)
+
 
